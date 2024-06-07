@@ -1,0 +1,297 @@
+@mixin input-box-item {
+  // https://fluentthemes.com/create-checkbox-radio-buttons-html-css/
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  & label {
+    //the input label text
+    margin-right: 0.5em;
+    &:before {
+      // the container for our custom element
+      content: '\2713'; // set the checkmark here so everything is rendered with the same height (weird)
+      display: inline-block;
+      width: 1.8em;
+      height: 1.6em;
+      padding-top: 0.2em; // vertical alignment fix
+      border: 2px solid $line-light;
+      background-color: white;
+      color: transparent; //hide placeholder text
+      text-align: center;
+    }
+    &:hover:before {
+      border: 2px solid $line-dark;
+    }
+    &:after {
+      // the container for our custom element
+      content: '\2713'; // set the checkmark here so everything is rendered with the same height (weird)
+      display: inline-block;
+      width: 1.8em;
+      height: 1.6em;
+      padding-top: 0.2em; // vertical alignment fix
+      border: 2px solid $line-light;
+      background-color: white;
+      color: transparent; //hide placeholder text
+      text-align: center;
+    }
+    &:hover:after {
+      border: 2px solid $line-dark;
+    }
+  }
+}
+
+@mixin button-base {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: $font-size-m;
+  color: $text-light;
+  background: $button-background;
+  border: none;
+  border-radius: 4px;
+  word-wrap: break-word;
+  white-space: normal;
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: middle;
+  max-width: 300px;
+  cursor: pointer;
+  margin: 4px;
+  width: 10em;
+  height: 3em;
+  &.button-primary {
+    background: $button-primary-background;
+  }
+  &.active {
+    background: $highlight;
+  }
+  &.large {
+    width: 12em;
+  }
+  &:not(:disabled):hover {
+    background: $button-active-background;
+  }
+  &:disabled {
+    background: gray;
+  }
+}
+
+//the original input component
+input[type='radio'],
+input[type='checkbox'] {
+  // hide from sight but keep in the DOM for accessibility
+  position: absolute;
+  opacity: 0;
+  &:checked + label:before {
+    background: $highlight;
+    border: 2px solid $highlight;
+    box-shadow: inset 0 0 0 3px white;
+  }
+  &:not(:checked):focus + label:before {
+    //when the original input has focus, highlight our custom one
+    border: 2px solid $line-dark;
+  }
+  &:disabled + label:before {
+    pointer-events: none;
+    background: $background-light;
+    border: 2px solid $line-light;
+  }
+  &:disabled + label:hover:before {
+    //disable hover effect when input is disabled
+    border: 2px solid $line-light;
+  }
+
+  &:checked + label:after {
+    background: $highlight;
+    border: 2px solid $highlight;
+    box-shadow: inset 0 0 0 3px white;
+  }
+  &:not(:checked):focus + label:after {
+    //when the original input has focus, highlight our custom one
+    border: 2px solid $line-dark;
+  }
+  &:disabled + label:after {
+    pointer-events: none;
+    background: $background-light;
+    border: 2px solid $line-light;
+  }
+  &:disabled + label:hover:after {
+    //disable hover effect when input is disabled
+    border: 2px solid $line-light;
+  }
+}
+
+.radio-item {
+  @include input-box-item;
+  & label:before {
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 0.25em;
+  }
+  & label:after {
+    display: none;
+  }
+}
+
+.checkbox-item {
+  @include input-box-item;
+  & input[type='checkbox'] {
+    &:checked + label:before {
+      color: white;
+    }
+    &:checked + label:after {
+      color: white;
+    }
+  }
+  & label:after {
+    display: none;
+  }
+  & label:before {
+    margin-right: 0.25em;
+  }
+  &.flipped {
+    & label {
+      margin-right: 0;
+    }
+    & label:after {
+      margin-left: 0.25em;
+      display: inline-block;
+    }
+    & label:before {
+      display: none;
+    }
+  }
+}
+
+.range-item {
+  padding: 1em 0;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid $line-light;
+  & .range-label {
+    width: $label-min-width;
+    font-weight: $semi-bold;
+    margin-right: 1em;
+  }
+  & input[type='range'] {
+    flex: 1 1 0%;
+    margin: 1em 1em 1em 0;
+    border: none;
+    background: transparent;
+  }
+  & .range-contents {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+input {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid $line-light;
+  padding: 0.3em;
+  margin-right: 0.5em;
+}
+
+input[type='number'] {
+  width: 9ch;
+}
+
+input[type='submit'] {
+  @include button-base;
+  width: 12em;
+  padding: 0 4px;
+  height: 4em;
+  margin: 1em;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  min-width: 200px;
+  max-width: 300px;
+  width: 100%;
+  margin: 8px;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: $slider-track;
+    border-radius: 10px;
+  }
+  &::-webkit-slider-thumb {
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: $highlight;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -9.1px;
+  }
+  &::-moz-range-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    background: $slider-track;
+    border-radius: 10px;
+  }
+  &::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    background: $highlight;
+    cursor: pointer;
+  }
+  &::-ms-track {
+    height: 10px; //higher than the others because of weird rendering issue on IE11
+    cursor: pointer;
+    background: $slider-track;
+    border: none;
+    color: transparent;
+    border-radius: 33px;
+  }
+  &::-ms-fill-lower {
+    background: $slider-track;
+    border-radius: 33px;
+  }
+  &::-ms-fill-upper {
+    background: $slider-track;
+    border-radius: 33px;
+  }
+  &::-ms-thumb {
+    height: 100%;
+    width: 20px;
+    border-radius: 15px;
+    background: $highlight;
+    cursor: pointer;
+    height: 8px;
+    border: none;
+  }
+
+  &:disabled {
+    &::-moz-range-thumb {
+      background: $disabled;
+    }
+    &::-ms-thumb {
+      background: $disabled;
+    }
+    &::-webkit-slider-thumb {
+      background: $disabled;
+    }
+  }
+}
+
+button {
+  @include button-base;
+}
+
+select {
+  border: 1px solid $line-light;
+  padding: 0.2em;
+  margin-right: 0.5em;
+  font-size: $font-size-m;
+  font-family: 'Open Sans', sans-serif;
+}
