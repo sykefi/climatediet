@@ -9,7 +9,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: process.env.BASE_URL,
+  base: '',
   server: {
     port: 3000,
   },
