@@ -1,0 +1,34 @@
+name: Deploy PR previews
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+concurrency: preview-${{ github.ref }}
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-20.04
+    permissions: 
+     pull-requests: write
+     contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Verify and deploy preview version
+        if: github.event.action != 'closed' # You might want to skip the build if the PR has been closed
+        run: |
+          npm ci
+          npm run test
+          npm run build -- --mode preview
+          npm run lint-no-fix
+
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./dist/
