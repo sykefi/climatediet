@@ -10,8 +10,8 @@
         ($i18n.locale == 'fi'
           ? 'Laskentaperusteet.pdf'
           : $i18n.locale == 'sv'
-          ? 'Berakningsgrunder.pdf'
-          : 'CalculationInfo.pdf')
+            ? 'Berakningsgrunder.pdf'
+            : 'CalculationInfo.pdf')
       "
       rel="noopener noreferrer"
       target="_blank"
