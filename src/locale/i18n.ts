@@ -58,8 +58,8 @@ export default createI18n({
   locale: browserLang.startsWith('fi')
     ? 'fi'
     : browserLang.startsWith('sv')
-    ? 'sv'
-    : 'en', // set locale
+      ? 'sv'
+      : 'en', // set locale
   fallbackLocale: 'en',
   messages: { en, fi, sv }, // set translated texts (defined in /locale/)
   dateTimeFormats,
