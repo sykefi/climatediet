@@ -13,7 +13,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@vitejs/plugin-vue": "^4.6.2",
+    "@vitejs/plugin-vue": "^5.0.5",
     "axios": "^1.7.2",
     "chart.js": "^4.4.3",
     "html2canvas": "^1.4.1",
