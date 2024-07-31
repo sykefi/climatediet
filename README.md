@@ -1,4 +1,7 @@
-# Ilmastodieetti client
+# Ilmastodieetti.fi frontend
+
+This repository contains the Vue frontend code for the ilmastodieetti.fi/climatediet.fi application.
+This version of the code was initially written in 2019 and the source was opened in 2024. The git history before the opening has been removed to simplify the opening process.
 
 ## Project structure
 
