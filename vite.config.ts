@@ -2,13 +2,12 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
-
 export default defineConfig(({ command, mode }) => {
   return {
     base: '',
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, './src')
+        '@': path.resolve(__dirname, './src'),
       },
     },
     server: {
@@ -17,6 +16,6 @@ export default defineConfig(({ command, mode }) => {
     plugins: [vue()],
     build: {
       sourcemap: mode !== 'production',
-    }
+    },
   }
 })
