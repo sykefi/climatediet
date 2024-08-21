@@ -15,11 +15,11 @@ This version of the code was initially written in 2019 and the source was opened
 │   ├───assets                          // static files (images, css...). These are managed in webpack during build
 │   ├───components                      // generic UI components
 │   ├───locale                          // localization files
-│   ├───store                           // state management (Vuex) files
+│   ├───stores                          // state management (Vuex) files
 │   │   └───modules                     // view specific state files
 │   ├───views                           // the higher level view components (i.e. tabs)
 │   │   ├───housing
-│   │   │   ├───modules
+│   │   │   ├───subForms
 │   │   │   │  HousingView.vue
 │   │   │   ...
 └───tests
@@ -31,33 +31,15 @@ This version of the code was initially written in 2019 and the source was opened
 
 ## Project setup
 
-Use Node 18
+Use Node >=18
 
 ```
 npm install
 ```
 
-## Enable autoformatting in VS Code
+## Available scripts
 
-```
-Install "Prettier - Code Formatter" to VS Code (restart VS Code)
-Open settings.json (Ctrl + P -> search for settings.json)
-Add following settings:
-
-"[vue]": {
-"editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"[typescript]": {
-"editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"[javascript]": {
-"editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"editor.formatOnSave": true,
-
-If you want to autoformat all types of files, then just add:
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-```
+In the project directory, you can run:
 
 ### Compiles and hot-reloads for development
 
@@ -83,14 +65,41 @@ npm run test
 npm run lint
 ```
 
-### Formats code using Prettier.
+### Formats code using Prettier
 
 ```
 npm run format
 ```
 
-### Run your unit tests
+## Backend API
+
+The development version of the backend API is available at: [https://ilmastodieetti-dev-storage.azurewebsites.net/api/v1/](https://ilmastodieetti-dev-storage.azurewebsites.net/api/v1/)
+
+## Formatting
+
+Run Prettier formatting before committing changes.
+
+If using VS Code, the easiest way to do this is to enable autoformatting as follows:
+
+Install "Prettier - Code Formatter" to VS Code (restart VS Code)
+Open settings.json (Ctrl + P -> search for settings.json)
+Add the following settings:
 
 ```
-npm run test:unit
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+```
+
+If you don't want to autoformat all types of files, then specify the file types to be formatted:
+
+```
+"[vue]": {
+"editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[typescript]": {
+"editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[javascript]": {
+"editor.defaultFormatter": "esbenp.prettier-vscode"
+},
 ```
