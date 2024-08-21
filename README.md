@@ -31,7 +31,7 @@ This version of the code was initially written in 2019 and the source was opened
 
 ## Project setup
 
-Use Node 20
+Use Node >=18
 
 ```
 npm install
@@ -71,11 +71,9 @@ npm run lint
 npm run format
 ```
 
-### Run your unit tests
+## Backend API
 
-```
-npm run test:unit
-```
+The development version of the backend API is available at: [https://ilmastodieetti-dev-storage.azurewebsites.net/api/v1/](https://ilmastodieetti-dev-storage.azurewebsites.net/api/v1/)
 
 ## Formatting
 
