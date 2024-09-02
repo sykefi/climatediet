@@ -157,14 +157,14 @@ export interface IFoodTranslations {
   $coffeeAndTea: string
   $diet: string
   $dietSummary: string
-  $dietOmnivore: string
+  $dietMixed: string
   $dietVegan: string
   $dietVegetarian: string
   $dryPlantBasedProtein: string
   $eggs: string
   $fermentedMilkProducts: string
   $fishAndShellfishAndFishProducts: string
-  $foodActionOmnivore: string
+  $foodActionMixed: string
   $foodActionVegan: string
   $foodActionVegetarian: string
   $foodIngredients: string
@@ -188,9 +188,16 @@ export interface IFoodTranslations {
   $plantBasedProteinProducts: string
   $pork: string
   $potatoes: string
-  $resultCategoryDairy: string
+  $resultCategoryDairyEggs: string
+  $resultCategoryDrinks: string
+  $resultCategoryFat: string
+  $resultCategoryFish: string
+  $resultCategoryGrainsPotatoes: string
   $resultCategoryMeat: string
-  $resultCategoryPlants: string
+  $resultCategoryOther: string
+  $resultCategoryPlantBasedProtein: string
+  $resultCategorySweets: string
+  $resultCategoryVegetablesFruitsBerries: string
   $rice: string
   $rootVegetables: string
   $saaSyoda: string

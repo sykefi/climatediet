@@ -15,7 +15,7 @@ const fi: IFoodTranslations = {
   Kasvisruokavaliossa ei ole lihaa eikä kalaa.
 
   Vegaanit eivät käytä mitään eläinperäisiä tuotteita. Jos lihaa tai muita eläinperäisiä tuotteita ei käytetä tai niiden kulutus on keskimääräistä vähäisempää, laskelmaan lisätään proteiinipitoisia kasvikunnan tuotteita.`,
-  $dietOmnivore: 'Sekasyöjä',
+  $dietMixed: 'Sekasyöjä',
   $dietVegan: 'Vegaani',
   $dietVegetarian: 'Kasvissyöjä',
   $dryPlantBasedProtein:
@@ -25,7 +25,7 @@ const fi: IFoodTranslations = {
   $fermentedMilkProducts:
     'Hapanmaitotuotteet (esim. jogurtti, viili, rahka, piimä, kermaviili)',
   $fishAndShellfishAndFishProducts: 'Kala, äyriäiset ja kalavalmisteet',
-  $foodActionOmnivore:
+  $foodActionMixed:
     'Kauden kasviksia kannattaa nauttia runsaasti kalan ja lihan kanssa jo terveyssyistä. Kokeile lounasravintoloiden kasvisvaihtoehtoa, suomalaista villiä kalaa ja lisää kasvisten osuutta kotiruoassa.',
   $foodActionVegan:
     'Vegaaniruokavalio on usein ilmastoystävällinen. Ruokailun ilmastovaikutuksia voi edelleen vähentää suosimalla kauden kasviksia.',
@@ -61,9 +61,16 @@ const fi: IFoodTranslations = {
     'Kasviproteiinivalmisteet (esim. tofu, kasvispyörykät ja -pihvit, kasvisleikkeleet, -nakit ja -makkarat, seitan, vöner)',
   $pork: 'Sianliha',
   $potatoes: 'Peruna',
-  $resultCategoryDairy: 'Maitotuotteet',
-  $resultCategoryMeat: 'Liha ja kala',
-  $resultCategoryPlants: 'Kasviperäiset tuotteet',
+  $resultCategoryDairyEggs: 'Maitotuotteet ja kananmunat',
+  $resultCategoryDrinks: 'Kahvi, tee, mehut ja muut alkoholittomat juomat',
+  $resultCategoryFat: 'Voit, margariinit, kasviöljyt',
+  $resultCategoryFish: 'Kala',
+  $resultCategoryGrainsPotatoes: 'Viljat ja peruna',
+  $resultCategoryMeat: 'Liha',
+  $resultCategoryOther: 'Muut',
+  $resultCategoryPlantBasedProtein: 'Palkokasvit, pähkinät, ja kasvijuomat',
+  $resultCategorySweets: 'Sokeri ja makeiset',
+  $resultCategoryVegetablesFruitsBerries: 'Vihannekset, hedelmät ja marjat',
   $rice: 'Riisi',
   $rootVegetables: 'Juurekset',
   $saaSyoda: 'Saa Syödä!',

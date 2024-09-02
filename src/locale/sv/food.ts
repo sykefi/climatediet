@@ -10,7 +10,7 @@ const sv: IFoodTranslations = {
   $coffeeAndTea: 'Kaffe och te',
   $diet: 'Kost',
   $dietSummary: `Utgångsvärdet för en blandad kost är finländarnas genomsnittliga livsmedelskonsumtion. Om du mestadels äter vegetariskt, men till exempel äter fisk eller då och då kött, väljer du blandad kost och reducerar köttkonsumtionen på följande sida. En vegetarisk kost innehåller varken kött eller fisk. Veganer använder inga animaliska produkter. Om du inte använder kött eller andra animaliska produkter, eller om du använder dem i mindre mängd än genomsnittet, läggs proteinhaltiga, vegetabiliska produkter till beräkningen.`,
-  $dietOmnivore: 'Flexitarian',
+  $dietMixed: 'Flexitarian',
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
   $dryPlantBasedProtein:
@@ -19,7 +19,7 @@ const sv: IFoodTranslations = {
   $fermentedMilkProducts:
     'Surmjölksprodukter (t.ex. yoghurt, fil, kvarg, kärnmjölk, gräddfil)',
   $fishAndShellfishAndFishProducts: 'Fisk, skaldjur och fiskprodukter',
-  $foodActionOmnivore:
+  $foodActionMixed:
     'Det lönar sig även av hälsoskäl att äta rikligt med säsongens grönsaker till fisk och kött. Testa lunchrestaurangernas vegetariska alternativ, finsk vild fisk och öka andelen grönsaker i den hemlagade maten.',
   $foodActionVegan:
     'Vegankost är ofta klimatvänlig. Måltidernas klimatpåverkan kan minskas ytterligare genom att välja säsongens grönsaker.',
@@ -50,9 +50,16 @@ const sv: IFoodTranslations = {
     'Växtbaserade proteinprodukter (t.ex. tofu, vegetariska bullar och biffar, vegetariska pålägg, korvar och grillkorvar, seitan, vöner)',
   $pork: 'Fläskkött',
   $potatoes: 'Potatis',
-  $resultCategoryDairy: 'Mjölkprodukter',
-  $resultCategoryMeat: 'Kött och fisk',
-  $resultCategoryPlants: 'Vegetabiliska produkter',
+  $resultCategoryDairyEggs: 'Maitotuotteet ja kananmunat',
+  $resultCategoryDrinks: 'Kahvi, tee, mehut ja muut alkoholittomat juomat',
+  $resultCategoryFat: 'Voit, margariinit, kasviöljyt',
+  $resultCategoryFish: 'Kala',
+  $resultCategoryGrainsPotatoes: 'Viljat ja peruna',
+  $resultCategoryMeat: 'Liha',
+  $resultCategoryOther: 'Muut',
+  $resultCategoryPlantBasedProtein: 'Palkokasvit, pähkinät, ja kasvijuomat',
+  $resultCategorySweets: 'Sokeri ja makeiset',
+  $resultCategoryVegetablesFruitsBerries: 'Vihannekset, hedelmät ja marjat',
   $rice: 'Ris',
   $rootVegetables: 'Rotfrukter',
   $saaSyoda: 'Saa Syödä!',

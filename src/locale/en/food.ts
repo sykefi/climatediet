@@ -15,7 +15,7 @@ const en: IFoodTranslations = {
 A vegetarian diet does not include fish or meat.
 
 A vegan diet excludes all animal products. If meat, fish or dairy consumption is below the average or not eaten at all, plant-based protein sources are added to compensate for the animal-based food items.`,
-  $dietOmnivore: 'Omnivore',
+  $dietMixed: 'Omnivore', // TODO: update term??
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
   $dryPlantBasedProtein:
@@ -24,7 +24,7 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
   $fermentedMilkProducts:
     'Fermented milk products (e.g., yogurt, curdled milk, quark, buttermilk, sour cream)',
   $fishAndShellfishAndFishProducts: 'Fish, shellfish, and fish products',
-  $foodActionOmnivore: `Seasonal greens should have a large share of your plate to help the climate's health as well as yours. Try out the vegetarian options in restaurants, favor Finnish wild fish and increase the portion of greens at home.`,
+  $foodActionMixed: `Seasonal greens should have a large share of your plate to help the climate's health as well as yours. Try out the vegetarian options in restaurants, favor Finnish wild fish and increase the portion of greens at home.`,
   $foodActionVegan:
     'A vegan diet is often climate friendly. The most effective way of reducing your food climate footprint even more is to favour seasonal produce.',
   $foodActionVegetarian: `Seasonal produce is climate friendly. If you are a heavy user of dairy products, try replacing some of them with plant-based alternatives, such as nut or oat products.`,
@@ -58,9 +58,17 @@ Note that dairy products and eggs are also included in various ready-made foods 
     'Plant-based protein products (e.g., tofu, vegetable balls and patties, vegetable cold cuts, sausages, seitan, vöner)',
   $pork: 'Pork',
   $potatoes: 'Potatoes',
-  $resultCategoryDairy: 'Dairy products',
-  $resultCategoryMeat: 'Meat and fish',
-  $resultCategoryPlants: 'Plant based foods',
+  $resultCategoryDairyEggs: 'Dairy products and eggs',
+  $resultCategoryDrinks:
+    'Coffee, tea, juices, and other non-alcoholic beverages',
+  $resultCategoryFat: 'Butters, margarines, vegetable oils',
+  $resultCategoryFish: 'Fish',
+  $resultCategoryGrainsPotatoes: 'Grains and potatoes',
+  $resultCategoryMeat: 'Meat',
+  $resultCategoryOther: 'Others',
+  $resultCategoryPlantBasedProtein: 'Legumes, nuts, and plant-based drinks',
+  $resultCategorySweets: 'Sugar and sweets',
+  $resultCategoryVegetablesFruitsBerries: 'Vegetables, fruits, and berries',
   $rice: 'Rice',
   $rootVegetables: 'Root vegetables',
   $saaSyoda: 'Saa Syödä! (only in Finnish)',
