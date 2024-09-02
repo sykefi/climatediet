@@ -148,35 +148,51 @@ export interface IHousingTranslations {
 }
 
 export interface IFoodTranslations {
-  $beefAndLamb: string
-  $cafesAndRestaurants: string
-  $cafesAndRestaurantsSummary: string
-  $cheese: string
-  $dairy: string
+  $alcoholicBeverages: string
+  $beef: string
+  $berries: string
+  $butterAndAnimalFats: string
+  $cheeses: string
+  $chickenAndTurkey: string
+  $coffeeAndTea: string
   $diet: string
   $dietSummary: string
   $dietOmnivore: string
   $dietVegan: string
   $dietVegetarian: string
+  $dryPlantBasedProtein: string
   $eggs: string
-  $fishAndSeafood: string
+  $fermentedMilkProducts: string
+  $fishAndShellfishAndFishProducts: string
   $foodActionOmnivore: string
   $foodActionVegan: string
   $foodActionVegetarian: string
   $foodIngredients: string
   $foodIngredientsSummary: string
   $foodIngredientsRangeDetails: string
-  $foodLowCarbonDetails: string
   $foodResultsSummary: string
   $foodResultsTitle: string
-  $lowCarbonFoodPrefence: string
-  $porkAndPoultry: string
-  $restaurantSpending: string
+  $frozenVegetables: string
+  $fruitAndBerryPreserves: string
+  $fruits: string
+  $grainsAndGrainProducts: string
+  $legumesAndNuts: string
+  $margarine: string
+  $meatProducts: string
+  $milk: string
+  $otherDairyProducts: string
+  $otherDrinks: string
+  $otherFoodProducts: string
+  $otherMeatsAndOffal: string
+  $plantBasedDrinks: string
+  $plantBasedProteinProducts: string
+  $pork: string
+  $potatoes: string
   $resultCategoryDairy: string
   $resultCategoryMeat: string
   $resultCategoryPlants: string
   $rice: string
-  $winterSalad: string
+  $rootVegetables: string
   $saaSyoda: string
   $saaSyodaDetails: string
   $saaSyodaUrl: string
@@ -184,6 +200,10 @@ export interface IFoodTranslations {
   $sitraVarietyWithVegetablesUrl: string
   $sitraAvoidFoodWaste: string
   $sitraAvoidFoodWasteUrl: string
+  $sausages: string
+  $sugarCandiesAndChocolate: string
+  $vegetablesAndMushrooms: string
+  $vegetableOils: string
 }
 
 export interface ITransportTranslations {

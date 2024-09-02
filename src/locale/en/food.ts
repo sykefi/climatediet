@@ -2,12 +2,13 @@ import { IFoodTranslations } from '../interfaces'
 
 /* tslint:disable:max-line-length */
 const en: IFoodTranslations = {
-  $beefAndLamb: 'Beef and lamb',
-  $cafesAndRestaurants: 'Cafes and restaurants',
-  $cafesAndRestaurantsSummary:
-    'Insert your personal spending for eating out (restaurants, cafes) per month. Include restaurant lunches as well. The default estimate is based on statistics.',
-  $cheese: 'Cheese',
-  $dairy: 'Dairy',
+  $alcoholicBeverages: 'Alcoholic beverages',
+  $beef: 'Beef',
+  $berries: 'Berries',
+  $butterAndAnimalFats: 'Butter and animal fats',
+  $cheeses: 'Cheeses',
+  $chickenAndTurkey: 'Chicken and turkey',
+  $coffeeAndTea: 'Coffee and tea',
   $diet: 'Diet',
   $dietSummary: `An omnivorous diet represents the average Finnish diet. If you are mainly a vegetarian but sometimes eat e.g. fish, choose the omnivorous diet and adjust the amounts on the next page.
 
@@ -17,8 +18,12 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
   $dietOmnivore: 'Omnivore',
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
+  $dryPlantBasedProtein:
+    'Dried plant proteins (e.g., soy, pea, and broad bean crumbles and strips)',
   $eggs: 'Eggs',
-  $fishAndSeafood: 'Fish and seafood',
+  $fermentedMilkProducts:
+    'Fermented milk products (e.g., yogurt, curdled milk, quark, buttermilk, sour cream)',
+  $fishAndShellfishAndFishProducts: 'Fish, shellfish, and fish products',
   $foodActionOmnivore: `Seasonal greens should have a large share of your plate to help the climate's health as well as yours. Try out the vegetarian options in restaurants, favor Finnish wild fish and increase the portion of greens at home.`,
   $foodActionVegan:
     'A vegan diet is often climate friendly. The most effective way of reducing your food climate footprint even more is to favour seasonal produce.',
@@ -32,17 +37,32 @@ The selection is filtered by the diet you chose.
 Note that dairy products and eggs are also included in various ready-made foods and bakery products.`,
   $foodIngredientsRangeDetails:
     'The selected default value is based on Finnish averages. ',
-  $foodLowCarbonDetails: `Low carbon food choices include seasonal vegetables, carbon compensated products, products that have a carbon label indicating low emissions and fresh produce instead of frozen products.`,
   $foodResultsSummary: `Typically, food contributes about one fifth of an average personal carbon footprint.`,
   $foodResultsTitle: 'Food carbon footprint',
-  $lowCarbonFoodPrefence: 'I prefer low-carbon choices in my diet',
-  $porkAndPoultry: 'Pork and poultry',
-  $restaurantSpending: 'Monthly expenditure',
+  $frozenVegetables: 'Frozen vegetables',
+  $fruitAndBerryPreserves: 'Fruit and berry preserves',
+  $fruits: 'Fruits',
+  $grainsAndGrainProducts: 'Grains and grain products',
+  $legumesAndNuts: 'Legumes and nuts',
+  $margarine: 'Margarine',
+  $meatProducts: 'Meat products',
+  $milk: 'Milk',
+  $otherDairyProducts: 'Other dairy products (e.g., ice cream, milk powder)',
+  $otherDrinks:
+    'Other drinks (fruit, berry, and vegetable juices, soft drinks, and other non-alcoholic beverages)',
+  $otherFoodProducts: 'Other food products',
+  $otherMeatsAndOffal: 'Other meats and offal',
+  $plantBasedDrinks:
+    'Plant-based drinks (soy and oat drinks, and other similar ones)',
+  $plantBasedProteinProducts:
+    'Plant-based protein products (e.g., tofu, vegetable balls and patties, vegetable cold cuts, sausages, seitan, vöner)',
+  $pork: 'Pork',
+  $potatoes: 'Potatoes',
   $resultCategoryDairy: 'Dairy products',
   $resultCategoryMeat: 'Meat and fish',
   $resultCategoryPlants: 'Plant based foods',
   $rice: 'Rice',
-  $winterSalad: 'Salad, cucumber, tomatoes in the winter',
+  $rootVegetables: 'Root vegetables',
   $saaSyoda: 'Saa Syödä! (only in Finnish)',
   $saaSyodaDetails:
     'The website has a recipe tool to help you utilise the ingredients in your cupboards and a calculator for estimating the food amounts required for a party.',
@@ -53,5 +73,9 @@ Note that dairy products and eggs are also included in various ready-made foods 
   $sitraAvoidFoodWaste: `Today's leftovers, tomorrow's treats`,
   $sitraAvoidFoodWasteUrl:
     'https://www.sitra.fi/en/cases/todays-leftovers-tomorrows-treats/',
+  $sausages: 'Sausages (not vegetarian sausages)',
+  $sugarCandiesAndChocolate: 'Sugar, candies, and chocolate',
+  $vegetablesAndMushrooms: 'Vegetables and mushrooms',
+  $vegetableOils: 'Vegetable oils',
 }
 export default en

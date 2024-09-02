@@ -1,19 +1,24 @@
 ﻿/* tslint:disable:max-line-length */
 import { IFoodTranslations } from '../interfaces'
 const sv: IFoodTranslations = {
-  $beefAndLamb: 'Nöt och lamm',
-  $cafesAndRestaurants: 'Kaféer och restauranger',
-  $cafesAndRestaurantsSummary:
-    'Ange den personliga penningsumma som du använder i restauranger och kaféer under en månad. Inkludera även lunchrestauranger i summan. Uppskattningen baseras på konsumtionsstatistik.',
-  $cheese: 'Ost',
-  $dairy: 'Mjölkprodukter',
+  $alcoholicBeverages: 'Alkoholhaltiga drycker',
+  $beef: 'Nötkött',
+  $berries: 'Bär',
+  $butterAndAnimalFats: 'Smör och animaliska fetter',
+  $cheeses: 'Ost',
+  $chickenAndTurkey: 'Kyckling och kalkon',
+  $coffeeAndTea: 'Kaffe och te',
   $diet: 'Kost',
   $dietSummary: `Utgångsvärdet för en blandad kost är finländarnas genomsnittliga livsmedelskonsumtion. Om du mestadels äter vegetariskt, men till exempel äter fisk eller då och då kött, väljer du blandad kost och reducerar köttkonsumtionen på följande sida. En vegetarisk kost innehåller varken kött eller fisk. Veganer använder inga animaliska produkter. Om du inte använder kött eller andra animaliska produkter, eller om du använder dem i mindre mängd än genomsnittet, läggs proteinhaltiga, vegetabiliska produkter till beräkningen.`,
   $dietOmnivore: 'Flexitarian',
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
+  $dryPlantBasedProtein:
+    'Torkade växtproteiner (t.ex. soja-, ärt- och bondbönsbitar och strimlor)',
   $eggs: 'Ägg',
-  $fishAndSeafood: 'Fisk och skaldjur',
+  $fermentedMilkProducts:
+    'Surmjölksprodukter (t.ex. yoghurt, fil, kvarg, kärnmjölk, gräddfil)',
+  $fishAndShellfishAndFishProducts: 'Fisk, skaldjur och fiskprodukter',
   $foodActionOmnivore:
     'Det lönar sig även av hälsoskäl att äta rikligt med säsongens grönsaker till fisk och kött. Testa lunchrestaurangernas vegetariska alternativ, finsk vild fisk och öka andelen grönsaker i den hemlagade maten.',
   $foodActionVegan:
@@ -24,19 +29,32 @@ const sv: IFoodTranslations = {
   $foodIngredientsSummary: `Uppskatta hur mycket du konsumerar av livsmedlen på listan. Inkludera all konsumtion såväl hemma som på restaurang, café och skolan eller jobbet. Livsmedlen har grupperats efter klimatavtryckets storlek. Därför efterfrågas till exempel svin- och fågelkött i samma punkt. De förhandsifyllda alternativen har valts efter angiven kost. Kom ihåg under punkten om mjölkprodukter, ost och ägg, att vi också äter dem i olika maträtter och bakverk.`,
   $foodIngredientsRangeDetails:
     'Det valda utgångsvärdet hänvisar till finländarnas medelvärde.',
-  $foodLowCarbonDetails:
-    'Med koldioxidsnåla produkter avses säsongens grönsaker, produkter vars koldioxidavtryck har kompenserats, produkter vars koldioxidavtryckmärke talar om låga utsläpp, samt färska produkter istället för frysta.',
   $foodResultsSummary:
     'Cirka en femtedel av en medborgares klimatpåverkan skapas av mat.',
   $foodResultsTitle: 'Matens koldioxidavtryck',
-  $lowCarbonFoodPrefence: 'Jag väljer koldioxidsnåla produkter i min kost',
-  $porkAndPoultry: 'Fläsk och fjäderfä',
-  $restaurantSpending: 'Konsumtion per månad',
+  $frozenVegetables: 'Frysta grönsaker',
+  $fruitAndBerryPreserves: 'Frukt- och bärkonserver',
+  $fruits: 'Frukter',
+  $grainsAndGrainProducts: 'Spannmål och spannmålsprodukter',
+  $legumesAndNuts: 'Baljväxter och nötter',
+  $margarine: 'Margarin',
+  $meatProducts: 'Köttprodukter',
+  $milk: 'Mjölk',
+  $otherDairyProducts: 'Övriga mejeriprodukter (t.ex. glass, mjölkpulver)',
+  $otherDrinks:
+    'Andra drycker (frukt-, bär- och grönsaksjuicer, läskedrycker och andra alkoholfria drycker)',
+  $otherFoodProducts: 'Övriga livsmedel',
+  $otherMeatsAndOffal: 'Övriga kött och inälvor',
+  $plantBasedDrinks: 'Växtdrycker (soja- och havredrycker samt liknande)',
+  $plantBasedProteinProducts:
+    'Växtbaserade proteinprodukter (t.ex. tofu, vegetariska bullar och biffar, vegetariska pålägg, korvar och grillkorvar, seitan, vöner)',
+  $pork: 'Fläskkött',
+  $potatoes: 'Potatis',
   $resultCategoryDairy: 'Mjölkprodukter',
   $resultCategoryMeat: 'Kött och fisk',
   $resultCategoryPlants: 'Vegetabiliska produkter',
   $rice: 'Ris',
-  $winterSalad: 'Sallat, tomat, gurka på vintern',
+  $rootVegetables: 'Rotfrukter',
   $saaSyoda: 'Saa Syödä!',
   $saaSyodaDetails:
     'Använd receptsökningen för att utnyttja ingredienser som du har i skåpet samt portionsräknaren för att uppskatta mängden mat för ett sällskap',
@@ -47,5 +65,9 @@ const sv: IFoodTranslations = {
   $sitraAvoidFoodWaste: 'Dagens matrester = morgondagens delikatesser',
   $sitraAvoidFoodWasteUrl:
     'https://www.sitra.fi/sv/cases/dagens-matrester-morgondagens-delikatesser/',
+  $sausages: 'Korvar (inte vegetariska korvar)',
+  $sugarCandiesAndChocolate: 'Socker, godis och choklad',
+  $vegetablesAndMushrooms: 'Grönsaker och svampar',
+  $vegetableOils: 'Vegetabiliska oljor',
 }
 export default sv

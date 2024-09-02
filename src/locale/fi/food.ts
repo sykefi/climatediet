@@ -2,12 +2,13 @@
 import { IFoodTranslations } from '../interfaces'
 
 const fi: IFoodTranslations = {
-  $beefAndLamb: 'Nauta ja lammas',
-  $cafesAndRestaurants: 'Kahvilat ja ravintolat',
-  $cafesAndRestaurantsSummary:
-    'Ilmoita ravintoloihin ja kahviloihin käyttämäsi henkilökohtainen rahamäärä kuukaudessa. Sisällytä määrään myös lounasravintolat. Arvio perustuu kulutustilastoon.',
-  $cheese: 'Juusto',
-  $dairy: 'Maitotuotteet',
+  $alcoholicBeverages: 'Alkoholijuomat',
+  $beef: 'Naudanliha',
+  $berries: 'Marjat',
+  $butterAndAnimalFats: 'Voi ja eläinrasvat',
+  $cheeses: 'Juustot',
+  $chickenAndTurkey: 'Kana ja kalkkuna',
+  $coffeeAndTea: 'Kahvi ja tee',
   $diet: 'Ruokavalio',
   $dietSummary: `Sekasyöjän oletusruokavalio perustuu suomalaisten keskimääräiseen ruoan kulutukseen. Jos syöt kasvispainotteisesti mutta esimerkiksi kalaa tai toisinaan lihaa, valitse sekasyöjän ruokavalio ja pienennä lihan kulutusta seuraavalla sivulla.
 
@@ -17,8 +18,13 @@ const fi: IFoodTranslations = {
   $dietOmnivore: 'Sekasyöjä',
   $dietVegan: 'Vegaani',
   $dietVegetarian: 'Kasvissyöjä',
+  $dryPlantBasedProtein:
+    'Kuivat kasviproteiinit (esim. soija-, herne- ja härkäpapurouhe ja -suikaleet)',
   $eggs: 'Munat',
-  $fishAndSeafood: 'Kala ja äyriäiset',
+
+  $fermentedMilkProducts:
+    'Hapanmaitotuotteet (esim. jogurtti, viili, rahka, piimä, kermaviili)',
+  $fishAndShellfishAndFishProducts: 'Kala, äyriäiset ja kalavalmisteet',
   $foodActionOmnivore:
     'Kauden kasviksia kannattaa nauttia runsaasti kalan ja lihan kanssa jo terveyssyistä. Kokeile lounasravintoloiden kasvisvaihtoehtoa, suomalaista villiä kalaa ja lisää kasvisten osuutta kotiruoassa.',
   $foodActionVegan:
@@ -34,19 +40,32 @@ const fi: IFoodTranslations = {
   Muista maitotuotteiden, juuston ja kananmunien kohdalla, että nautimme niitä myös erilaisten ruokien ja leivonnaisten osana.`,
   $foodIngredientsRangeDetails:
     'Valittuna oleva lähtöarvo viittaa suomalaisten keskiarvoon.',
-  $foodLowCarbonDetails:
-    'Vähähiilisillä tuotteilla tarkoitetaan kaudenmukaisia kasviksia, tuotteita joiden hiilijalanjälki on hyvitetty, tuotteita, joiden hiilijalanjälkimerkki kertoo päästöjen olevan alhaisia sekä tuoretuotteita pakasteiden sijaan.',
   $foodResultsSummary:
     'Noin viidennes kansalaisen ilmastovaikutuksista syntyy ruoasta.',
   $foodResultsTitle: 'Ruuan hiilijalanjälki',
-  $lowCarbonFoodPrefence: 'Suosin ruokavaliossani vähähiilisiä tuotteita',
-  $porkAndPoultry: 'Sika ja siipikarja',
-  $restaurantSpending: 'Kuukausittainen kulutus',
+  $frozenVegetables: 'Pakastevihannekset',
+  $fruitAndBerryPreserves: 'Hedelmä- ja marjasäilykkeet',
+  $fruits: 'Hedelmät',
+  $grainsAndGrainProducts: 'Viljat ja viljatuotteet',
+  $legumesAndNuts: 'Palkokasvit ja pähkinät',
+  $margarine: 'Margariini',
+  $meatProducts: 'Lihavalmisteet',
+  $milk: 'Maito',
+  $otherDairyProducts: 'Muut maitovalmisteet (esim. jäätelö, maitojauhe)',
+  $otherDrinks:
+    'Muut juomat (hedelmä-, marja- ja kasvismehut, virvoitusjuomat ja muut alkoholittomat juomat)',
+  $otherFoodProducts: 'Muut elintarvikkeet',
+  $otherMeatsAndOffal: 'Muut lihat ja sisäelimet',
+  $plantBasedDrinks: 'Kasvijuomat (soija- ja kaurajuomat sekä muut vastaavat)',
+  $plantBasedProteinProducts:
+    'Kasviproteiinivalmisteet (esim. tofu, kasvispyörykät ja -pihvit, kasvisleikkeleet, -nakit ja -makkarat, seitan, vöner)',
+  $pork: 'Sianliha',
+  $potatoes: 'Peruna',
   $resultCategoryDairy: 'Maitotuotteet',
   $resultCategoryMeat: 'Liha ja kala',
   $resultCategoryPlants: 'Kasviperäiset tuotteet',
   $rice: 'Riisi',
-  $winterSalad: 'Salaatit, tomaatit, kurkut talvella',
+  $rootVegetables: 'Juurekset',
   $saaSyoda: 'Saa Syödä!',
   $saaSyodaDetails:
     'Katso reseptihaku kaapista löytyvien ainesten hyödyntämiseksi sekä annoslaskuri seurueen ruokamäärän arvioimiseksi',
@@ -57,5 +76,9 @@ const fi: IFoodTranslations = {
   $sitraAvoidFoodWaste: 'Tämän päivän tähteet, huomisen herkut',
   $sitraAvoidFoodWasteUrl:
     'https://www.sitra.fi/caset/taman-paivan-tahteet-huomisen-herkut/',
+  $sausages: 'Makkarat (ei kasvismakkarat)',
+  $sugarCandiesAndChocolate: 'Sokeri, makeiset ja suklaa',
+  $vegetablesAndMushrooms: 'Vihannekset ja sienet',
+  $vegetableOils: 'Kasviöljyt',
 }
 export default fi
