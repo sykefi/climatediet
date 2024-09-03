@@ -10,7 +10,7 @@
       <button
         type="button"
         :class="{ invisible: !consumptionStore.defaultsChanged }"
-        id="reset-button"
+        class="reset-button"
         @click="reset"
       >
         {{ $t('$resetToDefaults') }}

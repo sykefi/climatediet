@@ -11,12 +11,12 @@
     <button
       type="button"
       :class="{ invisible: !foodStore.consumptionDefaultsChanged }"
-      id="reset-button"
+      class="reset-button"
       @click="reset"
     >
       {{ $t('$resetToDefaults') }}
     </button>
-    <b id="range-details-text">{{ $t('$foodIngredientsRangeDetails') }}</b>
+    <b class="range-details-text">{{ $t('$foodIngredientsRangeDetails') }}</b>
 
     <div>
       <label class="section-title-food">
@@ -752,9 +752,9 @@
 </template>
 
 <style lang="scss" scoped>
-#range-details-text {
-  text-align: center;
+.range-details-text {
   display: block;
+  margin-top: 1em;
 }
 </style>
 <script lang="ts">

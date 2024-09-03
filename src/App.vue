@@ -177,9 +177,12 @@ h3 {
   user-select: none;
 }
 
-#reset-button {
+.reset-button {
   display: block;
   margin-left: 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: fit-content;
 }
 
 @media (min-width: $window-width-large-low) {

@@ -17,7 +17,7 @@
     <button
       type="button"
       :class="{ invisible: !purchases.defaultsChanged }"
-      id="reset-button"
+      class="reset-button"
       @click="reset"
     >
       {{ $t('$resetToDefaults') }}
