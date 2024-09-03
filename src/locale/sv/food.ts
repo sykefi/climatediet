@@ -13,11 +13,13 @@ const sv: IFoodTranslations = {
   $dietMixed: 'Flexitarian',
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
-  $dryPlantBasedProtein:
-    'Torkade växtproteiner (t.ex. soja-, ärt- och bondbönsbitar och strimlor)',
+  $dryPlantBasedProtein: 'Torkade växtproteiner',
+  $dryPlantBasedProteinDescription:
+    'T.ex. soja-, ärt- och bondbönsbitar och strimlor',
   $eggs: 'Ägg',
-  $fermentedMilkProducts:
-    'Surmjölksprodukter (t.ex. yoghurt, fil, kvarg, kärnmjölk, gräddfil)',
+  $fermentedMilkProducts: 'Surmjölksprodukter',
+  $fermentedMilkProductsDescription:
+    'T.ex. yoghurt, fil, kvarg, kärnmjölk, gräddfil',
   $fishAndShellfishAndFishProducts: 'Fisk, skaldjur och fiskprodukter',
   $foodActionMixed:
     'Det lönar sig även av hälsoskäl att äta rikligt med säsongens grönsaker till fisk och kött. Testa lunchrestaurangernas vegetariska alternativ, finsk vild fisk och öka andelen grönsaker i den hemlagade maten.',
@@ -40,14 +42,18 @@ const sv: IFoodTranslations = {
   $margarine: 'Margarin',
   $meatProducts: 'Köttprodukter',
   $milk: 'Mjölk',
-  $otherDairyProducts: 'Övriga mejeriprodukter (t.ex. glass, mjölkpulver)',
-  $otherDrinks:
-    'Andra drycker (frukt-, bär- och grönsaksjuicer, läskedrycker och andra alkoholfria drycker)',
+  $otherDairyProducts: 'Övriga mejeriprodukter',
+  $otherDairyProductsDescription: 'T.ex. glass, mjölkpulver',
+  $otherDrinks: 'Andra drycker',
+  $otherDrinksDescription:
+    'Frukt-, bär- och grönsaksjuicer, läskedrycker och andra alkoholfria drycker',
   $otherFoodProducts: 'Övriga livsmedel',
   $otherMeatsAndOffal: 'Övriga kött och inälvor',
-  $plantBasedDrinks: 'Växtdrycker (soja- och havredrycker samt liknande)',
-  $plantBasedProteinProducts:
-    'Växtbaserade proteinprodukter (t.ex. tofu, vegetariska bullar och biffar, vegetariska pålägg, korvar och grillkorvar, seitan, vöner)',
+  $plantBasedDrinks: 'Växtdrycker',
+  $plantBasedDrinksDescription: 'Soja- och havredrycker samt liknande',
+  $plantBasedProteinProducts: 'Växtbaserade proteinprodukter',
+  $plantBasedProteinProductsDescription:
+    'T.ex. tofu, vegetariska bullar och biffar, vegetariska pålägg, korvar och grillkorvar, seitan, vöner',
   $pork: 'Fläskkött',
   $potatoes: 'Potatis',
   $resultCategoryDairyEggs: 'Maitotuotteet ja kananmunat',
@@ -72,7 +78,8 @@ const sv: IFoodTranslations = {
   $sitraAvoidFoodWaste: 'Dagens matrester = morgondagens delikatesser',
   $sitraAvoidFoodWasteUrl:
     'https://www.sitra.fi/sv/cases/dagens-matrester-morgondagens-delikatesser/',
-  $sausages: 'Korvar (inte vegetariska korvar)',
+  $sausages: 'Korvar',
+  $sausagesDescription: 'Inte vegetariska korvar',
   $sugarCandiesAndChocolate: 'Socker, godis och choklad',
   $vegetablesAndMushrooms: 'Grönsaker och svampar',
   $vegetableOils: 'Vegetabiliska oljor',

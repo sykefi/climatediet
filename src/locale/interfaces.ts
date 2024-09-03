@@ -161,8 +161,10 @@ export interface IFoodTranslations {
   $dietVegan: string
   $dietVegetarian: string
   $dryPlantBasedProtein: string
+  $dryPlantBasedProteinDescription: string
   $eggs: string
   $fermentedMilkProducts: string
+  $fermentedMilkProductsDescription: string
   $fishAndShellfishAndFishProducts: string
   $foodActionMixed: string
   $foodActionVegan: string
@@ -181,11 +183,15 @@ export interface IFoodTranslations {
   $meatProducts: string
   $milk: string
   $otherDairyProducts: string
+  $otherDairyProductsDescription: string
   $otherDrinks: string
+  $otherDrinksDescription: string
   $otherFoodProducts: string
   $otherMeatsAndOffal: string
   $plantBasedDrinks: string
+  $plantBasedDrinksDescription: string
   $plantBasedProteinProducts: string
+  $plantBasedProteinProductsDescription: string
   $pork: string
   $potatoes: string
   $resultCategoryDairyEggs: string
@@ -208,6 +214,7 @@ export interface IFoodTranslations {
   $sitraAvoidFoodWaste: string
   $sitraAvoidFoodWasteUrl: string
   $sausages: string
+  $sausagesDescription: string
   $sugarCandiesAndChocolate: string
   $vegetablesAndMushrooms: string
   $vegetableOils: string

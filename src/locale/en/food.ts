@@ -18,11 +18,13 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
   $dietMixed: 'Omnivore', // TODO: update term??
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
-  $dryPlantBasedProtein:
-    'Dried plant proteins (e.g., soy, pea, and broad bean crumbles and strips)',
+  $dryPlantBasedProtein: 'Dried plant proteins',
+  $dryPlantBasedProteinDescription:
+    'E.g., soy, pea, and broad bean crumbles and strips',
   $eggs: 'Eggs',
-  $fermentedMilkProducts:
-    'Fermented milk products (e.g., yogurt, curdled milk, quark, buttermilk, sour cream)',
+  $fermentedMilkProducts: 'Fermented milk products',
+  $fermentedMilkProductsDescription:
+    'E.g., yogurt, curdled milk, quark, buttermilk, sour cream',
   $fishAndShellfishAndFishProducts: 'Fish, shellfish, and fish products',
   $foodActionMixed: `Seasonal greens should have a large share of your plate to help the climate's health as well as yours. Try out the vegetarian options in restaurants, favor Finnish wild fish and increase the portion of greens at home.`,
   $foodActionVegan:
@@ -47,15 +49,18 @@ Note that dairy products and eggs are also included in various ready-made foods 
   $margarine: 'Margarine',
   $meatProducts: 'Meat products',
   $milk: 'Milk',
-  $otherDairyProducts: 'Other dairy products (e.g., ice cream, milk powder)',
-  $otherDrinks:
-    'Other drinks (fruit, berry, and vegetable juices, soft drinks, and other non-alcoholic beverages)',
+  $otherDairyProducts: 'Other dairy products',
+  $otherDairyProductsDescription: 'E.g., ice cream, milk powder',
+  $otherDrinks: 'Other drinks',
+  $otherDrinksDescription:
+    'Fruit, berry, and vegetable juices, soft drinks, and other non-alcoholic beverages',
   $otherFoodProducts: 'Other food products',
   $otherMeatsAndOffal: 'Other meats and offal',
-  $plantBasedDrinks:
-    'Plant-based drinks (soy and oat drinks, and other similar ones)',
-  $plantBasedProteinProducts:
-    'Plant-based protein products (e.g., tofu, vegetable balls and patties, vegetable cold cuts, sausages, seitan, vöner)',
+  $plantBasedDrinks: 'Plant-based drinks',
+  $plantBasedDrinksDescription: 'Soy and oat drinks, and other similar ones',
+  $plantBasedProteinProducts: 'Plant-based protein products',
+  $plantBasedProteinProductsDescription:
+    'E.g., tofu, vegetable balls and patties, vegetable cold cuts, sausages, seitan, vöner',
   $pork: 'Pork',
   $potatoes: 'Potatoes',
   $resultCategoryDairyEggs: 'Dairy products and eggs',
@@ -81,7 +86,8 @@ Note that dairy products and eggs are also included in various ready-made foods 
   $sitraAvoidFoodWaste: `Today's leftovers, tomorrow's treats`,
   $sitraAvoidFoodWasteUrl:
     'https://www.sitra.fi/en/cases/todays-leftovers-tomorrows-treats/',
-  $sausages: 'Sausages (not vegetarian sausages)',
+  $sausages: 'Sausages',
+  $sausagesDescription: 'Not vegetarian sausages',
   $sugarCandiesAndChocolate: 'Sugar, candies, and chocolate',
   $vegetablesAndMushrooms: 'Vegetables and mushrooms',
   $vegetableOils: 'Vegetable oils',

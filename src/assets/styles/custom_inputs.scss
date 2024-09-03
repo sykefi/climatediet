@@ -173,6 +173,11 @@ input[type='checkbox'] {
     font-weight: $semi-bold;
     margin-right: 1em;
   }
+  & .range-label-description {
+    display: block;
+    font-weight: normal;
+    font-size: $font-size-s;
+  }
   & input[type='range'] {
     flex: 1 1 0%;
     margin: 1em 1em 1em 0;

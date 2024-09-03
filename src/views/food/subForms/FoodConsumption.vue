@@ -249,6 +249,9 @@
       <div class="range-item">
         <label class="range-label" for="fermentedMilkProducts">
           {{ $t('$fermentedMilkProducts') }}
+          <span class="range-label-description">
+            {{ $t('$fermentedMilkProductsDescription') }}
+          </span>
         </label>
         <input
           id="fermentedMilkProducts"
@@ -272,6 +275,9 @@
       <div class="range-item">
         <label class="range-label" for="otherDairyProducts">
           {{ $t('$otherDairyProducts') }}
+          <span class="range-label-description">
+            {{ $t('$otherDairyProductsDescription') }}
+          </span>
         </label>
         <input
           id="otherDairyProducts"
@@ -359,6 +365,9 @@
       <div class="range-item">
         <label class="range-label" for="sausages">
           {{ $t('$sausages') }}
+          <span class="range-label-description">
+            {{ $t('$sausagesDescription') }}
+          </span>
         </label>
         <input
           id="sausages"
@@ -475,6 +484,9 @@
       <div class="range-item">
         <label class="range-label" for="plantBasedProteinProducts">
           {{ $t('$plantBasedProteinProducts') }}
+          <span class="range-label-description">
+            {{ $t('$plantBasedProteinProductsDescription') }}
+          </span>
         </label>
         <input
           id="plantBasedProteinProducts"
@@ -498,6 +510,9 @@
       <div class="range-item">
         <label class="range-label" for="dryPlantBasedProtein">
           {{ $t('$dryPlantBasedProtein') }}
+          <span class="range-label-description">
+            {{ $t('$dryPlantBasedProteinDescription') }}
+          </span>
         </label>
         <input
           id="dryPlantBasedProtein"
@@ -521,6 +536,9 @@
       <div class="range-item">
         <label class="range-label" for="plantBasedDrinks">
           {{ $t('$plantBasedDrinks') }}
+          <span class="range-label-description">
+            {{ $t('$plantBasedDrinksDescription') }}
+          </span>
         </label>
         <input
           id="plantBasedDrinks"
@@ -587,6 +605,9 @@
       <div class="range-item">
         <label class="range-label" for="otherDrinks">
           {{ $t('$otherDrinks') }}
+          <span class="range-label-description">
+            {{ $t('$otherDrinksDescription') }}
+          </span>
         </label>
         <input
           id="otherDrinks"

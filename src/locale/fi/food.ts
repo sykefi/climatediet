@@ -18,12 +18,14 @@ const fi: IFoodTranslations = {
   $dietMixed: 'Sekasyöjä',
   $dietVegan: 'Vegaani',
   $dietVegetarian: 'Kasvissyöjä',
-  $dryPlantBasedProtein:
-    'Kuivat kasviproteiinit (esim. soija-, herne- ja härkäpapurouhe ja -suikaleet)',
+  $dryPlantBasedProtein: 'Kuivat kasviproteiinit',
+  $dryPlantBasedProteinDescription:
+    'Esim. soija-, herne- ja härkäpapurouhe ja -suikaleet',
   $eggs: 'Munat',
 
-  $fermentedMilkProducts:
-    'Hapanmaitotuotteet (esim. jogurtti, viili, rahka, piimä, kermaviili)',
+  $fermentedMilkProducts: 'Hapanmaitotuotteet',
+  $fermentedMilkProductsDescription:
+    'Esim. jogurtti, viili, rahka, piimä, kermaviili',
   $fishAndShellfishAndFishProducts: 'Kala, äyriäiset ja kalavalmisteet',
   $foodActionMixed:
     'Kauden kasviksia kannattaa nauttia runsaasti kalan ja lihan kanssa jo terveyssyistä. Kokeile lounasravintoloiden kasvisvaihtoehtoa, suomalaista villiä kalaa ja lisää kasvisten osuutta kotiruoassa.',
@@ -51,14 +53,18 @@ const fi: IFoodTranslations = {
   $margarine: 'Margariini',
   $meatProducts: 'Lihavalmisteet',
   $milk: 'Maito',
-  $otherDairyProducts: 'Muut maitovalmisteet (esim. jäätelö, maitojauhe)',
-  $otherDrinks:
-    'Muut juomat (hedelmä-, marja- ja kasvismehut, virvoitusjuomat ja muut alkoholittomat juomat)',
+  $otherDairyProducts: 'Muut maitovalmisteet',
+  $otherDairyProductsDescription: 'Esim. jäätelö, maitojauhe',
+  $otherDrinks: 'Muut juomat',
+  $otherDrinksDescription:
+    'Hedelmä-, marja- ja kasvismehut, virvoitusjuomat ja muut alkoholittomat juomat',
   $otherFoodProducts: 'Muut elintarvikkeet',
   $otherMeatsAndOffal: 'Muut lihat ja sisäelimet',
-  $plantBasedDrinks: 'Kasvijuomat (soija- ja kaurajuomat sekä muut vastaavat)',
-  $plantBasedProteinProducts:
-    'Kasviproteiinivalmisteet (esim. tofu, kasvispyörykät ja -pihvit, kasvisleikkeleet, -nakit ja -makkarat, seitan, vöner)',
+  $plantBasedDrinks: 'Kasvijuomat',
+  $plantBasedDrinksDescription: 'Soija- ja kaurajuomat sekä muut vastaavat',
+  $plantBasedProteinProducts: 'Kasviproteiinivalmisteet',
+  $plantBasedProteinProductsDescription:
+    'Esim. tofu, kasvispyörykät ja -pihvit, kasvisleikkeleet, -nakit ja -makkarat, seitan, vöner',
   $pork: 'Sianliha',
   $potatoes: 'Peruna',
   $resultCategoryDairyEggs: 'Maitotuotteet ja kananmunat',
@@ -83,7 +89,8 @@ const fi: IFoodTranslations = {
   $sitraAvoidFoodWaste: 'Tämän päivän tähteet, huomisen herkut',
   $sitraAvoidFoodWasteUrl:
     'https://www.sitra.fi/caset/taman-paivan-tahteet-huomisen-herkut/',
-  $sausages: 'Makkarat (ei kasvismakkarat)',
+  $sausages: 'Makkarat',
+  $sausagesDescription: 'Ei kasvismakkarat',
   $sugarCandiesAndChocolate: 'Sokeri, makeiset ja suklaa',
   $vegetablesAndMushrooms: 'Vihannekset ja sienet',
   $vegetableOils: 'Kasviöljyt',
