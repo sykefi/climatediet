@@ -168,4 +168,14 @@ export default defineComponent({
     text-transform: none;
   }
 }
+
+.section-title-food {
+  font-weight: bold;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  word-wrap: break-word;
+  display: inline-block;
+}
 </style>
