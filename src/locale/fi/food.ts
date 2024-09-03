@@ -41,7 +41,7 @@ const fi: IFoodTranslations = {
 
   Muista maitotuotteiden, juuston ja kananmunien kohdalla, että nautimme niitä myös erilaisten ruokien ja leivonnaisten osana.`,
   $foodIngredientsRangeDetails:
-    'Valittuna oleva lähtöarvo viittaa suomalaisten keskiarvoon.',
+    'Valitut oletusarvot perustuvat suomaisten keskiarvoihin.',
   $foodResultsSummary:
     'Noin viidennes kansalaisen ilmastovaikutuksista syntyy ruoasta.',
   $foodResultsTitle: 'Ruuan hiilijalanjälki',
