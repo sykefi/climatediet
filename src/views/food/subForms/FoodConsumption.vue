@@ -772,7 +772,7 @@ export default defineComponent({
     },
     alcoholicBeverages: {
       get(): number {
-        return this.food.alcoholicBeveragesRatio
+        return this.food.alcoholicBeveragesValue
       },
       set(value: number) {
         this.foodStore.setAlcoholicBeverages(value)
@@ -780,7 +780,7 @@ export default defineComponent({
     },
     beef: {
       get(): number {
-        return this.food.beefRatio
+        return this.food.beefValue
       },
       set(value: number) {
         this.foodStore.setBeef(value)
@@ -788,7 +788,7 @@ export default defineComponent({
     },
     berries: {
       get(): number {
-        return this.food.berriesRatio
+        return this.food.berriesValue
       },
       set(value: number) {
         this.foodStore.setBerries(value)
@@ -796,7 +796,7 @@ export default defineComponent({
     },
     butterAndAnimalFats: {
       get(): number {
-        return this.food.butterAndAnimalFatsRatio
+        return this.food.butterAndAnimalFatsValue
       },
       set(value: number) {
         this.foodStore.setButterAndAnimalFats(value)
@@ -804,7 +804,7 @@ export default defineComponent({
     },
     cheeses: {
       get(): number {
-        return this.food.cheesesRatio
+        return this.food.cheesesValue
       },
       set(value: number) {
         this.foodStore.setCheeses(value)
@@ -812,7 +812,7 @@ export default defineComponent({
     },
     chickenAndTurkey: {
       get(): number {
-        return this.food.chickenAndTurkeyRatio
+        return this.food.chickenAndTurkeyValue
       },
       set(value: number) {
         this.foodStore.setChickenAndTurkey(value)
@@ -820,7 +820,7 @@ export default defineComponent({
     },
     coffeeAndTea: {
       get(): number {
-        return this.food.coffeeAndTeaRatio
+        return this.food.coffeeAndTeaValue
       },
       set(value: number) {
         this.foodStore.setCoffeeAndTea(value)
@@ -828,7 +828,7 @@ export default defineComponent({
     },
     dryPlantBasedProtein: {
       get(): number {
-        return this.food.dryPlantBasedProteinRatio
+        return this.food.dryPlantBasedProteinValue
       },
       set(value: number) {
         this.foodStore.setDryPlantBasedProtein(value)
@@ -844,7 +844,7 @@ export default defineComponent({
     },
     fermentedMilkProducts: {
       get(): number {
-        return this.food.fermentedMilkProductsRatio
+        return this.food.fermentedMilkProductsValue
       },
       set(value: number) {
         this.foodStore.setFermentedMilkProducts(value)
@@ -852,7 +852,7 @@ export default defineComponent({
     },
     fishAndShellfishAndFishProducts: {
       get(): number {
-        return this.food.fishAndShellfishAndFishProductsRatio
+        return this.food.fishAndShellfishAndFishProductsValue
       },
       set(value: number) {
         this.foodStore.setFishAndShellfishAndFishProducts(value)
@@ -860,7 +860,7 @@ export default defineComponent({
     },
     frozenVegetables: {
       get(): number {
-        return this.food.frozenVegetablesRatio
+        return this.food.frozenVegetablesValue
       },
       set(value: number) {
         this.foodStore.setFrozenVegetables(value)
@@ -868,7 +868,7 @@ export default defineComponent({
     },
     fruitAndBerryPreserves: {
       get(): number {
-        return this.food.fruitAndBerryPreservesRatio
+        return this.food.fruitAndBerryPreservesValue
       },
       set(value: number) {
         this.foodStore.setFruitAndBerryPreserves(value)
@@ -876,7 +876,7 @@ export default defineComponent({
     },
     fruits: {
       get(): number {
-        return this.food.fruitsRatio
+        return this.food.fruitsValue
       },
       set(value: number) {
         this.foodStore.setFruits(value)
@@ -884,7 +884,7 @@ export default defineComponent({
     },
     grainsAndGrainProducts: {
       get(): number {
-        return this.food.grainsAndGrainProductsRatio
+        return this.food.grainsAndGrainProductsValue
       },
       set(value: number) {
         this.foodStore.setGrainsAndGrainProducts(value)
@@ -892,7 +892,7 @@ export default defineComponent({
     },
     legumesAndNuts: {
       get(): number {
-        return this.food.legumesAndNutsRatio
+        return this.food.legumesAndNutsValue
       },
       set(value: number) {
         this.foodStore.setLegumesAndNuts(value)
@@ -900,7 +900,7 @@ export default defineComponent({
     },
     margarine: {
       get(): number {
-        return this.food.margarineRatio
+        return this.food.margarineValue
       },
       set(value: number) {
         this.foodStore.setMargarine(value)
@@ -908,7 +908,7 @@ export default defineComponent({
     },
     meatProducts: {
       get(): number {
-        return this.food.meatProductsRatio
+        return this.food.meatProductsValue
       },
       set(value: number) {
         this.foodStore.setMeatProducts(value)
@@ -916,7 +916,7 @@ export default defineComponent({
     },
     milk: {
       get(): number {
-        return this.food.milkRatio
+        return this.food.milkValue
       },
       set(value: number) {
         this.foodStore.setMilk(value)
@@ -924,7 +924,7 @@ export default defineComponent({
     },
     otherDairyProducts: {
       get(): number {
-        return this.food.otherDairyProductsRatio
+        return this.food.otherDairyProductsValue
       },
       set(value: number) {
         this.foodStore.setOtherDairyProducts(value)
@@ -932,7 +932,7 @@ export default defineComponent({
     },
     otherDrinks: {
       get(): number {
-        return this.food.otherDrinksRatio
+        return this.food.otherDrinksValue
       },
       set(value: number) {
         this.foodStore.setOtherDrinks(value)
@@ -940,7 +940,7 @@ export default defineComponent({
     },
     otherFoodProducts: {
       get(): number {
-        return this.food.otherFoodProductsRatio
+        return this.food.otherFoodProductsValue
       },
       set(value: number) {
         this.foodStore.setOtherFoodProducts(value)
@@ -948,7 +948,7 @@ export default defineComponent({
     },
     otherMeatsAndOffal: {
       get(): number {
-        return this.food.otherMeatsAndOffalRatio
+        return this.food.otherMeatsAndOffalValue
       },
       set(value: number) {
         this.foodStore.setOtherMeatsAndOffal(value)
@@ -956,7 +956,7 @@ export default defineComponent({
     },
     plantBasedDrinks: {
       get(): number {
-        return this.food.plantBasedDrinksRatio
+        return this.food.plantBasedDrinksValue
       },
       set(value: number) {
         this.foodStore.setPlantBasedDrinks(value)
@@ -964,7 +964,7 @@ export default defineComponent({
     },
     plantBasedProteinProducts: {
       get(): number {
-        return this.food.plantBasedProteinProductsRatio
+        return this.food.plantBasedProteinProductsValue
       },
       set(value: number) {
         this.foodStore.setPlantBasedProteinProducts(value)
@@ -972,7 +972,7 @@ export default defineComponent({
     },
     pork: {
       get(): number {
-        return this.food.porkRatio
+        return this.food.porkValue
       },
       set(value: number) {
         this.foodStore.setPork(value)
@@ -980,7 +980,7 @@ export default defineComponent({
     },
     potatoes: {
       get(): number {
-        return this.food.potatoesRatio
+        return this.food.potatoesValue
       },
       set(value: number) {
         this.foodStore.setPotatoes(value)
@@ -988,7 +988,7 @@ export default defineComponent({
     },
     rice: {
       get(): number {
-        return this.food.riceRatio
+        return this.food.riceValue
       },
       set(value: number) {
         this.foodStore.setRice(value)
@@ -996,7 +996,7 @@ export default defineComponent({
     },
     rootVegetables: {
       get(): number {
-        return this.food.rootVegetablesRatio
+        return this.food.rootVegetablesValue
       },
       set(value: number) {
         this.foodStore.setRootVegetables(value)
@@ -1004,7 +1004,7 @@ export default defineComponent({
     },
     sausages: {
       get(): number {
-        return this.food.sausagesRatio
+        return this.food.sausagesValue
       },
       set(value: number) {
         this.foodStore.setSausages(value)
@@ -1012,7 +1012,7 @@ export default defineComponent({
     },
     sugarCandiesAndChocolate: {
       get(): number {
-        return this.food.sugarCandiesAndChocolateRatio
+        return this.food.sugarCandiesAndChocolateValue
       },
       set(value: number) {
         this.foodStore.setSugarCandiesAndChocolate(value)
@@ -1020,7 +1020,7 @@ export default defineComponent({
     },
     vegetablesAndMushrooms: {
       get(): number {
-        return this.food.vegetablesAndMushroomsRatio
+        return this.food.vegetablesAndMushroomsValue
       },
       set(value: number) {
         this.foodStore.setVegetablesAndMushrooms(value)
@@ -1028,7 +1028,7 @@ export default defineComponent({
     },
     vegetableOils: {
       get(): number {
-        return this.food.vegetableOilsRatio
+        return this.food.vegetableOilsValue
       },
       set(value: number) {
         this.foodStore.setVegetableOils(value)

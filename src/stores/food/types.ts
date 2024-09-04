@@ -54,39 +54,39 @@ export interface IFoodState {
   submitted: boolean
   activeSection: FoodSections
   diet: Diets
-  alcoholicBeveragesRatio: number
-  beefRatio: number
-  berriesRatio: number
-  butterAndAnimalFatsRatio: number
-  cheesesRatio: number
-  chickenAndTurkeyRatio: number
-  coffeeAndTeaRatio: number
-  dryPlantBasedProteinRatio: number
+  alcoholicBeveragesValue: number
+  beefValue: number
+  berriesValue: number
+  butterAndAnimalFatsValue: number
+  cheesesValue: number
+  chickenAndTurkeyValue: number
+  coffeeAndTeaValue: number
+  dryPlantBasedProteinValue: number
   eggsCount: number
-  fermentedMilkProductsRatio: number
-  fishAndShellfishAndFishProductsRatio: number
-  frozenVegetablesRatio: number
-  fruitAndBerryPreservesRatio: number
-  fruitsRatio: number
-  grainsAndGrainProductsRatio: number
-  legumesAndNutsRatio: number
-  margarineRatio: number
-  meatProductsRatio: number
-  milkRatio: number
-  otherDairyProductsRatio: number
-  otherDrinksRatio: number
-  otherFoodProductsRatio: number
-  otherMeatsAndOffalRatio: number
-  plantBasedDrinksRatio: number
-  plantBasedProteinProductsRatio: number
-  porkRatio: number
-  potatoesRatio: number
-  riceRatio: number
-  rootVegetablesRatio: number
-  sausagesRatio: number
-  sugarCandiesAndChocolateRatio: number
-  vegetablesAndMushroomsRatio: number
-  vegetableOilsRatio: number
+  fermentedMilkProductsValue: number
+  fishAndShellfishAndFishProductsValue: number
+  frozenVegetablesValue: number
+  fruitAndBerryPreservesValue: number
+  fruitsValue: number
+  grainsAndGrainProductsValue: number
+  legumesAndNutsValue: number
+  margarineValue: number
+  meatProductsValue: number
+  milkValue: number
+  otherDairyProductsValue: number
+  otherDrinksValue: number
+  otherFoodProductsValue: number
+  otherMeatsAndOffalValue: number
+  plantBasedDrinksValue: number
+  plantBasedProteinProductsValue: number
+  porkValue: number
+  potatoesValue: number
+  riceValue: number
+  rootVegetablesValue: number
+  sausagesValue: number
+  sugarCandiesAndChocolateValue: number
+  vegetablesAndMushroomsValue: number
+  vegetableOilsValue: number
   vegetablesFruitsBerriesResult: number
   grainsPotatoesResult: number
   dairyEggsResult: number

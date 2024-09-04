@@ -19,39 +19,39 @@ export const useFoodStore = defineStore('food', {
     submitted: false,
     activeSection: FoodSections.Diet,
     diet: Diets.Mixed,
-    alcoholicBeveragesRatio: 100,
-    beefRatio: 100,
-    berriesRatio: 100,
-    butterAndAnimalFatsRatio: 100,
-    cheesesRatio: 100,
-    chickenAndTurkeyRatio: 100,
-    coffeeAndTeaRatio: 100,
-    dryPlantBasedProteinRatio: 100,
+    alcoholicBeveragesValue: 100,
+    beefValue: 100,
+    berriesValue: 100,
+    butterAndAnimalFatsValue: 100,
+    cheesesValue: 100,
+    chickenAndTurkeyValue: 100,
+    coffeeAndTeaValue: 100,
+    dryPlantBasedProteinValue: 100,
     eggsCount: 3, // eggs are counted as whole eggs to make estimations easier
-    fermentedMilkProductsRatio: 100,
-    fishAndShellfishAndFishProductsRatio: 100,
-    frozenVegetablesRatio: 100,
-    fruitAndBerryPreservesRatio: 100,
-    fruitsRatio: 100,
-    grainsAndGrainProductsRatio: 100,
-    legumesAndNutsRatio: 100,
-    margarineRatio: 100,
-    meatProductsRatio: 100,
-    milkRatio: 100,
-    otherDairyProductsRatio: 100,
-    otherDrinksRatio: 100,
-    otherFoodProductsRatio: 100,
-    otherMeatsAndOffalRatio: 100,
-    plantBasedDrinksRatio: 100,
-    plantBasedProteinProductsRatio: 100,
-    porkRatio: 100,
-    potatoesRatio: 100,
-    riceRatio: 100,
-    rootVegetablesRatio: 100,
-    sausagesRatio: 100,
-    sugarCandiesAndChocolateRatio: 100,
-    vegetablesAndMushroomsRatio: 100,
-    vegetableOilsRatio: 100,
+    fermentedMilkProductsValue: 100,
+    fishAndShellfishAndFishProductsValue: 100,
+    frozenVegetablesValue: 100,
+    fruitAndBerryPreservesValue: 100,
+    fruitsValue: 100,
+    grainsAndGrainProductsValue: 100,
+    legumesAndNutsValue: 100,
+    margarineValue: 100,
+    meatProductsValue: 100,
+    milkValue: 100,
+    otherDairyProductsValue: 100,
+    otherDrinksValue: 100,
+    otherFoodProductsValue: 100,
+    otherMeatsAndOffalValue: 100,
+    plantBasedDrinksValue: 100,
+    plantBasedProteinProductsValue: 100,
+    porkValue: 100,
+    potatoesValue: 100,
+    riceValue: 100,
+    rootVegetablesValue: 100,
+    sausagesValue: 100,
+    sugarCandiesAndChocolateValue: 100,
+    vegetableOilsValue: 100,
+    vegetablesAndMushroomsValue: 100,
     vegetablesFruitsBerriesResult: 0,
     grainsPotatoesResult: 0,
     dairyEggsResult: 0,
@@ -77,40 +77,40 @@ export const useFoodStore = defineStore('food', {
         const eggs = eggCountToRatio(this.eggsCount)
         const data = {
           diet: this.diet,
-          alcoholicBeverages: this.alcoholicBeveragesRatio,
-          beef: this.beefRatio,
-          berries: this.berriesRatio,
-          butterAndAnimalFats: this.butterAndAnimalFatsRatio,
-          cheeses: this.cheesesRatio,
-          chickenAndTurkey: this.chickenAndTurkeyRatio,
-          coffeeAndTea: this.coffeeAndTeaRatio,
-          dryPlantBasedProtein: this.dryPlantBasedProteinRatio,
+          alcoholicBeverages: this.alcoholicBeveragesValue,
+          beef: this.beefValue,
+          berries: this.berriesValue,
+          butterAndAnimalFats: this.butterAndAnimalFatsValue,
+          cheeses: this.cheesesValue,
+          chickenAndTurkey: this.chickenAndTurkeyValue,
+          coffeeAndTea: this.coffeeAndTeaValue,
+          dryPlantBasedProtein: this.dryPlantBasedProteinValue,
           eggs: eggs,
-          fermentedMilkProducts: this.fermentedMilkProductsRatio,
+          fermentedMilkProducts: this.fermentedMilkProductsValue,
           fishAndShellfishAndFishProducts:
-            this.fishAndShellfishAndFishProductsRatio,
-          frozenVegetables: this.frozenVegetablesRatio,
-          fruitAndBerryPreserves: this.fruitAndBerryPreservesRatio,
-          fruits: this.fruitsRatio,
-          grainsAndGrainProducts: this.grainsAndGrainProductsRatio,
-          legumesAndNuts: this.legumesAndNutsRatio,
-          margarine: this.margarineRatio,
-          meatProducts: this.meatProductsRatio,
-          milk: this.milkRatio,
-          otherDairyProducts: this.otherDairyProductsRatio,
-          otherDrinks: this.otherDrinksRatio,
-          otherFoodProducts: this.otherFoodProductsRatio,
-          otherMeatsAndOffal: this.otherMeatsAndOffalRatio,
-          plantBasedDrinks: this.plantBasedDrinksRatio,
-          plantBasedProteinProducts: this.plantBasedProteinProductsRatio,
-          pork: this.porkRatio,
-          potatoes: this.potatoesRatio,
-          rice: this.riceRatio,
-          rootVegetables: this.rootVegetablesRatio,
-          sausages: this.sausagesRatio,
-          sugarCandiesAndChocolate: this.sugarCandiesAndChocolateRatio,
-          vegetablesAndMushrooms: this.vegetablesAndMushroomsRatio,
-          vegetableOils: this.vegetableOilsRatio,
+            this.fishAndShellfishAndFishProductsValue,
+          frozenVegetables: this.frozenVegetablesValue,
+          fruitAndBerryPreserves: this.fruitAndBerryPreservesValue,
+          fruits: this.fruitsValue,
+          grainsAndGrainProducts: this.grainsAndGrainProductsValue,
+          legumesAndNuts: this.legumesAndNutsValue,
+          margarine: this.margarineValue,
+          meatProducts: this.meatProductsValue,
+          milk: this.milkValue,
+          otherDairyProducts: this.otherDairyProductsValue,
+          otherDrinks: this.otherDrinksValue,
+          otherFoodProducts: this.otherFoodProductsValue,
+          otherMeatsAndOffal: this.otherMeatsAndOffalValue,
+          plantBasedDrinks: this.plantBasedDrinksValue,
+          plantBasedProteinProducts: this.plantBasedProteinProductsValue,
+          pork: this.porkValue,
+          potatoes: this.potatoesValue,
+          rice: this.riceValue,
+          rootVegetables: this.rootVegetablesValue,
+          sausages: this.sausagesValue,
+          sugarCandiesAndChocolate: this.sugarCandiesAndChocolateValue,
+          vegetablesAndMushrooms: this.vegetablesAndMushroomsValue,
+          vegetableOils: this.vegetableOilsValue,
         }
         const createNew = this.id === 0
         const response = createNew
@@ -156,42 +156,42 @@ export const useFoodStore = defineStore('food', {
       }
     },
     setAlcoholicBeverages(value: number) {
-      this.alcoholicBeveragesRatio = value
+      this.alcoholicBeveragesValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setBeef(value: number) {
-      this.beefRatio = value
+      this.beefValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setBerries(value: number) {
-      this.berriesRatio = value
+      this.berriesValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setButterAndAnimalFats(value: number) {
-      this.butterAndAnimalFatsRatio = value
+      this.butterAndAnimalFatsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setCheeses(value: number) {
-      this.cheesesRatio = value
+      this.cheesesValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setChickenAndTurkey(value: number) {
-      this.chickenAndTurkeyRatio = value
+      this.chickenAndTurkeyValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setCoffeeAndTea(value: number) {
-      this.coffeeAndTeaRatio = value
+      this.coffeeAndTeaValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setDryPlantBasedProtein(value: number) {
-      this.dryPlantBasedProteinRatio = value
+      this.dryPlantBasedProteinValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
@@ -201,122 +201,122 @@ export const useFoodStore = defineStore('food', {
       this.consumptionDefaultsChanged = true
     },
     setFermentedMilkProducts(value: number) {
-      this.fermentedMilkProductsRatio = value
+      this.fermentedMilkProductsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setFishAndShellfishAndFishProducts(value: number) {
-      this.fishAndShellfishAndFishProductsRatio = value
+      this.fishAndShellfishAndFishProductsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setFrozenVegetables(value: number) {
-      this.frozenVegetablesRatio = value
+      this.frozenVegetablesValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setFruitAndBerryPreserves(value: number) {
-      this.fruitAndBerryPreservesRatio = value
+      this.fruitAndBerryPreservesValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setFruits(value: number) {
-      this.fruitsRatio = value
+      this.fruitsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setGrainsAndGrainProducts(value: number) {
-      this.grainsAndGrainProductsRatio = value
+      this.grainsAndGrainProductsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setLegumesAndNuts(value: number) {
-      this.legumesAndNutsRatio = value
+      this.legumesAndNutsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setMargarine(value: number) {
-      this.margarineRatio = value
+      this.margarineValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setMeatProducts(value: number) {
-      this.meatProductsRatio = value
+      this.meatProductsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setMilk(value: number) {
-      this.milkRatio = value
+      this.milkValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setOtherDairyProducts(value: number) {
-      this.otherDairyProductsRatio = value
+      this.otherDairyProductsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setOtherDrinks(value: number) {
-      this.otherDrinksRatio = value
+      this.otherDrinksValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setOtherFoodProducts(value: number) {
-      this.otherFoodProductsRatio = value
+      this.otherFoodProductsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setOtherMeatsAndOffal(value: number) {
-      this.otherMeatsAndOffalRatio = value
+      this.otherMeatsAndOffalValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setPlantBasedDrinks(value: number) {
-      this.plantBasedDrinksRatio = value
+      this.plantBasedDrinksValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setPlantBasedProteinProducts(value: number) {
-      this.plantBasedProteinProductsRatio = value
+      this.plantBasedProteinProductsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setPork(value: number) {
-      this.porkRatio = value
+      this.porkValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setPotatoes(value: number) {
-      this.potatoesRatio = value
+      this.potatoesValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setRice(value: number) {
-      this.riceRatio = value
+      this.riceValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setRootVegetables(value: number) {
-      this.rootVegetablesRatio = value
+      this.rootVegetablesValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setSausages(value: number) {
-      this.sausagesRatio = value
+      this.sausagesValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setSugarCandiesAndChocolate(value: number) {
-      this.sugarCandiesAndChocolateRatio = value
+      this.sugarCandiesAndChocolateValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setVegetableOils(value: number) {
-      this.vegetableOilsRatio = value
+      this.vegetableOilsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
     setVegetablesAndMushrooms(value: number) {
-      this.vegetablesAndMushroomsRatio = value
+      this.vegetablesAndMushroomsValue = value
       this.unSavedChanges = true
       this.consumptionDefaultsChanged = true
     },
@@ -470,13 +470,13 @@ export const useFoodStore = defineStore('food', {
     sitraCases: (state) => {
       // TODO: Make work with the new model that uses direct amounts instead of ratios
       if (
-        state.beefRatio >= 100 ||
-        state.fishAndShellfishAndFishProductsRatio >= 100 ||
-        state.porkRatio >= 100 ||
-        state.chickenAndTurkeyRatio >= 100 ||
-        state.meatProductsRatio >= 100 ||
-        state.otherMeatsAndOffalRatio >= 100 ||
-        state.sausagesRatio >= 100
+        state.beefValue >= 100 ||
+        state.fishAndShellfishAndFishProductsValue >= 100 ||
+        state.porkValue >= 100 ||
+        state.chickenAndTurkeyValue >= 100 ||
+        state.meatProductsValue >= 100 ||
+        state.otherMeatsAndOffalValue >= 100 ||
+        state.sausagesValue >= 100
       ) {
         return '$sitraVarietyWithVegetables'
       }
