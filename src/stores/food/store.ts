@@ -174,85 +174,8 @@ export const useFoodStore = defineStore('food', {
       this.diet = value
       this.unSavedChanges = true
 
-      // Change consumption defaults based on diet
-      this.setAlcoholicBeverages(
-        consumptionAverageKgPerCapPerWeek.alcoholicBeverages[value]
-      )
-      this.setBeef(consumptionAverageKgPerCapPerWeek.beef[value])
-      this.setBerries(consumptionAverageKgPerCapPerWeek.berries[value])
-      this.setButterAndAnimalFats(
-        consumptionAverageKgPerCapPerWeek.butterAndAnimalFats[value]
-      )
-      this.setCheeses(consumptionAverageKgPerCapPerWeek.cheeses[value])
-      this.setChickenAndTurkey(
-        consumptionAverageKgPerCapPerWeek.chickenAndTurkey[value]
-      )
-      this.setCoffeeAndTea(
-        consumptionAverageKgPerCapPerWeek.coffeeAndTea[value]
-      )
-      this.setDryPlantBasedProtein(
-        consumptionAverageKgPerCapPerWeek.dryPlantBasedProtein[value]
-      )
-      this.setEggs(consumptionAverageKgPerCapPerWeek.eggs[value])
-      this.setFermentedMilkProducts(
-        consumptionAverageKgPerCapPerWeek.fermentedMilkProducts[value]
-      )
-      this.setFishAndShellfishAndFishProducts(
-        consumptionAverageKgPerCapPerWeek.fishAndShellfishAndFishProducts[value]
-      )
-      this.setFrozenVegetables(
-        consumptionAverageKgPerCapPerWeek.frozenVegetables[value]
-      )
-      this.setFruitAndBerryPreserves(
-        consumptionAverageKgPerCapPerWeek.fruitAndBerryPreserves[value]
-      )
-      this.setFruits(consumptionAverageKgPerCapPerWeek.fruits[value])
-      this.setGrainsAndGrainProducts(
-        consumptionAverageKgPerCapPerWeek.grainsAndGrainProducts[value]
-      )
-      this.setLegumesAndNuts(
-        consumptionAverageKgPerCapPerWeek.legumesAndNuts[value]
-      )
-      this.setMargarine(consumptionAverageKgPerCapPerWeek.margarine[value])
-      this.setMeatProducts(
-        consumptionAverageKgPerCapPerWeek.meatProducts[value]
-      )
-      this.setMilk(consumptionAverageKgPerCapPerWeek.milk[value])
-      this.setOtherDairyProducts(
-        consumptionAverageKgPerCapPerWeek.otherDairyProducts[value]
-      )
-      this.setOtherDrinks(consumptionAverageKgPerCapPerWeek.otherDrinks[value])
-      this.setOtherFoodProducts(
-        consumptionAverageKgPerCapPerWeek.otherFoodProducts[value]
-      )
-      this.setOtherMeatsAndOffal(
-        consumptionAverageKgPerCapPerWeek.otherMeatsAndOffal[value]
-      )
-      this.setPlantBasedDrinks(
-        consumptionAverageKgPerCapPerWeek.plantBasedDrinks[value]
-      )
-      this.setPlantBasedProteinProducts(
-        consumptionAverageKgPerCapPerWeek.plantBasedProteinProducts[value]
-      )
-      this.setPork(consumptionAverageKgPerCapPerWeek.pork[value])
-      this.setPotatoes(consumptionAverageKgPerCapPerWeek.potatoes[value])
-      this.setRice(consumptionAverageKgPerCapPerWeek.rice[value])
-      this.setRootVegetables(
-        consumptionAverageKgPerCapPerWeek.rootVegetables[value]
-      )
-      this.setSausages(consumptionAverageKgPerCapPerWeek.sausages[value])
-      this.setSugarCandiesAndChocolate(
-        consumptionAverageKgPerCapPerWeek.sugarCandiesAndChocolate[value]
-      )
-      this.setVegetableOils(
-        consumptionAverageKgPerCapPerWeek.vegetableOils[value]
-      )
-      this.setVegetablesAndMushrooms(
-        consumptionAverageKgPerCapPerWeek.vegetablesAndMushrooms[value]
-      )
-
-      // Defaults have been updated based on diet selection, not changed by user -> don't show reset button
-      this.consumptionDefaultsChanged = false
+      // set consumption defaults based on diet
+      this.resetConsumption()
     },
     setAlcoholicBeverages(value: number) {
       this.alcoholicBeveragesValue = value
@@ -445,11 +368,81 @@ export const useFoodStore = defineStore('food', {
       this.submitted = value
     },
     resetConsumption() {
-      // TODO: update defaults got from FoodData
-      this.$reset()
-      this.activeSection = FoodSections.Consumption
+      const diet = this.diet
+      // Set consumption defaults based on diet
+      this.setAlcoholicBeverages(
+        consumptionAverageKgPerCapPerWeek.alcoholicBeverages[diet]
+      )
+      this.setBeef(consumptionAverageKgPerCapPerWeek.beef[diet])
+      this.setBerries(consumptionAverageKgPerCapPerWeek.berries[diet])
+      this.setButterAndAnimalFats(
+        consumptionAverageKgPerCapPerWeek.butterAndAnimalFats[diet]
+      )
+      this.setCheeses(consumptionAverageKgPerCapPerWeek.cheeses[diet])
+      this.setChickenAndTurkey(
+        consumptionAverageKgPerCapPerWeek.chickenAndTurkey[diet]
+      )
+      this.setCoffeeAndTea(consumptionAverageKgPerCapPerWeek.coffeeAndTea[diet])
+      this.setDryPlantBasedProtein(
+        consumptionAverageKgPerCapPerWeek.dryPlantBasedProtein[diet]
+      )
+      this.setEggs(consumptionAverageKgPerCapPerWeek.eggs[diet])
+      this.setFermentedMilkProducts(
+        consumptionAverageKgPerCapPerWeek.fermentedMilkProducts[diet]
+      )
+      this.setFishAndShellfishAndFishProducts(
+        consumptionAverageKgPerCapPerWeek.fishAndShellfishAndFishProducts[diet]
+      )
+      this.setFrozenVegetables(
+        consumptionAverageKgPerCapPerWeek.frozenVegetables[diet]
+      )
+      this.setFruitAndBerryPreserves(
+        consumptionAverageKgPerCapPerWeek.fruitAndBerryPreserves[diet]
+      )
+      this.setFruits(consumptionAverageKgPerCapPerWeek.fruits[diet])
+      this.setGrainsAndGrainProducts(
+        consumptionAverageKgPerCapPerWeek.grainsAndGrainProducts[diet]
+      )
+      this.setLegumesAndNuts(
+        consumptionAverageKgPerCapPerWeek.legumesAndNuts[diet]
+      )
+      this.setMargarine(consumptionAverageKgPerCapPerWeek.margarine[diet])
+      this.setMeatProducts(consumptionAverageKgPerCapPerWeek.meatProducts[diet])
+      this.setMilk(consumptionAverageKgPerCapPerWeek.milk[diet])
+      this.setOtherDairyProducts(
+        consumptionAverageKgPerCapPerWeek.otherDairyProducts[diet]
+      )
+      this.setOtherDrinks(consumptionAverageKgPerCapPerWeek.otherDrinks[diet])
+      this.setOtherFoodProducts(
+        consumptionAverageKgPerCapPerWeek.otherFoodProducts[diet]
+      )
+      this.setOtherMeatsAndOffal(
+        consumptionAverageKgPerCapPerWeek.otherMeatsAndOffal[diet]
+      )
+      this.setPlantBasedDrinks(
+        consumptionAverageKgPerCapPerWeek.plantBasedDrinks[diet]
+      )
+      this.setPlantBasedProteinProducts(
+        consumptionAverageKgPerCapPerWeek.plantBasedProteinProducts[diet]
+      )
+      this.setPork(consumptionAverageKgPerCapPerWeek.pork[diet])
+      this.setPotatoes(consumptionAverageKgPerCapPerWeek.potatoes[diet])
+      this.setRice(consumptionAverageKgPerCapPerWeek.rice[diet])
+      this.setRootVegetables(
+        consumptionAverageKgPerCapPerWeek.rootVegetables[diet]
+      )
+      this.setSausages(consumptionAverageKgPerCapPerWeek.sausages[diet])
+      this.setSugarCandiesAndChocolate(
+        consumptionAverageKgPerCapPerWeek.sugarCandiesAndChocolate[diet]
+      )
+      this.setVegetableOils(
+        consumptionAverageKgPerCapPerWeek.vegetableOils[diet]
+      )
+      this.setVegetablesAndMushrooms(
+        consumptionAverageKgPerCapPerWeek.vegetablesAndMushrooms[diet]
+      )
 
-      this.unSavedChanges = true
+      this.consumptionDefaultsChanged = false
     },
     foodReset() {
       this.$reset()
