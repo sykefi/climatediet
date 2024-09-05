@@ -30,11 +30,11 @@
           id="vegetablesAndMushrooms"
           type="range"
           min="0"
-          max="20"
+          max="10500"
           v-model.number="vegetablesAndMushrooms"
         />
         <span class="field-unit">
-          {{ vegetablesAndMushrooms + ' kg/' + $t('$weekLong') }}
+          {{ vegetablesAndMushrooms + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -46,11 +46,11 @@
           id="rootVegetables"
           type="range"
           min="0"
-          max="20"
+          max="1500"
           v-model.number="rootVegetables"
         />
         <span class="field-unit">
-          {{ rootVegetables + ' kg/' + $t('$weekLong') }}
+          {{ rootVegetables + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -62,11 +62,11 @@
           id="frozenVegetables"
           type="range"
           min="0"
-          max="20"
+          max="500"
           v-model.number="frozenVegetables"
         />
         <span class="field-unit">
-          {{ frozenVegetables + ' kg/' + $t('$weekLong') }}
+          {{ frozenVegetables + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -78,11 +78,11 @@
           id="fruits"
           type="range"
           min="0"
-          max="20"
+          max="5500"
           v-model.number="fruits"
         />
         <span class="field-unit">
-          {{ fruits + ' kg/' + $t('$weekLong') }}
+          {{ fruits + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -94,11 +94,11 @@
           id="fruitAndBerryPreserves"
           type="range"
           min="0"
-          max="20"
+          max="500"
           v-model.number="fruitAndBerryPreserves"
         />
         <span class="field-unit">
-          {{ fruitAndBerryPreserves + ' kg/' + $t('$weekLong') }}
+          {{ fruitAndBerryPreserves + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -110,11 +110,11 @@
           id="berries"
           type="range"
           min="0"
-          max="20"
+          max="1500"
           v-model.number="berries"
         />
         <span class="field-unit">
-          {{ berries + ' kg/' + $t('$weekLong') }}
+          {{ berries + ' g/' + $t('$weekLong') }}
         </span>
       </div>
     </div>
@@ -131,11 +131,11 @@
           id="grainsAndGrainProducts"
           type="range"
           min="0"
-          max="20"
+          max="6500"
           v-model.number="grainsAndGrainProducts"
         />
         <span class="field-unit">
-          {{ grainsAndGrainProducts + ' kg/' + $t('$weekLong') }}
+          {{ grainsAndGrainProducts + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -143,9 +143,9 @@
         <label class="range-label" for="rice">
           {{ $t('$rice') }}
         </label>
-        <input id="rice" type="range" min="0" max="20" v-model.number="rice" />
+        <input id="rice" type="range" min="0" max="500" v-model.number="rice" />
         <span class="field-unit">
-          {{ rice + ' kg/' + $t('$weekLong') }}
+          {{ rice + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -157,11 +157,11 @@
           id="potatoes"
           type="range"
           min="0"
-          max="20"
+          max="3500"
           v-model.number="potatoes"
         />
         <span class="field-unit">
-          {{ potatoes + ' kg/' + $t('$weekLong') }}
+          {{ potatoes + ' g/' + $t('$weekLong') }}
         </span>
       </div>
     </div>
@@ -175,9 +175,15 @@
         <label class="range-label" for="milk">
           {{ $t('$milk') }}
         </label>
-        <input id="milk" type="range" min="0" max="20" v-model.number="milk" />
+        <input
+          id="milk"
+          type="range"
+          min="0"
+          max="9000"
+          v-model.number="milk"
+        />
         <span class="field-unit">
-          {{ milk + ' kg/' + $t('$weekLong') }}
+          {{ milk + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -189,11 +195,11 @@
           id="cheeses"
           type="range"
           min="0"
-          max="20"
+          max="1500"
           v-model.number="cheeses"
         />
         <span class="field-unit">
-          {{ cheeses + ' kg/' + $t('$weekLong') }}
+          {{ cheeses + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -208,11 +214,11 @@
           id="fermentedMilkProducts"
           type="range"
           min="0"
-          max="20"
+          max="4500"
           v-model.number="fermentedMilkProducts"
         />
         <span class="field-unit">
-          {{ fermentedMilkProducts + ' kg/' + $t('$weekLong') }}
+          {{ fermentedMilkProducts + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -227,11 +233,11 @@
           id="otherDairyProducts"
           type="range"
           min="0"
-          max="20"
+          max="1000"
           v-model.number="otherDairyProducts"
         />
         <span class="field-unit">
-          {{ otherDairyProducts + ' kg/' + $t('$weekLong') }}
+          {{ otherDairyProducts + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -241,7 +247,7 @@
           id="eggs"
           type="range"
           min="0"
-          max="30"
+          max="50"
           v-model.number="eggsCount"
         />
         <span class="field-unit">
@@ -259,9 +265,15 @@
         <label class="range-label" for="beef">
           {{ $t('$beef') }}
         </label>
-        <input id="beef" type="range" min="0" max="20" v-model.number="beef" />
+        <input
+          id="beef"
+          type="range"
+          min="0"
+          max="1000"
+          v-model.number="beef"
+        />
         <span class="field-unit">
-          {{ beef + ' kg/' + $t('$weekLong') }}
+          {{ beef + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -269,9 +281,15 @@
         <label class="range-label" for="pork">
           {{ $t('$pork') }}
         </label>
-        <input id="pork" type="range" min="0" max="20" v-model.number="pork" />
+        <input
+          id="pork"
+          type="range"
+          min="0"
+          max="1000"
+          v-model.number="pork"
+        />
         <span class="field-unit">
-          {{ pork + ' kg/' + $t('$weekLong') }}
+          {{ pork + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -283,11 +301,11 @@
           id="chickenAndTurkey"
           type="range"
           min="0"
-          max="20"
+          max="1500"
           v-model.number="chickenAndTurkey"
         />
         <span class="field-unit">
-          {{ chickenAndTurkey + ' kg/' + $t('$weekLong') }}
+          {{ chickenAndTurkey + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -302,11 +320,11 @@
           id="sausages"
           type="range"
           min="0"
-          max="20"
+          max="1000"
           v-model.number="sausages"
         />
         <span class="field-unit">
-          {{ sausages + ' kg/' + $t('$weekLong') }}
+          {{ sausages + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -318,11 +336,11 @@
           id="meatProducts"
           type="range"
           min="0"
-          max="20"
+          max="1000"
           v-model.number="meatProducts"
         />
         <span class="field-unit">
-          {{ meatProducts + ' kg/' + $t('$weekLong') }}
+          {{ meatProducts + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -334,11 +352,11 @@
           id="otherMeatsAndOffal"
           type="range"
           min="0"
-          max="20"
+          max="500"
           v-model.number="otherMeatsAndOffal"
         />
         <span class="field-unit">
-          {{ otherMeatsAndOffal + ' kg/' + $t('$weekLong') }}
+          {{ otherMeatsAndOffal + ' g/' + $t('$weekLong') }}
         </span>
       </div>
     </div>
@@ -355,11 +373,11 @@
           id="fishAndShellfishAndFishProducts"
           type="range"
           min="0"
-          max="20"
+          max="1500"
           v-model.number="fishAndShellfishAndFishProducts"
         />
         <span class="field-unit">
-          {{ fishAndShellfishAndFishProducts + ' kg/' + $t('$weekLong') }}
+          {{ fishAndShellfishAndFishProducts + ' g/' + $t('$weekLong') }}
         </span>
       </div>
     </div>
@@ -376,11 +394,11 @@
           id="legumesAndNuts"
           type="range"
           min="0"
-          max="20"
+          max="1500"
           v-model.number="legumesAndNuts"
         />
         <span class="field-unit">
-          {{ legumesAndNuts + ' kg/' + $t('$weekLong') }}
+          {{ legumesAndNuts + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -395,11 +413,11 @@
           id="plantBasedProteinProducts"
           type="range"
           min="0"
-          max="20"
+          max="4000"
           v-model.number="plantBasedProteinProducts"
         />
         <span class="field-unit">
-          {{ plantBasedProteinProducts + ' kg/' + $t('$weekLong') }}
+          {{ plantBasedProteinProducts + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -414,11 +432,11 @@
           id="dryPlantBasedProtein"
           type="range"
           min="0"
-          max="20"
+          max="500"
           v-model.number="dryPlantBasedProtein"
         />
         <span class="field-unit">
-          {{ dryPlantBasedProtein + ' kg/' + $t('$weekLong') }}
+          {{ dryPlantBasedProtein + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -433,11 +451,11 @@
           id="plantBasedDrinks"
           type="range"
           min="0"
-          max="20"
+          max="9000"
           v-model.number="plantBasedDrinks"
         />
         <span class="field-unit">
-          {{ plantBasedDrinks + ' kg/' + $t('$weekLong') }}
+          {{ plantBasedDrinks + ' g/' + $t('$weekLong') }}
         </span>
       </div>
     </div>
@@ -454,11 +472,11 @@
           id="coffeeAndTea"
           type="range"
           min="0"
-          max="20"
+          max="19500"
           v-model.number="coffeeAndTea"
         />
         <span class="field-unit">
-          {{ coffeeAndTea + ' kg/' + $t('$weekLong') }}
+          {{ coffeeAndTea + ' g/' + $t('$weekLong') }}
         </span>
       </div>
       <div class="range-item">
@@ -469,11 +487,11 @@
           id="alcoholicBeverages"
           type="range"
           min="0"
-          max="20"
+          max="3500"
           v-model.number="alcoholicBeverages"
         />
         <span class="field-unit">
-          {{ alcoholicBeverages + ' kg/' + $t('$weekLong') }}
+          {{ alcoholicBeverages + ' g/' + $t('$weekLong') }}
         </span>
       </div>
       <div class="range-item">
@@ -487,11 +505,11 @@
           id="otherDrinks"
           type="range"
           min="0"
-          max="20"
+          max="5500"
           v-model.number="otherDrinks"
         />
         <span class="field-unit">
-          {{ otherDrinks + ' kg/' + $t('$weekLong') }}
+          {{ otherDrinks + ' g/' + $t('$weekLong') }}
         </span>
       </div>
     </div>
@@ -508,11 +526,11 @@
           id="butterAndAnimalFats"
           type="range"
           min="0"
-          max="20"
+          max="1000"
           v-model.number="butterAndAnimalFats"
         />
         <span class="field-unit">
-          {{ butterAndAnimalFats + ' kg/' + $t('$weekLong') }}
+          {{ butterAndAnimalFats + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -524,11 +542,11 @@
           id="margarine"
           type="range"
           min="0"
-          max="20"
+          max="500"
           v-model.number="margarine"
         />
         <span class="field-unit">
-          {{ margarine + ' kg/' + $t('$weekLong') }}
+          {{ margarine + ' g/' + $t('$weekLong') }}
         </span>
       </div>
 
@@ -540,11 +558,11 @@
           id="vegetableOils"
           type="range"
           min="0"
-          max="20"
+          max="500"
           v-model.number="vegetableOils"
         />
         <span class="field-unit">
-          {{ vegetableOils + ' kg/' + $t('$weekLong') }}
+          {{ vegetableOils + ' g/' + $t('$weekLong') }}
         </span>
       </div>
     </div>
@@ -561,11 +579,11 @@
           id="sugarCandiesAndChocolate"
           type="range"
           min="0"
-          max="20"
+          max="1500"
           v-model.number="sugarCandiesAndChocolate"
         />
         <span class="field-unit">
-          {{ sugarCandiesAndChocolate + ' kg/' + $t('$weekLong') }}
+          {{ sugarCandiesAndChocolate + ' g/' + $t('$weekLong') }}
         </span>
       </div>
     </div>
@@ -581,11 +599,11 @@
           id="otherFoodProducts"
           type="range"
           min="0"
-          max="20"
+          max="1000"
           v-model.number="otherFoodProducts"
         />
         <span class="field-unit">
-          {{ otherFoodProducts + ' kg/' + $t('$weekLong') }}
+          {{ otherFoodProducts + ' g/' + $t('$weekLong') }}
         </span>
       </div>
     </div>
