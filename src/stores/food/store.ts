@@ -19,39 +19,55 @@ export const useFoodStore = defineStore('food', {
     submitted: false,
     activeSection: FoodSections.Diet,
     diet: Diets.Mixed,
-    alcoholicBeveragesValue: 0.689, // TODO: get from consumptionAverageKgPerCapPerWeek?
-    beefValue: 0.179,
-    berriesValue: 0.209,
-    butterAndAnimalFatsValue: 0.169,
-    cheesesValue: 0.282,
-    chickenAndTurkeyValue: 0.275,
-    coffeeAndTeaValue: 3.899,
-    dryPlantBasedProteinValue: 0.0,
-    eggsCount: 3,
-    fermentedMilkProductsValue: 0.816,
-    fishAndShellfishAndFishProductsValue: 0.218,
-    frozenVegetablesValue: 0.06,
-    fruitAndBerryPreservesValue: 0.083,
-    fruitsValue: 0.856,
-    grainsAndGrainProductsValue: 0.838,
-    legumesAndNutsValue: 0.096,
-    margarineValue: 0.078,
-    meatProductsValue: 0.161,
-    milkValue: 1.767,
-    otherDairyProductsValue: 0.178,
-    otherDrinksValue: 1.086,
-    otherFoodProductsValue: 0.132,
-    otherMeatsAndOffalValue: 0.05,
-    plantBasedDrinksValue: 0.084,
-    plantBasedProteinProductsValue: 0.0,
-    porkValue: 0.189,
-    potatoesValue: 0.51,
-    riceValue: 0.07,
-    rootVegetablesValue: 0.203,
-    sausagesValue: 0.14,
-    sugarCandiesAndChocolateValue: 0.227,
-    vegetableOilsValue: 0.065,
-    vegetablesAndMushroomsValue: 0.773,
+    alcoholicBeveragesValue:
+      consumptionAverageKgPerCapPerWeek.alcoholicBeverages.Mixed,
+    beefValue: consumptionAverageKgPerCapPerWeek.beef.Mixed,
+    berriesValue: consumptionAverageKgPerCapPerWeek.berries.Mixed,
+    butterAndAnimalFatsValue:
+      consumptionAverageKgPerCapPerWeek.butterAndAnimalFats.Mixed,
+    cheesesValue: consumptionAverageKgPerCapPerWeek.cheeses.Mixed,
+    chickenAndTurkeyValue:
+      consumptionAverageKgPerCapPerWeek.chickenAndTurkey.Mixed,
+    coffeeAndTeaValue: consumptionAverageKgPerCapPerWeek.coffeeAndTea.Mixed,
+    dryPlantBasedProteinValue:
+      consumptionAverageKgPerCapPerWeek.dryPlantBasedProtein.Mixed,
+    eggsCount: consumptionAverageKgPerCapPerWeek.eggs.Mixed,
+    fermentedMilkProductsValue:
+      consumptionAverageKgPerCapPerWeek.fermentedMilkProducts.Mixed,
+    fishAndShellfishAndFishProductsValue:
+      consumptionAverageKgPerCapPerWeek.fishAndShellfishAndFishProducts.Mixed,
+    frozenVegetablesValue:
+      consumptionAverageKgPerCapPerWeek.frozenVegetables.Mixed,
+    fruitAndBerryPreservesValue:
+      consumptionAverageKgPerCapPerWeek.fruitAndBerryPreserves.Mixed,
+    fruitsValue: consumptionAverageKgPerCapPerWeek.fruits.Mixed,
+    grainsAndGrainProductsValue:
+      consumptionAverageKgPerCapPerWeek.grainsAndGrainProducts.Mixed,
+    legumesAndNutsValue: consumptionAverageKgPerCapPerWeek.legumesAndNuts.Mixed,
+    margarineValue: consumptionAverageKgPerCapPerWeek.margarine.Mixed,
+    meatProductsValue: consumptionAverageKgPerCapPerWeek.meatProducts.Mixed,
+    milkValue: consumptionAverageKgPerCapPerWeek.milk.Mixed,
+    otherDairyProductsValue:
+      consumptionAverageKgPerCapPerWeek.otherDairyProducts.Mixed,
+    otherDrinksValue: consumptionAverageKgPerCapPerWeek.otherDrinks.Mixed,
+    otherFoodProductsValue:
+      consumptionAverageKgPerCapPerWeek.otherFoodProducts.Mixed,
+    otherMeatsAndOffalValue:
+      consumptionAverageKgPerCapPerWeek.otherMeatsAndOffal.Mixed,
+    plantBasedDrinksValue:
+      consumptionAverageKgPerCapPerWeek.plantBasedDrinks.Mixed,
+    plantBasedProteinProductsValue:
+      consumptionAverageKgPerCapPerWeek.plantBasedProteinProducts.Mixed,
+    porkValue: consumptionAverageKgPerCapPerWeek.pork.Mixed,
+    potatoesValue: consumptionAverageKgPerCapPerWeek.potatoes.Mixed,
+    riceValue: consumptionAverageKgPerCapPerWeek.rice.Mixed,
+    rootVegetablesValue: consumptionAverageKgPerCapPerWeek.rootVegetables.Mixed,
+    sausagesValue: consumptionAverageKgPerCapPerWeek.sausages.Mixed,
+    sugarCandiesAndChocolateValue:
+      consumptionAverageKgPerCapPerWeek.sugarCandiesAndChocolate.Mixed,
+    vegetableOilsValue: consumptionAverageKgPerCapPerWeek.vegetableOils.Mixed,
+    vegetablesAndMushroomsValue:
+      consumptionAverageKgPerCapPerWeek.vegetablesAndMushrooms.Mixed,
     vegetablesFruitsBerriesResult: 0,
     grainsPotatoesResult: 0,
     dairyEggsResult: 0,
