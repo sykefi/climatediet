@@ -9,44 +9,50 @@ export enum FoodSections {
   Consumption,
 }
 
-/** The Finnish consumption averages, in kg/week */
-// this dictionary is used to calculate the actual consumption in kg
-// see foodGetters.CONSUMPTION_AMOUNT
-export const foodConsumptionAverages: { [index: string]: number } = {
-  // TODO: get correct averages
-  alcoholicBeverages: 1.0,
-  beef: 1.0,
-  berries: 1.0,
-  butterAndAnimalFats: 1.0,
-  cheeses: 1.0,
-  chickenAndTurkey: 1.0,
-  coffeeAndTea: 1.0,
-  dryPlantBasedProtein: 1.0,
-  eggs: 1.0,
-  fermentedMilkProducts: 1.0,
-  fishAndShellfishAndFishProducts: 1.0,
-  frozenVegetables: 1.0,
-  fruitAndBerryPreserves: 1.0,
-  fruits: 1.0,
-  grainsAndGrainProducts: 1.0,
-  legumesAndNuts: 1.0,
-  margarine: 1.0,
-  meatProducts: 1.0,
-  milk: 1.0,
-  otherDairyProducts: 1.0,
-  otherDrinks: 1.0,
-  otherFoodProducts: 1.0,
-  otherMeatsAndOffal: 1.0,
-  plantBasedDrinks: 1.0,
-  plantBasedProteinProducts: 1.0,
-  pork: 1.0,
-  potatoes: 1.0,
-  rice: 1.0,
-  rootVegetables: 1.0,
-  sausages: 1.0,
-  sugarCandiesAndChocolate: 1.0,
-  vegetablesAndMushrooms: 1.0,
-  vegetableOils: 1.0,
+/** The Finnish consumption averages, in kg/week.
+ * Except for eggs that is in count/week (average in kg/week / weight of sigle egg in kg: 0.168/0.058= 2.897
+ **/
+
+export const consumptionAverageKgPerCapPerWeek: {
+  [index: string]: { [dietType: string]: number }
+} = {
+  alcoholicBeverages: { Mixed: 0.689, Vegetarian: 0.689, Vegan: 0.689 },
+  beef: { Mixed: 0.179, Vegetarian: 0.0, Vegan: 0.0 },
+  berries: { Mixed: 0.209, Vegetarian: 0.209, Vegan: 0.209 },
+  butterAndAnimalFats: { Mixed: 0.169, Vegetarian: 0.169, Vegan: 0.0 },
+  cheeses: { Mixed: 0.282, Vegetarian: 0.282, Vegan: 0.0 },
+  chickenAndTurkey: { Mixed: 0.275, Vegetarian: 0.0, Vegan: 0.0 },
+  coffeeAndTea: { Mixed: 3.899, Vegetarian: 3.899, Vegan: 3.899 },
+  dryPlantBasedProtein: { Mixed: 0.0, Vegetarian: 0.0, Vegan: 0.038 },
+  eggs: { Mixed: 3, Vegetarian: 3, Vegan: 0.0 },
+  fermentedMilkProducts: { Mixed: 0.816, Vegetarian: 0.816, Vegan: 0.0 },
+  fishAndShellfishAndFishProducts: {
+    Mixed: 0.218,
+    Vegetarian: 0.0,
+    Vegan: 0.0,
+  },
+  frozenVegetables: { Mixed: 0.06, Vegetarian: 0.06, Vegan: 0.06 },
+  fruitAndBerryPreserves: { Mixed: 0.083, Vegetarian: 0.083, Vegan: 0.083 },
+  fruits: { Mixed: 0.856, Vegetarian: 0.856, Vegan: 1.071 },
+  grainsAndGrainProducts: { Mixed: 0.838, Vegetarian: 1.005, Vegan: 1.257 },
+  legumesAndNuts: { Mixed: 0.096, Vegetarian: 0.216, Vegan: 0.216 },
+  margarine: { Mixed: 0.078, Vegetarian: 0.078, Vegan: 0.097 },
+  meatProducts: { Mixed: 0.161, Vegetarian: 0.0, Vegan: 0.0 },
+  milk: { Mixed: 1.767, Vegetarian: 1.767, Vegan: 0.0 },
+  otherDairyProducts: { Mixed: 0.178, Vegetarian: 0.178, Vegan: 0.0 },
+  otherDrinks: { Mixed: 1.086, Vegetarian: 1.086, Vegan: 1.086 },
+  otherFoodProducts: { Mixed: 0.132, Vegetarian: 0.132, Vegan: 0.132 },
+  otherMeatsAndOffal: { Mixed: 0.05, Vegetarian: 0.0, Vegan: 0.0 },
+  plantBasedDrinks: { Mixed: 0.084, Vegetarian: 0.084, Vegan: 1.767 },
+  plantBasedProteinProducts: { Mixed: 0.0, Vegetarian: 0.0, Vegan: 0.767 },
+  pork: { Mixed: 0.189, Vegetarian: 0.0, Vegan: 0.0 },
+  potatoes: { Mixed: 0.51, Vegetarian: 0.51, Vegan: 0.637 },
+  rice: { Mixed: 0.07, Vegetarian: 0.07, Vegan: 0.07 },
+  rootVegetables: { Mixed: 0.203, Vegetarian: 0.203, Vegan: 0.254 },
+  sausages: { Mixed: 0.14, Vegetarian: 0.0, Vegan: 0.0 },
+  sugarCandiesAndChocolate: { Mixed: 0.227, Vegetarian: 0.227, Vegan: 0.227 },
+  vegetableOils: { Mixed: 0.065, Vegetarian: 0.065, Vegan: 0.081 },
+  vegetablesAndMushrooms: { Mixed: 0.773, Vegetarian: 1.546, Vegan: 2.061 },
 }
 
 export interface IFoodState {

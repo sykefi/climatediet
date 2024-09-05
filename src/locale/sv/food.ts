@@ -30,7 +30,7 @@ const sv: IFoodTranslations = {
   $foodIngredients: 'Födoämnen',
   $foodIngredientsSummary: `Uppskatta hur mycket du konsumerar av livsmedlen på listan. Inkludera all konsumtion såväl hemma som på restaurang, café och skolan eller jobbet. Livsmedlen har grupperats efter klimatavtryckets storlek. Därför efterfrågas till exempel svin- och fågelkött i samma punkt. De förhandsifyllda alternativen har valts efter angiven kost. Kom ihåg under punkten om mjölkprodukter, ost och ägg, att vi också äter dem i olika maträtter och bakverk.`,
   $foodIngredientsRangeDetails:
-    'De valda standardvärdena baseras på finska medelvärden.',
+    'Standardvärdena baseras på finska medelvärden enligt den valda kosten.',
   $foodResultsSummary:
     'Cirka en femtedel av en medborgares klimatpåverkan skapas av mat.',
   $foodResultsTitle: 'Matens koldioxidavtryck',

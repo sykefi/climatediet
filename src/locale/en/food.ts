@@ -38,7 +38,7 @@ The selection is filtered by the diet you chose.
 
 Note that dairy products and eggs are also included in various ready-made foods and bakery products.`,
   $foodIngredientsRangeDetails:
-    'The selected default values are based on Finnish averages.',
+    'The default values are based on the Finnish averages according to the selected diet.',
   $foodResultsSummary: `Typically, food contributes about one fifth of an average personal carbon footprint.`,
   $foodResultsTitle: 'Food carbon footprint',
   $frozenVegetables: 'Frozen vegetables',

@@ -4,10 +4,10 @@ import {
   FoodSections,
   IFoodResults,
   IFoodState,
-  foodConsumptionAverages,
+  consumptionAverageKgPerCapPerWeek,
 } from './types'
 import { useGlobalStateStore } from '../global/store'
-import { eggCountToRatio } from './helpers'
+import { eggsCountToKilograms } from './helpers'
 import api from '@/utilities/api'
 import { TranslateResult } from 'vue-i18n'
 import i18n from '@/locale/i18n'
@@ -19,39 +19,39 @@ export const useFoodStore = defineStore('food', {
     submitted: false,
     activeSection: FoodSections.Diet,
     diet: Diets.Mixed,
-    alcoholicBeveragesValue: 100,
-    beefValue: 100,
-    berriesValue: 100,
-    butterAndAnimalFatsValue: 100,
-    cheesesValue: 100,
-    chickenAndTurkeyValue: 100,
-    coffeeAndTeaValue: 100,
-    dryPlantBasedProteinValue: 100,
-    eggsCount: 3, // eggs are counted as whole eggs to make estimations easier
-    fermentedMilkProductsValue: 100,
-    fishAndShellfishAndFishProductsValue: 100,
-    frozenVegetablesValue: 100,
-    fruitAndBerryPreservesValue: 100,
-    fruitsValue: 100,
-    grainsAndGrainProductsValue: 100,
-    legumesAndNutsValue: 100,
-    margarineValue: 100,
-    meatProductsValue: 100,
-    milkValue: 100,
-    otherDairyProductsValue: 100,
-    otherDrinksValue: 100,
-    otherFoodProductsValue: 100,
-    otherMeatsAndOffalValue: 100,
-    plantBasedDrinksValue: 100,
-    plantBasedProteinProductsValue: 100,
-    porkValue: 100,
-    potatoesValue: 100,
-    riceValue: 100,
-    rootVegetablesValue: 100,
-    sausagesValue: 100,
-    sugarCandiesAndChocolateValue: 100,
-    vegetableOilsValue: 100,
-    vegetablesAndMushroomsValue: 100,
+    alcoholicBeveragesValue: 0.689, // TODO: get from consumptionAverageKgPerCapPerWeek?
+    beefValue: 0.179,
+    berriesValue: 0.209,
+    butterAndAnimalFatsValue: 0.169,
+    cheesesValue: 0.282,
+    chickenAndTurkeyValue: 0.275,
+    coffeeAndTeaValue: 3.899,
+    dryPlantBasedProteinValue: 0.0,
+    eggsCount: 3,
+    fermentedMilkProductsValue: 0.816,
+    fishAndShellfishAndFishProductsValue: 0.218,
+    frozenVegetablesValue: 0.06,
+    fruitAndBerryPreservesValue: 0.083,
+    fruitsValue: 0.856,
+    grainsAndGrainProductsValue: 0.838,
+    legumesAndNutsValue: 0.096,
+    margarineValue: 0.078,
+    meatProductsValue: 0.161,
+    milkValue: 1.767,
+    otherDairyProductsValue: 0.178,
+    otherDrinksValue: 1.086,
+    otherFoodProductsValue: 0.132,
+    otherMeatsAndOffalValue: 0.05,
+    plantBasedDrinksValue: 0.084,
+    plantBasedProteinProductsValue: 0.0,
+    porkValue: 0.189,
+    potatoesValue: 0.51,
+    riceValue: 0.07,
+    rootVegetablesValue: 0.203,
+    sausagesValue: 0.14,
+    sugarCandiesAndChocolateValue: 0.227,
+    vegetableOilsValue: 0.065,
+    vegetablesAndMushroomsValue: 0.773,
     vegetablesFruitsBerriesResult: 0,
     grainsPotatoesResult: 0,
     dairyEggsResult: 0,
@@ -74,7 +74,7 @@ export const useFoodStore = defineStore('food', {
       const global = useGlobalStateStore()
       try {
         global.setBusy(true)
-        const eggs = eggCountToRatio(this.eggsCount)
+        const eggs = eggsCountToKilograms(this.eggsCount)
         const data = {
           diet: this.diet,
           alcoholicBeverages: this.alcoholicBeveragesValue,
@@ -151,9 +151,86 @@ export const useFoodStore = defineStore('food', {
     setDiet(value: Diets) {
       this.diet = value
       this.unSavedChanges = true
-      if (!this.consumptionDefaultsChanged) {
-        this.consumptionDefaultsChanged = false
-      }
+
+      // Change consumption defaults based on diet
+      this.setAlcoholicBeverages(
+        consumptionAverageKgPerCapPerWeek.alcoholicBeverages[value]
+      )
+      this.setBeef(consumptionAverageKgPerCapPerWeek.beef[value])
+      this.setBerries(consumptionAverageKgPerCapPerWeek.berries[value])
+      this.setButterAndAnimalFats(
+        consumptionAverageKgPerCapPerWeek.butterAndAnimalFats[value]
+      )
+      this.setCheeses(consumptionAverageKgPerCapPerWeek.cheeses[value])
+      this.setChickenAndTurkey(
+        consumptionAverageKgPerCapPerWeek.chickenAndTurkey[value]
+      )
+      this.setCoffeeAndTea(
+        consumptionAverageKgPerCapPerWeek.coffeeAndTea[value]
+      )
+      this.setDryPlantBasedProtein(
+        consumptionAverageKgPerCapPerWeek.dryPlantBasedProtein[value]
+      )
+      this.setEggs(consumptionAverageKgPerCapPerWeek.eggs[value])
+      this.setFermentedMilkProducts(
+        consumptionAverageKgPerCapPerWeek.fermentedMilkProducts[value]
+      )
+      this.setFishAndShellfishAndFishProducts(
+        consumptionAverageKgPerCapPerWeek.fishAndShellfishAndFishProducts[value]
+      )
+      this.setFrozenVegetables(
+        consumptionAverageKgPerCapPerWeek.frozenVegetables[value]
+      )
+      this.setFruitAndBerryPreserves(
+        consumptionAverageKgPerCapPerWeek.fruitAndBerryPreserves[value]
+      )
+      this.setFruits(consumptionAverageKgPerCapPerWeek.fruits[value])
+      this.setGrainsAndGrainProducts(
+        consumptionAverageKgPerCapPerWeek.grainsAndGrainProducts[value]
+      )
+      this.setLegumesAndNuts(
+        consumptionAverageKgPerCapPerWeek.legumesAndNuts[value]
+      )
+      this.setMargarine(consumptionAverageKgPerCapPerWeek.margarine[value])
+      this.setMeatProducts(
+        consumptionAverageKgPerCapPerWeek.meatProducts[value]
+      )
+      this.setMilk(consumptionAverageKgPerCapPerWeek.milk[value])
+      this.setOtherDairyProducts(
+        consumptionAverageKgPerCapPerWeek.otherDairyProducts[value]
+      )
+      this.setOtherDrinks(consumptionAverageKgPerCapPerWeek.otherDrinks[value])
+      this.setOtherFoodProducts(
+        consumptionAverageKgPerCapPerWeek.otherFoodProducts[value]
+      )
+      this.setOtherMeatsAndOffal(
+        consumptionAverageKgPerCapPerWeek.otherMeatsAndOffal[value]
+      )
+      this.setPlantBasedDrinks(
+        consumptionAverageKgPerCapPerWeek.plantBasedDrinks[value]
+      )
+      this.setPlantBasedProteinProducts(
+        consumptionAverageKgPerCapPerWeek.plantBasedProteinProducts[value]
+      )
+      this.setPork(consumptionAverageKgPerCapPerWeek.pork[value])
+      this.setPotatoes(consumptionAverageKgPerCapPerWeek.potatoes[value])
+      this.setRice(consumptionAverageKgPerCapPerWeek.rice[value])
+      this.setRootVegetables(
+        consumptionAverageKgPerCapPerWeek.rootVegetables[value]
+      )
+      this.setSausages(consumptionAverageKgPerCapPerWeek.sausages[value])
+      this.setSugarCandiesAndChocolate(
+        consumptionAverageKgPerCapPerWeek.sugarCandiesAndChocolate[value]
+      )
+      this.setVegetableOils(
+        consumptionAverageKgPerCapPerWeek.vegetableOils[value]
+      )
+      this.setVegetablesAndMushrooms(
+        consumptionAverageKgPerCapPerWeek.vegetablesAndMushrooms[value]
+      )
+
+      // Defaults have been updated based on diet selection, not changed by user -> don't show reset button
+      this.consumptionDefaultsChanged = false
     },
     setAlcoholicBeverages(value: number) {
       this.alcoholicBeveragesValue = value
@@ -357,16 +434,6 @@ export const useFoodStore = defineStore('food', {
     },
   },
   getters: {
-    consumptionAmount: () => {
-      return (key: string, ratio: number) => {
-        if (ratio === 0) {
-          return 0
-        }
-        const average = foodConsumptionAverages[key]
-
-        return (average * (ratio / 100)).toFixed(2)
-      }
-    },
     resultChartData: (state) => {
       return () => {
         const data: Array<IChartData> = []
