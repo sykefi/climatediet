@@ -34,12 +34,10 @@ const fi: IFoodTranslations = {
   $foodActionVegetarian:
     'Kauden kasvikset ovat ilmastoystävällisiä. Jos käytät paljon juustoa ja maitotuotteita, kokeile toisinaan korvata ne kasviperäisillä aineksilla kuten pähkinöillä ja kasvirasvapohjaisilla tuotteilla.',
   $foodIngredients: 'Ruoka-aineet',
-  $foodIngredientsSummary: `Arvioi, kuinka paljon kulutat listassa mainittuja ruoka-aineita. Huomioi kaikki kulutus eli kotiruokailun lisäksi myös ravintolat, kahvilat ja ruokalat.
-
-  Ruoka-aineiden ryhmittely on tehty hiilijalanjäljen suuruusluokan perusteella, siksi esimerkiksi sian- ja siipikarjan liha kysytään samassa kohdassa.
-  Esivalinnat on tehty valitsemasi ruokavalion perusteella.
-
-  Muista maitotuotteiden, juuston ja kananmunien kohdalla, että nautimme niitä myös erilaisten ruokien ja leivonnaisten osana.`,
+  $foodIngredientsDetails:
+    'Huomioi kaikki kulutus eli kotiruokailun lisäksi myös ravintolat, kahvilat ja ruokalat. Muista maitotuotteiden, juuston ja kananmunien kohdalla, että nautimme niitä myös erilaisten ruokien ja leivonnaisten osana.',
+  $foodIngredientsSummary:
+    'Arvioi henkilökohtainen viikoittainen kulutuksesi listatuista ruoka-aineista.',
   $foodIngredientsRangeDetails:
     'Oletusarvot perustuvat valitun ruokavalion mukaisiin suomaisten keskiarvoihin.',
   $foodResultsSummary:

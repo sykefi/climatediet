@@ -31,12 +31,10 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
     'A vegan diet is often climate friendly. The most effective way of reducing your food climate footprint even more is to favour seasonal produce.',
   $foodActionVegetarian: `Seasonal produce is climate friendly. If you are a heavy user of dairy products, try replacing some of them with plant-based alternatives, such as nut or oat products.`,
   $foodIngredients: 'Food items',
-  $foodIngredientsSummary: `Estimate your personal consumption of the listed food items. Take into account meals eaten at home and in restaurants etc.
-
-Food items are grouped according to their typical emission intensity. Therefore pork and poultry are presented as one group. In beef consumption, lamb and other ruminant meat are also included.
-The selection is filtered by the diet you chose.
-
-Note that dairy products and eggs are also included in various ready-made foods and bakery products.`,
+  $foodIngredientsDetails:
+    'Take into account meals eaten at home and in restaurants etc. Note that dairy products and eggs are also included in various ready-made foods and bakery products.',
+  $foodIngredientsSummary:
+    'Estimate your personal weekly consumption of the listed food items.',
   $foodIngredientsRangeDetails:
     'The default values are based on the Finnish averages according to the selected diet.',
   $foodResultsSummary: `Typically, food contributes about one fifth of an average personal carbon footprint.`,

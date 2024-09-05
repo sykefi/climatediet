@@ -6,6 +6,7 @@
     :is-enabled="baseDataStore.submitted"
     @titleClicked="consumptionTitleClicked"
     :summary="$t('$foodIngredientsSummary')"
+    :details="$t('$foodIngredientsDetails')"
     calc-info-hash="food"
   >
     <button
@@ -16,7 +17,7 @@
     >
       {{ $t('$resetToDefaults') }}
     </button>
-    <b class="range-details-text">{{ $t('$foodIngredientsRangeDetails') }}</b>
+    <p class="range-details-text">{{ $t('$foodIngredientsRangeDetails') }}</p>
 
     <div>
       <label class="section-title-food">

@@ -28,7 +28,10 @@ const sv: IFoodTranslations = {
   $foodActionVegetarian:
     'Säsongens grönsaker är klimatvänliga. Om du använder mycket ost och mjölkprodukter, testa att byta ut dem ibland mot vegetabiliska ingredienser, såsom nötter och produkter baserade på vegetabiliskt fett.',
   $foodIngredients: 'Födoämnen',
-  $foodIngredientsSummary: `Uppskatta hur mycket du konsumerar av livsmedlen på listan. Inkludera all konsumtion såväl hemma som på restaurang, café och skolan eller jobbet. Livsmedlen har grupperats efter klimatavtryckets storlek. Därför efterfrågas till exempel svin- och fågelkött i samma punkt. De förhandsifyllda alternativen har valts efter angiven kost. Kom ihåg under punkten om mjölkprodukter, ost och ägg, att vi också äter dem i olika maträtter och bakverk.`,
+  $foodIngredientsDetails:
+    'Inkludera all konsumtion såväl hemma som på restaurang, café och skolan eller jobbet. Kom ihåg under punkten om mjölkprodukter, ost och ägg, att vi också äter dem i olika maträtter och bakverk.',
+  $foodIngredientsSummary:
+    'Utvärdera din personliga veckokonsumtion av de listade livsmedlen.',
   $foodIngredientsRangeDetails:
     'Standardvärdena baseras på finska medelvärden enligt den valda kosten.',
   $foodResultsSummary:
