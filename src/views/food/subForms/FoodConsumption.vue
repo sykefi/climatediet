@@ -30,7 +30,7 @@
           id="vegetablesAndMushrooms"
           type="range"
           min="0"
-          max="10500"
+          max="10400"
           v-model.number="vegetablesAndMushrooms"
         />
         <span class="field-unit">
@@ -46,7 +46,7 @@
           id="rootVegetables"
           type="range"
           min="0"
-          max="1500"
+          max="1300"
           v-model.number="rootVegetables"
         />
         <span class="field-unit">
@@ -62,7 +62,7 @@
           id="frozenVegetables"
           type="range"
           min="0"
-          max="500"
+          max="300"
           v-model.number="frozenVegetables"
         />
         <span class="field-unit">
@@ -78,7 +78,7 @@
           id="fruits"
           type="range"
           min="0"
-          max="5500"
+          max="5400"
           v-model.number="fruits"
         />
         <span class="field-unit">
@@ -110,7 +110,7 @@
           id="berries"
           type="range"
           min="0"
-          max="1500"
+          max="1100"
           v-model.number="berries"
         />
         <span class="field-unit">
@@ -131,7 +131,7 @@
           id="grainsAndGrainProducts"
           type="range"
           min="0"
-          max="6500"
+          max="6300"
           v-model.number="grainsAndGrainProducts"
         />
         <span class="field-unit">
@@ -143,7 +143,7 @@
         <label class="range-label" for="rice">
           {{ $t('$rice') }}
         </label>
-        <input id="rice" type="range" min="0" max="500" v-model.number="rice" />
+        <input id="rice" type="range" min="0" max="400" v-model.number="rice" />
         <span class="field-unit">
           {{ rice + ' g/' + $t('$weekLong') }}
         </span>
@@ -157,7 +157,7 @@
           id="potatoes"
           type="range"
           min="0"
-          max="3500"
+          max="3200"
           v-model.number="potatoes"
         />
         <span class="field-unit">
@@ -179,7 +179,7 @@
           id="milk"
           type="range"
           min="0"
-          max="9000"
+          max="8900"
           v-model.number="milk"
         />
         <span class="field-unit">
@@ -214,7 +214,7 @@
           id="fermentedMilkProducts"
           type="range"
           min="0"
-          max="4500"
+          max="4100"
           v-model.number="fermentedMilkProducts"
         />
         <span class="field-unit">
@@ -233,7 +233,7 @@
           id="otherDairyProducts"
           type="range"
           min="0"
-          max="1000"
+          max="900"
           v-model.number="otherDairyProducts"
         />
         <span class="field-unit">
@@ -265,13 +265,7 @@
         <label class="range-label" for="beef">
           {{ $t('$beef') }}
         </label>
-        <input
-          id="beef"
-          type="range"
-          min="0"
-          max="1000"
-          v-model.number="beef"
-        />
+        <input id="beef" type="range" min="0" max="900" v-model.number="beef" />
         <span class="field-unit">
           {{ beef + ' g/' + $t('$weekLong') }}
         </span>
@@ -301,7 +295,7 @@
           id="chickenAndTurkey"
           type="range"
           min="0"
-          max="1500"
+          max="1400"
           v-model.number="chickenAndTurkey"
         />
         <span class="field-unit">
@@ -320,7 +314,7 @@
           id="sausages"
           type="range"
           min="0"
-          max="1000"
+          max="700"
           v-model.number="sausages"
         />
         <span class="field-unit">
@@ -336,7 +330,7 @@
           id="meatProducts"
           type="range"
           min="0"
-          max="1000"
+          max="900"
           v-model.number="meatProducts"
         />
         <span class="field-unit">
@@ -352,7 +346,7 @@
           id="otherMeatsAndOffal"
           type="range"
           min="0"
-          max="500"
+          max="300"
           v-model.number="otherMeatsAndOffal"
         />
         <span class="field-unit">
@@ -373,7 +367,7 @@
           id="fishAndShellfishAndFishProducts"
           type="range"
           min="0"
-          max="1500"
+          max="1100"
           v-model.number="fishAndShellfishAndFishProducts"
         />
         <span class="field-unit">
@@ -394,7 +388,7 @@
           id="legumesAndNuts"
           type="range"
           min="0"
-          max="1500"
+          max="1100"
           v-model.number="legumesAndNuts"
         />
         <span class="field-unit">
@@ -413,7 +407,7 @@
           id="plantBasedProteinProducts"
           type="range"
           min="0"
-          max="4000"
+          max="3900"
           v-model.number="plantBasedProteinProducts"
         />
         <span class="field-unit">
@@ -432,7 +426,7 @@
           id="dryPlantBasedProtein"
           type="range"
           min="0"
-          max="500"
+          max="200"
           v-model.number="dryPlantBasedProtein"
         />
         <span class="field-unit">
@@ -451,7 +445,7 @@
           id="plantBasedDrinks"
           type="range"
           min="0"
-          max="9000"
+          max="8900"
           v-model.number="plantBasedDrinks"
         />
         <span class="field-unit">
@@ -526,7 +520,7 @@
           id="butterAndAnimalFats"
           type="range"
           min="0"
-          max="1000"
+          max="900"
           v-model.number="butterAndAnimalFats"
         />
         <span class="field-unit">
@@ -579,7 +573,7 @@
           id="sugarCandiesAndChocolate"
           type="range"
           min="0"
-          max="1500"
+          max="1200"
           v-model.number="sugarCandiesAndChocolate"
         />
         <span class="field-unit">
@@ -599,7 +593,7 @@
           id="otherFoodProducts"
           type="range"
           min="0"
-          max="1000"
+          max="700"
           v-model.number="otherFoodProducts"
         />
         <span class="field-unit">
