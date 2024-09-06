@@ -9,9 +9,13 @@ export enum FoodSections {
   Consumption,
 }
 
-/** The Finnish consumption averages, in kg/week.
- * Except for eggs that is in count/week (average in kg/week / weight of sigle egg in kg: 0.168/0.058= 2.897
- **/
+/** The Finnish consumption averages, in g/week.
+
+Converted from average consumption of different food types (per capita in kg per year) for different diet
+choices (vegan/vegetarian/mixed) based on FinRavinto (2017) study. Additional information acquired from Ravintotase
+
+Except for eggs that is in count/week (average in kg/week / weight of sigle egg in kg: 0.168/0.058= 2.897)
+**/
 
 export const consumptionAverageKgPerCapPerWeek: {
   [index: string]: { [dietType: string]: number }
