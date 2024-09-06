@@ -25,63 +25,104 @@ describe('FoodView', () => {
   it('loads properly', () => {
     expect(FoodView).toBeTruthy()
   })
-  it('shows 8 options for omnivore diet', async () => {
+  it('shows 33 options for mixed diet', async () => {
     await foodStore.setActiveSection(FoodSections.Consumption)
-    await foodStore.setDiet(Diets.Omnivore)
+    await foodStore.setDiet(Diets.Mixed)
     assert.equal(
       vm.findAll('.range-item').length,
-      8,
-      'Omnivore diet did not have 8 sliders'
+      33,
+      'Mixed diet did not have 33 sliders'
     )
   })
-  it('shows 5 options for vegetarian diet', async () => {
+  it('shows 33 options for vegetarian diet', async () => {
     await foodStore.setActiveSection(FoodSections.Consumption)
     await foodStore.setDiet(Diets.Vegetarian)
     assert.equal(
       vm.findAll('.range-item').length,
-      5,
-      'Vegetarian diet did not have 5 sliders'
+      33,
+      'Vegetarian diet did not have 33 sliders'
     )
   })
-  it('shows 2 options for vegan diet', async () => {
+  it('shows 33 options for vegan diet', async () => {
     await foodStore.setActiveSection(FoodSections.Consumption)
     await foodStore.setDiet(Diets.Vegan)
     assert.equal(
       vm.findAll('.range-item').length,
-      2,
-      'Vegan diet did not have 2 sliders'
+      33,
+      'Vegan diet did not have 33 sliders'
     )
   }),
     it('handles the submit correctly', async () => {
       const globalStore = useGlobalStateStore()
 
       assert.equal(foodStore.id, 0)
-      assert.equal(foodStore.restaurantResult, 0)
+      assert.equal(foodStore.grainsPotatoesResult, 0)
+      assert.equal(foodStore.dairyEggsResult, 0)
+      assert.equal(foodStore.fatResult, 0)
       assert.equal(foodStore.meatResult, 0)
-      assert.equal(foodStore.plantResult, 0)
-      assert.equal(foodStore.dairyResult, 0)
+      assert.equal(foodStore.fishResult, 0)
+      assert.equal(foodStore.plantBasedProteinResult, 0)
+      assert.equal(foodStore.drinksResult, 0)
+      assert.equal(foodStore.sweetsResult, 0)
+      assert.equal(foodStore.otherResult, 0)
       assert.equal(foodStore.totalResult, 0)
 
       fakeApi.onPost('/food/' + globalStore.testInstanceId).reply(200, {
         id: 2,
         result: {
-          meat: 1000,
-          plant: 200,
-          dairy: 600,
-          restaurant: 1000,
-          total: 2800,
+          vegetablesFruitsBerries: 214.64049465,
+          grainsPotatoes: 107.0348364,
+          dairyEggs: 796.905392175,
+          fat: 159.6464532,
+          meat: 750.81857175,
+          fish: 42.20011845,
+          plantBasedProtein: 19.4288139,
+          drinks: 117.702526275,
+          sweets: 94.99122585,
+          other: 24.3126279,
+          total: 2327.68106055,
         },
       })
       await foodStore.submit()
       assert.equal(foodStore.id, 2, 'Id mismatch')
-      assert.equal(foodStore.meatResult, 1000, 'Meat result mismatch')
-      assert.equal(foodStore.dairyResult, 600, 'Dairy result mismatch')
-      assert.equal(foodStore.plantResult, 200, 'Plant result mismatch')
       assert.equal(
-        foodStore.restaurantResult,
-        1000,
-        'Restaurant result mismatch'
+        foodStore.vegetablesFruitsBerriesResult,
+        214.64049465,
+        'vegetablesFruitsBerries result mismatch'
       )
-      assert.equal(foodStore.totalResult, 2800, 'Total result mismatch')
+      assert.equal(
+        foodStore.grainsPotatoesResult,
+        107.0348364,
+        'grainsPotatoes result mismatch'
+      )
+      assert.equal(
+        foodStore.dairyEggsResult,
+        796.905392175,
+        'dairyEggs result mismatch'
+      )
+      assert.equal(foodStore.fatResult, 159.6464532, 'fat result mismatch')
+      assert.equal(foodStore.meatResult, 750.81857175, 'meat result mismatch')
+      assert.equal(foodStore.fishResult, 42.20011845, 'fish result mismatch')
+      assert.equal(
+        foodStore.plantBasedProteinResult,
+        19.4288139,
+        'plantBasedProtein result mismatch'
+      )
+      assert.equal(
+        foodStore.drinksResult,
+        117.702526275,
+        'drinks result mismatch'
+      )
+      assert.equal(
+        foodStore.sweetsResult,
+        94.99122585,
+        'sweets result mismatch'
+      )
+      assert.equal(foodStore.otherResult, 24.3126279, 'other result mismatch')
+      assert.equal(
+        foodStore.totalResult,
+        2327.68106055,
+        'total result mismatch'
+      )
     })
 })
