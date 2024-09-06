@@ -87,42 +87,26 @@ describe('FoodView', () => {
       assert.equal(foodStore.id, 2, 'Id mismatch')
       assert.equal(
         foodStore.vegetablesFruitsBerriesResult,
-        214.64049465,
+        215,
         'vegetablesFruitsBerries result mismatch'
       )
       assert.equal(
         foodStore.grainsPotatoesResult,
-        107.0348364,
+        107,
         'grainsPotatoes result mismatch'
       )
-      assert.equal(
-        foodStore.dairyEggsResult,
-        796.905392175,
-        'dairyEggs result mismatch'
-      )
-      assert.equal(foodStore.fatResult, 159.6464532, 'fat result mismatch')
-      assert.equal(foodStore.meatResult, 750.81857175, 'meat result mismatch')
-      assert.equal(foodStore.fishResult, 42.20011845, 'fish result mismatch')
+      assert.equal(foodStore.dairyEggsResult, 797, 'dairyEggs result mismatch')
+      assert.equal(foodStore.fatResult, 160, 'fat result mismatch')
+      assert.equal(foodStore.meatResult, 751, 'meat result mismatch')
+      assert.equal(foodStore.fishResult, 42, 'fish result mismatch')
       assert.equal(
         foodStore.plantBasedProteinResult,
-        19.4288139,
+        19,
         'plantBasedProtein result mismatch'
       )
-      assert.equal(
-        foodStore.drinksResult,
-        117.702526275,
-        'drinks result mismatch'
-      )
-      assert.equal(
-        foodStore.sweetsResult,
-        94.99122585,
-        'sweets result mismatch'
-      )
-      assert.equal(foodStore.otherResult, 24.3126279, 'other result mismatch')
-      assert.equal(
-        foodStore.totalResult,
-        2327.68106055,
-        'total result mismatch'
-      )
+      assert.equal(foodStore.drinksResult, 118, 'drinks result mismatch')
+      assert.equal(foodStore.sweetsResult, 95, 'sweets result mismatch')
+      assert.equal(foodStore.otherResult, 24, 'other result mismatch')
+      assert.equal(foodStore.totalResult, 2328, 'total result mismatch')
     })
 })
