@@ -21,6 +21,53 @@
 
     <div>
       <label class="section-title-food">
+        {{ $t('$resultCategoryGrainsPotatoes') }}
+      </label>
+      <div class="range-item">
+        <label class="range-label" for="grainsAndGrainProducts">
+          {{ $t('$grainsAndGrainProducts') }}
+        </label>
+        <input
+          id="grainsAndGrainProducts"
+          type="range"
+          min="0"
+          max="6300"
+          v-model.number="grainsAndGrainProducts"
+        />
+        <span class="field-unit">
+          {{ grainsAndGrainProducts + ' g/' + $t('$weekLong') }}
+        </span>
+      </div>
+
+      <div class="range-item">
+        <label class="range-label" for="rice">
+          {{ $t('$rice') }}
+        </label>
+        <input id="rice" type="range" min="0" max="400" v-model.number="rice" />
+        <span class="field-unit">
+          {{ rice + ' g/' + $t('$weekLong') }}
+        </span>
+      </div>
+
+      <div class="range-item">
+        <label class="range-label" for="potatoes">
+          {{ $t('$potatoes') }}
+        </label>
+        <input
+          id="potatoes"
+          type="range"
+          min="0"
+          max="3200"
+          v-model.number="potatoes"
+        />
+        <span class="field-unit">
+          {{ potatoes + ' g/' + $t('$weekLong') }}
+        </span>
+      </div>
+    </div>
+
+    <div>
+      <label class="section-title-food">
         {{ $t('$resultCategoryVegetablesFruitsBerries') }}
       </label>
       <div class="range-item">
@@ -116,53 +163,6 @@
         />
         <span class="field-unit">
           {{ berries + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
-    </div>
-
-    <div>
-      <label class="section-title-food">
-        {{ $t('$resultCategoryGrainsPotatoes') }}
-      </label>
-      <div class="range-item">
-        <label class="range-label" for="grainsAndGrainProducts">
-          {{ $t('$grainsAndGrainProducts') }}
-        </label>
-        <input
-          id="grainsAndGrainProducts"
-          type="range"
-          min="0"
-          max="6300"
-          v-model.number="grainsAndGrainProducts"
-        />
-        <span class="field-unit">
-          {{ grainsAndGrainProducts + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
-
-      <div class="range-item">
-        <label class="range-label" for="rice">
-          {{ $t('$rice') }}
-        </label>
-        <input id="rice" type="range" min="0" max="400" v-model.number="rice" />
-        <span class="field-unit">
-          {{ rice + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
-
-      <div class="range-item">
-        <label class="range-label" for="potatoes">
-          {{ $t('$potatoes') }}
-        </label>
-        <input
-          id="potatoes"
-          type="range"
-          min="0"
-          max="3200"
-          v-model.number="potatoes"
-        />
-        <span class="field-unit">
-          {{ potatoes + ' g/' + $t('$weekLong') }}
         </span>
       </div>
     </div>
