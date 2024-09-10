@@ -61,7 +61,7 @@ const sv: IFoodTranslations = {
   $potatoes: 'Potatis',
   $resultCategoryDairyEggs: 'Mejeriprodukter och ägg',
   $resultCategoryDrinks: 'Drycker (exkl. mjölk och växtbaserade drycker)',
-  $resultCategoryFat: 'Smör, margarin, vegetabiliska oljor',
+  $resultCategoryFat: 'Fetter och oljor',
   $resultCategoryFish: 'Fisk',
   $resultCategoryGrainsPotatoes: 'Spannmål och potatis',
   $resultCategoryMeat: 'Kött',

@@ -63,7 +63,7 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
   $potatoes: 'Potatoes',
   $resultCategoryDairyEggs: 'Dairy products and eggs',
   $resultCategoryDrinks: 'Drinks (excl. milk and plant-based drinks)',
-  $resultCategoryFat: 'Butter, margarine, vegetable oils',
+  $resultCategoryFat: 'Fats and oils',
   $resultCategoryFish: 'Fish',
   $resultCategoryGrainsPotatoes: 'Grains and potatoes',
   $resultCategoryMeat: 'Meat',
