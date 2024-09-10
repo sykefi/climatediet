@@ -66,7 +66,7 @@ const fi: IFoodTranslations = {
   $pork: 'Sianliha',
   $potatoes: 'Peruna',
   $resultCategoryDairyEggs: 'Maitotuotteet ja kananmunat',
-  $resultCategoryDrinks: 'Juomat (poislukien kasvijuomat)',
+  $resultCategoryDrinks: 'Juomat (poislukien maito ja kasvijuomat)',
   $resultCategoryFat: 'Voi, margariini, kasviöljyt',
   $resultCategoryFish: 'Kala',
   $resultCategoryGrainsPotatoes: 'Viljat ja peruna',

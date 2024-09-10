@@ -13,7 +13,7 @@ const sv: IFoodTranslations = {
   $dietMixed: 'Flexitarian',
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
-  $dryPlantBasedProtein: 'Torkade växtproteiner',
+  $dryPlantBasedProtein: 'Torra växtproteiner',
   $dryPlantBasedProteinDescription:
     'T.ex. soja-, ärt- och bondbönsbitar och strimlor',
   $eggs: 'Ägg',
@@ -60,7 +60,7 @@ const sv: IFoodTranslations = {
   $pork: 'Fläskkött',
   $potatoes: 'Potatis',
   $resultCategoryDairyEggs: 'Mejeriprodukter och ägg',
-  $resultCategoryDrinks: 'Drycker (exkl. växtbaserade drycker)',
+  $resultCategoryDrinks: 'Drycker (exkl. mjölk och växtbaserade drycker)',
   $resultCategoryFat: 'Smör, margarin, vegetabiliska oljor',
   $resultCategoryFish: 'Fisk',
   $resultCategoryGrainsPotatoes: 'Spannmål och potatis',

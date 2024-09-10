@@ -15,10 +15,10 @@ const en: IFoodTranslations = {
 A vegetarian diet does not include fish or meat.
 
 A vegan diet excludes all animal products. If meat, fish or dairy consumption is below the average or not eaten at all, plant-based protein sources are added to compensate for the animal-based food items.`,
-  $dietMixed: 'Omnivore', // TODO: update term??
+  $dietMixed: 'Omnivore',
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
-  $dryPlantBasedProtein: 'Dried plant proteins',
+  $dryPlantBasedProtein: 'Dry plant proteins',
   $dryPlantBasedProteinDescription:
     'E.g., soy, pea, and broad bean crumbles and strips',
   $eggs: 'Eggs',
@@ -62,12 +62,12 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
   $pork: 'Pork',
   $potatoes: 'Potatoes',
   $resultCategoryDairyEggs: 'Dairy products and eggs',
-  $resultCategoryDrinks: 'Drinks (excl. plant-based drinks)',
+  $resultCategoryDrinks: 'Drinks (excl. milk and plant-based drinks)',
   $resultCategoryFat: 'Butter, margarine, vegetable oils',
   $resultCategoryFish: 'Fish',
   $resultCategoryGrainsPotatoes: 'Grains and potatoes',
   $resultCategoryMeat: 'Meat',
-  $resultCategoryOther: 'Others',
+  $resultCategoryOther: 'Other',
   $resultCategoryPlantBasedProtein:
     'Legumes, nuts, and plant-based proteins and drinks',
   $resultCategorySweets: 'Sugar and sweets',
