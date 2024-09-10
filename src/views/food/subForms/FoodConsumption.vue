@@ -25,19 +25,19 @@
       </label>
       <FoodConsumptionInput
         inputName="grainsAndGrainProducts"
-        maxValue="6300"
+        maxValue="20000"
         v-model.number="grainsAndGrainProducts"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="rice"
-        maxValue="400"
+        maxValue="5000"
         v-model.number="rice"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="potatoes"
-        maxValue="3200"
+        maxValue="10000"
         v-model.number="potatoes"
       ></FoodConsumptionInput>
     </div>
@@ -47,37 +47,37 @@
       </label>
       <FoodConsumptionInput
         inputName="vegetablesAndMushrooms"
-        maxValue="10400"
+        maxValue="20000"
         v-model.number="vegetablesAndMushrooms"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="rootVegetables"
-        maxValue="1300"
+        maxValue="5000"
         v-model.number="rootVegetables"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="frozenVegetables"
-        maxValue="300"
+        maxValue="5000"
         v-model.number="frozenVegetables"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="fruits"
-        maxValue="5400"
+        maxValue="10000"
         v-model.number="fruits"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="fruitAndBerryPreserves"
-        maxValue="500"
+        maxValue="1000"
         v-model.number="fruitAndBerryPreserves"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="berries"
-        maxValue="1100"
+        maxValue="5000"
         v-model.number="berries"
       ></FoodConsumptionInput>
     </div>
@@ -89,32 +89,32 @@
 
       <FoodConsumptionInput
         inputName="milk"
-        maxValue="8900"
+        maxValue="20"
         unit="l/ "
         v-model.number="milk"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="cheeses"
-        maxValue="1500"
+        maxValue="5000"
         v-model.number="cheeses"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="fermentedMilkProducts"
-        maxValue="4100"
+        maxValue="10000"
         v-model.number="fermentedMilkProducts"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="otherDairyProducts"
-        maxValue="900"
+        maxValue="5000"
         v-model.number="otherDairyProducts"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="eggs"
-        maxValue="50"
+        maxValue="100"
         unit="$piecesShort"
         v-model.number="eggsCount"
       ></FoodConsumptionInput>
@@ -127,37 +127,37 @@
 
       <FoodConsumptionInput
         inputName="beef"
-        maxValue="900"
+        maxValue="5000"
         v-model.number="beef"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="pork"
-        maxValue="1000"
+        maxValue="5000"
         v-model.number="pork"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="chickenAndTurkey"
-        maxValue="1400"
+        maxValue="5000"
         v-model.number="chickenAndTurkey"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="sausages"
-        maxValue="700"
+        maxValue="5000"
         v-model.number="sausages"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="meatProducts"
-        maxValue="900"
+        maxValue="5000"
         v-model.number="meatProducts"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="otherMeatsAndOffal"
-        maxValue="300"
+        maxValue="1000"
         v-model.number="otherMeatsAndOffal"
       ></FoodConsumptionInput>
     </div>
@@ -168,7 +168,7 @@
       </label>
       <FoodConsumptionInput
         inputName="fishAndShellfishAndFishProducts"
-        maxValue="1100"
+        maxValue="5000"
         v-model.number="fishAndShellfishAndFishProducts"
       ></FoodConsumptionInput>
     </div>
@@ -179,25 +179,25 @@
       </label>
       <FoodConsumptionInput
         inputName="legumesAndNuts"
-        maxValue="1100"
+        maxValue="5000"
         v-model.number="legumesAndNuts"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="plantBasedProteinProducts"
-        maxValue="3900"
+        maxValue="10000"
         v-model.number="plantBasedProteinProducts"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="dryPlantBasedProtein"
-        maxValue="200"
+        maxValue="5000"
         v-model.number="dryPlantBasedProtein"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="plantBasedDrinks"
-        maxValue="8900"
+        maxValue="20"
         unit="l/ "
         v-model.number="plantBasedDrinks"
       ></FoodConsumptionInput>
@@ -209,21 +209,21 @@
       </label>
       <FoodConsumptionInput
         inputName="coffeeAndTea"
-        maxValue="19500"
+        maxValue="20"
         unit="l/ "
         v-model.number="coffeeAndTea"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="alcoholicBeverages"
-        maxValue="3500"
+        maxValue="10"
         unit="l/ "
         v-model.number="alcoholicBeverages"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="otherDrinks"
-        maxValue="5500"
+        maxValue="20"
         unit="l/ "
         v-model.number="otherDrinks"
       ></FoodConsumptionInput>
@@ -235,19 +235,19 @@
       </label>
       <FoodConsumptionInput
         inputName="butterAndAnimalFats"
-        maxValue="900"
+        maxValue="1000"
         v-model.number="butterAndAnimalFats"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="margarine"
-        maxValue="500"
+        maxValue="1000"
         v-model.number="margarine"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="vegetableOils"
-        maxValue="500"
+        maxValue="1000"
         v-model.number="vegetableOils"
       ></FoodConsumptionInput>
     </div>
@@ -258,7 +258,7 @@
       </label>
       <FoodConsumptionInput
         inputName="sugarCandiesAndChocolate"
-        maxValue="1200"
+        maxValue="5000"
         v-model.number="sugarCandiesAndChocolate"
       ></FoodConsumptionInput>
     </div>
@@ -268,7 +268,7 @@
       </label>
       <FoodConsumptionInput
         inputName="otherFoodProducts"
-        maxValue="700"
+        maxValue="5000"
         v-model.number="otherFoodProducts"
       ></FoodConsumptionInput>
     </div>
