@@ -23,137 +23,63 @@
       <label class="section-title-food">
         {{ $t('$resultCategoryGrainsPotatoes') }}
       </label>
-      <div class="range-item">
-        <label class="range-label" for="grainsAndGrainProducts">
-          {{ $t('$grainsAndGrainProducts') }}
-        </label>
-        <input
-          id="grainsAndGrainProducts"
-          type="range"
-          min="0"
-          max="6300"
-          v-model.number="grainsAndGrainProducts"
-        />
-        <span class="field-unit">
-          {{ grainsAndGrainProducts + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="grainsAndGrainProducts"
+        maxValue="6300"
+        v-model.number="grainsAndGrainProducts"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="rice">
-          {{ $t('$rice') }}
-        </label>
-        <input id="rice" type="range" min="0" max="400" v-model.number="rice" />
-        <span class="field-unit">
-          {{ rice + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="rice"
+        maxValue="400"
+        v-model.number="rice"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="potatoes">
-          {{ $t('$potatoes') }}
-        </label>
-        <input
-          id="potatoes"
-          type="range"
-          min="0"
-          max="3200"
-          v-model.number="potatoes"
-        />
-        <span class="field-unit">
-          {{ potatoes + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="potatoes"
+        maxValue="3200"
+        v-model.number="potatoes"
+      ></FoodConsumptionInput>
     </div>
     <div>
       <label class="section-title-food">
         {{ $t('$resultCategoryVegetablesFruitsBerries') }}
       </label>
-      <foodConsumptionInput
+      <FoodConsumptionInput
         inputName="vegetablesAndMushrooms"
         maxValue="10400"
         v-model.number="vegetablesAndMushrooms"
-      ></foodConsumptionInput>
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="rootVegetables">
-          {{ $t('$rootVegetables') }}
-        </label>
-        <input
-          id="rootVegetables"
-          type="range"
-          min="0"
-          max="1300"
-          v-model.number="rootVegetables"
-        />
-        <span class="field-unit">
-          {{ rootVegetables + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="rootVegetables"
+        maxValue="1300"
+        v-model.number="rootVegetables"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="frozenVegetables">
-          {{ $t('$frozenVegetables') }}
-        </label>
-        <input
-          id="frozenVegetables"
-          type="range"
-          min="0"
-          max="300"
-          v-model.number="frozenVegetables"
-        />
-        <span class="field-unit">
-          {{ frozenVegetables + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="frozenVegetables"
+        maxValue="300"
+        v-model.number="frozenVegetables"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="fruits">
-          {{ $t('$fruits') }}
-        </label>
-        <input
-          id="fruits"
-          type="range"
-          min="0"
-          max="5400"
-          v-model.number="fruits"
-        />
-        <span class="field-unit">
-          {{ fruits + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="fruits"
+        maxValue="5400"
+        v-model.number="fruits"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="fruitAndBerryPreserves">
-          {{ $t('$fruitAndBerryPreserves') }}
-        </label>
-        <input
-          id="fruitAndBerryPreserves"
-          type="range"
-          min="0"
-          max="500"
-          v-model.number="fruitAndBerryPreserves"
-        />
-        <span class="field-unit">
-          {{ fruitAndBerryPreserves + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="fruitAndBerryPreserves"
+        maxValue="500"
+        v-model.number="fruitAndBerryPreserves"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="berries">
-          {{ $t('$berries') }}
-        </label>
-        <input
-          id="berries"
-          type="range"
-          min="0"
-          max="1100"
-          v-model.number="berries"
-        />
-        <span class="field-unit">
-          {{ berries + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="berries"
+        maxValue="1100"
+        v-model.number="berries"
+      ></FoodConsumptionInput>
     </div>
 
     <div>
@@ -161,89 +87,35 @@
         {{ $t('$resultCategoryDairyEggs') }}
       </label>
 
-      <div class="range-item">
-        <label class="range-label" for="milk">
-          {{ $t('$milk') }}
-        </label>
-        <input
-          id="milk"
-          type="range"
-          min="0"
-          max="8900"
-          v-model.number="milk"
-        />
-        <span class="field-unit">
-          {{ milk + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="milk"
+        maxValue="8900"
+        v-model.number="milk"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="cheeses">
-          {{ $t('$cheeses') }}
-        </label>
-        <input
-          id="cheeses"
-          type="range"
-          min="0"
-          max="1500"
-          v-model.number="cheeses"
-        />
-        <span class="field-unit">
-          {{ cheeses + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="cheeses"
+        maxValue="1500"
+        v-model.number="cheeses"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="fermentedMilkProducts">
-          {{ $t('$fermentedMilkProducts') }}
-          <span class="range-label-description">
-            {{ $t('$fermentedMilkProductsDescription') }}
-          </span>
-        </label>
-        <input
-          id="fermentedMilkProducts"
-          type="range"
-          min="0"
-          max="4100"
-          v-model.number="fermentedMilkProducts"
-        />
-        <span class="field-unit">
-          {{ fermentedMilkProducts + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="fermentedMilkProducts"
+        maxValue="4100"
+        v-model.number="fermentedMilkProducts"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="otherDairyProducts">
-          {{ $t('$otherDairyProducts') }}
-          <span class="range-label-description">
-            {{ $t('$otherDairyProductsDescription') }}
-          </span>
-        </label>
-        <input
-          id="otherDairyProducts"
-          type="range"
-          min="0"
-          max="900"
-          v-model.number="otherDairyProducts"
-        />
-        <span class="field-unit">
-          {{ otherDairyProducts + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="otherDairyProducts"
+        maxValue="900"
+        v-model.number="otherDairyProducts"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="eggs">{{ $t('$eggs') }}</label>
-        <input
-          id="eggs"
-          type="range"
-          min="0"
-          max="50"
-          v-model.number="eggsCount"
-        />
-        <span class="field-unit">
-          {{ eggsCount + ' ' + $t('$piecesShort') + '/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="eggs"
+        maxValue="50"
+        v-model.number="eggsCount"
+      ></FoodConsumptionInput>
     </div>
 
     <div>
@@ -251,345 +123,148 @@
         {{ $t('$resultCategoryMeat') }}
       </label>
 
-      <div class="range-item">
-        <label class="range-label" for="beef">
-          {{ $t('$beef') }}
-        </label>
-        <input id="beef" type="range" min="0" max="900" v-model.number="beef" />
-        <span class="field-unit">
-          {{ beef + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="beef"
+        maxValue="900"
+        v-model.number="beef"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="pork">
-          {{ $t('$pork') }}
-        </label>
-        <input
-          id="pork"
-          type="range"
-          min="0"
-          max="1000"
-          v-model.number="pork"
-        />
-        <span class="field-unit">
-          {{ pork + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="pork"
+        maxValue="1000"
+        v-model.number="pork"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="chickenAndTurkey">
-          {{ $t('$chickenAndTurkey') }}
-        </label>
-        <input
-          id="chickenAndTurkey"
-          type="range"
-          min="0"
-          max="1400"
-          v-model.number="chickenAndTurkey"
-        />
-        <span class="field-unit">
-          {{ chickenAndTurkey + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="chickenAndTurkey"
+        maxValue="1400"
+        v-model.number="chickenAndTurkey"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="sausages">
-          {{ $t('$sausages') }}
-          <span class="range-label-description">
-            {{ $t('$sausagesDescription') }}
-          </span>
-        </label>
-        <input
-          id="sausages"
-          type="range"
-          min="0"
-          max="700"
-          v-model.number="sausages"
-        />
-        <span class="field-unit">
-          {{ sausages + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="sausages"
+        maxValue="700"
+        v-model.number="sausages"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="meatProducts">
-          {{ $t('$meatProducts') }}
-        </label>
-        <input
-          id="meatProducts"
-          type="range"
-          min="0"
-          max="900"
-          v-model.number="meatProducts"
-        />
-        <span class="field-unit">
-          {{ meatProducts + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="meatProducts"
+        maxValue="900"
+        v-model.number="meatProducts"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="otherMeatsAndOffal">
-          {{ $t('$otherMeatsAndOffal') }}
-        </label>
-        <input
-          id="otherMeatsAndOffal"
-          type="range"
-          min="0"
-          max="300"
-          v-model.number="otherMeatsAndOffal"
-        />
-        <span class="field-unit">
-          {{ otherMeatsAndOffal + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="otherMeatsAndOffal"
+        maxValue="300"
+        v-model.number="otherMeatsAndOffal"
+      ></FoodConsumptionInput>
     </div>
 
     <div>
       <label class="section-title-food">
         {{ $t('$resultCategoryFish') }}
       </label>
-      <div class="range-item">
-        <label class="range-label" for="fishAndShellfishAndFishProducts">
-          {{ $t('$fishAndShellfishAndFishProducts') }}
-        </label>
-        <input
-          id="fishAndShellfishAndFishProducts"
-          type="range"
-          min="0"
-          max="1100"
-          v-model.number="fishAndShellfishAndFishProducts"
-        />
-        <span class="field-unit">
-          {{ fishAndShellfishAndFishProducts + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="fishAndShellfishAndFishProducts"
+        maxValue="1100"
+        v-model.number="fishAndShellfishAndFishProducts"
+      ></FoodConsumptionInput>
     </div>
 
     <div>
       <label class="section-title-food">
         {{ $t('$resultCategoryPlantBasedProtein') }}
       </label>
-      <div class="range-item">
-        <label class="range-label" for="legumesAndNuts">
-          {{ $t('$legumesAndNuts') }}
-        </label>
-        <input
-          id="legumesAndNuts"
-          type="range"
-          min="0"
-          max="1100"
-          v-model.number="legumesAndNuts"
-        />
-        <span class="field-unit">
-          {{ legumesAndNuts + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="legumesAndNuts"
+        maxValue="1100"
+        v-model.number="legumesAndNuts"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="plantBasedProteinProducts">
-          {{ $t('$plantBasedProteinProducts') }}
-          <span class="range-label-description">
-            {{ $t('$plantBasedProteinProductsDescription') }}
-          </span>
-        </label>
-        <input
-          id="plantBasedProteinProducts"
-          type="range"
-          min="0"
-          max="3900"
-          v-model.number="plantBasedProteinProducts"
-        />
-        <span class="field-unit">
-          {{ plantBasedProteinProducts + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="plantBasedProteinProducts"
+        maxValue="3900"
+        v-model.number="plantBasedProteinProducts"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="dryPlantBasedProtein">
-          {{ $t('$dryPlantBasedProtein') }}
-          <span class="range-label-description">
-            {{ $t('$dryPlantBasedProteinDescription') }}
-          </span>
-        </label>
-        <input
-          id="dryPlantBasedProtein"
-          type="range"
-          min="0"
-          max="200"
-          v-model.number="dryPlantBasedProtein"
-        />
-        <span class="field-unit">
-          {{ dryPlantBasedProtein + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="dryPlantBasedProtein"
+        maxValue="200"
+        v-model.number="dryPlantBasedProtein"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="plantBasedDrinks">
-          {{ $t('$plantBasedDrinks') }}
-          <span class="range-label-description">
-            {{ $t('$plantBasedDrinksDescription') }}
-          </span>
-        </label>
-        <input
-          id="plantBasedDrinks"
-          type="range"
-          min="0"
-          max="8900"
-          v-model.number="plantBasedDrinks"
-        />
-        <span class="field-unit">
-          {{ plantBasedDrinks + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="plantBasedDrinks"
+        maxValue="8900"
+        v-model.number="plantBasedDrinks"
+      ></FoodConsumptionInput>
     </div>
 
     <div>
       <label class="section-title-food">
         {{ $t('$resultCategoryDrinks') }}
       </label>
-      <div class="range-item">
-        <label class="range-label" for="coffeeAndTea">
-          {{ $t('$coffeeAndTea') }}
-        </label>
-        <input
-          id="coffeeAndTea"
-          type="range"
-          min="0"
-          max="19500"
-          v-model.number="coffeeAndTea"
-        />
-        <span class="field-unit">
-          {{ coffeeAndTea + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
-      <div class="range-item">
-        <label class="range-label" for="alcoholicBeverages">
-          {{ $t('$alcoholicBeverages') }}
-        </label>
-        <input
-          id="alcoholicBeverages"
-          type="range"
-          min="0"
-          max="3500"
-          v-model.number="alcoholicBeverages"
-        />
-        <span class="field-unit">
-          {{ alcoholicBeverages + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
-      <div class="range-item">
-        <label class="range-label" for="otherDrinks">
-          {{ $t('$otherDrinks') }}
-          <span class="range-label-description">
-            {{ $t('$otherDrinksDescription') }}
-          </span>
-        </label>
-        <input
-          id="otherDrinks"
-          type="range"
-          min="0"
-          max="5500"
-          v-model.number="otherDrinks"
-        />
-        <span class="field-unit">
-          {{ otherDrinks + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="coffeeAndTea"
+        maxValue="19500"
+        v-model.number="coffeeAndTea"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="alcoholicBeverages"
+        maxValue="3500"
+        v-model.number="alcoholicBeverages"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="otherDrinks"
+        maxValue="5500"
+        v-model.number="otherDrinks"
+      ></FoodConsumptionInput>
     </div>
 
     <div>
       <label class="section-title-food">
         {{ $t('$resultCategoryFat') }}
       </label>
-      <div class="range-item">
-        <label class="range-label" for="butterAndAnimalFats">
-          {{ $t('$butterAndAnimalFats') }}
-        </label>
-        <input
-          id="butterAndAnimalFats"
-          type="range"
-          min="0"
-          max="900"
-          v-model.number="butterAndAnimalFats"
-        />
-        <span class="field-unit">
-          {{ butterAndAnimalFats + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="butterAndAnimalFats"
+        maxValue="900"
+        v-model.number="butterAndAnimalFats"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="margarine">
-          {{ $t('$margarine') }}
-        </label>
-        <input
-          id="margarine"
-          type="range"
-          min="0"
-          max="500"
-          v-model.number="margarine"
-        />
-        <span class="field-unit">
-          {{ margarine + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="margarine"
+        maxValue="500"
+        v-model.number="margarine"
+      ></FoodConsumptionInput>
 
-      <div class="range-item">
-        <label class="range-label" for="vegetableOils">
-          {{ $t('$vegetableOils') }}
-        </label>
-        <input
-          id="vegetableOils"
-          type="range"
-          min="0"
-          max="500"
-          v-model.number="vegetableOils"
-        />
-        <span class="field-unit">
-          {{ vegetableOils + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="vegetableOils"
+        maxValue="500"
+        v-model.number="vegetableOils"
+      ></FoodConsumptionInput>
     </div>
 
     <div>
       <label class="section-title-food">
         {{ $t('$resultCategorySweets') }}
       </label>
-      <div class="range-item">
-        <label class="range-label" for="sugarCandiesAndChocolate">
-          {{ $t('$sugarCandiesAndChocolate') }}
-        </label>
-        <input
-          id="sugarCandiesAndChocolate"
-          type="range"
-          min="0"
-          max="1200"
-          v-model.number="sugarCandiesAndChocolate"
-        />
-        <span class="field-unit">
-          {{ sugarCandiesAndChocolate + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="sugarCandiesAndChocolate"
+        maxValue="1200"
+        v-model.number="sugarCandiesAndChocolate"
+      ></FoodConsumptionInput>
     </div>
     <div>
       <label class="section-title-food">
         {{ $t('$resultCategoryOther') }}
       </label>
-      <div class="range-item">
-        <label class="range-label" for="otherFoodProducts">
-          {{ $t('$otherFoodProducts') }}
-        </label>
-        <input
-          id="otherFoodProducts"
-          type="range"
-          min="0"
-          max="700"
-          v-model.number="otherFoodProducts"
-        />
-        <span class="field-unit">
-          {{ otherFoodProducts + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <FoodConsumptionInput
+        inputName="otherFoodProducts"
+        maxValue="700"
+        v-model.number="otherFoodProducts"
+      ></FoodConsumptionInput>
     </div>
   </SubForm>
 </template>
