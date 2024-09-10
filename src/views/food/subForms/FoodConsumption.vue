@@ -65,26 +65,15 @@
         </span>
       </div>
     </div>
-
     <div>
       <label class="section-title-food">
         {{ $t('$resultCategoryVegetablesFruitsBerries') }}
       </label>
-      <div class="range-item">
-        <label class="range-label" for="vegetablesAndMushrooms">
-          {{ $t('$vegetablesAndMushrooms') }}
-        </label>
-        <input
-          id="vegetablesAndMushrooms"
-          type="range"
-          min="0"
-          max="10400"
-          v-model.number="vegetablesAndMushrooms"
-        />
-        <span class="field-unit">
-          {{ vegetablesAndMushrooms + ' g/' + $t('$weekLong') }}
-        </span>
-      </div>
+      <foodConsumptionInput
+        inputName="vegetablesAndMushrooms"
+        maxValue="10400"
+        v-model.number="vegetablesAndMushrooms"
+      ></foodConsumptionInput>
 
       <div class="range-item">
         <label class="range-label" for="rootVegetables">
@@ -617,8 +606,10 @@ import { FoodSections, IFoodState } from '@/stores/food/types'
 import { useBaseDataStore } from '@/stores/startView/store'
 import { mapStores } from 'pinia'
 import { defineComponent } from 'vue'
+import FoodConsumptionInput from './FoodConsumptionInput.vue'
 
 export default defineComponent({
+  components: { FoodConsumptionInput },
   computed: {
     ...mapStores(useFoodStore, useBaseDataStore),
     food(): IFoodState {
