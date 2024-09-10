@@ -30,9 +30,8 @@
 </template>
 
 <script setup lang="ts">
-const [model, modifiers] = defineModel({ required: true })
-console.log('model: ', model)
-console.log('modifiers: ', modifiers)
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const [model, _modifiers] = defineModel({ required: true })
 
 const props = defineProps({
   inputName: {
