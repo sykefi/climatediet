@@ -18,7 +18,10 @@
         :max="props.maxValue"
         v-model.number="model"
       />
-      {{ props.unit + $t('$weekLong') }}
+      {{
+        (props.unit == '$piecesShort' ? $t(props.unit) + '/ ' : props.unit) +
+        $t('$weekLong')
+      }}
     </span>
   </div>
 </template>
@@ -41,7 +44,7 @@ const props = defineProps({
   unit: {
     type: String,
     required: false,
-    default: 'g/',
+    default: 'g/ ',
   },
 })
 </script>

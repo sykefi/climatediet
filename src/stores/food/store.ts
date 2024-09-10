@@ -94,13 +94,13 @@ export const useFoodStore = defineStore('food', {
         const gramsToKilos = 0.001
         const data = {
           diet: this.diet,
-          alcoholicBeverages: this.alcoholicBeveragesValue * gramsToKilos,
+          alcoholicBeverages: this.alcoholicBeveragesValue, // input in liters ≈ kg
           beef: this.beefValue * gramsToKilos,
           berries: this.berriesValue * gramsToKilos,
           butterAndAnimalFats: this.butterAndAnimalFatsValue * gramsToKilos,
           cheeses: this.cheesesValue * gramsToKilos,
           chickenAndTurkey: this.chickenAndTurkeyValue * gramsToKilos,
-          coffeeAndTea: this.coffeeAndTeaValue * gramsToKilos,
+          coffeeAndTea: this.coffeeAndTeaValue, // input in liters ≈ kg
           dryPlantBasedProtein: this.dryPlantBasedProteinValue * gramsToKilos,
           eggs: eggs,
           fermentedMilkProducts: this.fermentedMilkProductsValue * gramsToKilos,
@@ -115,12 +115,12 @@ export const useFoodStore = defineStore('food', {
           legumesAndNuts: this.legumesAndNutsValue * gramsToKilos,
           margarine: this.margarineValue * gramsToKilos,
           meatProducts: this.meatProductsValue * gramsToKilos,
-          milk: this.milkValue * gramsToKilos,
+          milk: this.milkValue, // input in liters ≈ kg
           otherDairyProducts: this.otherDairyProductsValue * gramsToKilos,
-          otherDrinks: this.otherDrinksValue * gramsToKilos,
+          otherDrinks: this.otherDrinksValue, // input in liters ≈ kg
           otherFoodProducts: this.otherFoodProductsValue * gramsToKilos,
           otherMeatsAndOffal: this.otherMeatsAndOffalValue * gramsToKilos,
-          plantBasedDrinks: this.plantBasedDrinksValue * gramsToKilos,
+          plantBasedDrinks: this.plantBasedDrinksValue, // input in liters ≈ kg
           plantBasedProteinProducts:
             this.plantBasedProteinProductsValue * gramsToKilos,
           pork: this.porkValue * gramsToKilos,

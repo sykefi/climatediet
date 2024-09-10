@@ -90,6 +90,7 @@
       <FoodConsumptionInput
         inputName="milk"
         maxValue="8900"
+        unit="l/ "
         v-model.number="milk"
       ></FoodConsumptionInput>
 
@@ -114,6 +115,7 @@
       <FoodConsumptionInput
         inputName="eggs"
         maxValue="50"
+        unit="$piecesShort"
         v-model.number="eggsCount"
       ></FoodConsumptionInput>
     </div>
@@ -196,6 +198,7 @@
       <FoodConsumptionInput
         inputName="plantBasedDrinks"
         maxValue="8900"
+        unit="l/ "
         v-model.number="plantBasedDrinks"
       ></FoodConsumptionInput>
     </div>
@@ -207,18 +210,21 @@
       <FoodConsumptionInput
         inputName="coffeeAndTea"
         maxValue="19500"
+        unit="l/ "
         v-model.number="coffeeAndTea"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="alcoholicBeverages"
         maxValue="3500"
+        unit="l/ "
         v-model.number="alcoholicBeverages"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="otherDrinks"
         maxValue="5500"
+        unit="l/ "
         v-model.number="otherDrinks"
       ></FoodConsumptionInput>
     </div>

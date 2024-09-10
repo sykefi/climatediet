@@ -15,18 +15,20 @@ Converted from average consumption of different food types (per capita in kg per
 choices (vegan/vegetarian/mixed) based on FinRavinto (2017) study. Additional information acquired from Ravintotase
 
 Except for eggs that is in count/week (average in kg/week / weight of sigle egg in kg: 0.168/0.058= 2.897)
+
+And excpet for drinks that are in liters/ week -> ≈ kg/ week
 **/
 
 export const consumptionAverageKgPerCapPerWeek: {
   [index: string]: { [dietType: string]: number }
 } = {
-  alcoholicBeverages: { Mixed: 689, Vegetarian: 689, Vegan: 689 },
+  alcoholicBeverages: { Mixed: 0.689, Vegetarian: 0.689, Vegan: 0.689 },
   beef: { Mixed: 179, Vegetarian: 0, Vegan: 0 },
   berries: { Mixed: 209, Vegetarian: 209, Vegan: 209 },
   butterAndAnimalFats: { Mixed: 169, Vegetarian: 169, Vegan: 0 },
   cheeses: { Mixed: 282, Vegetarian: 282, Vegan: 0 },
   chickenAndTurkey: { Mixed: 275, Vegetarian: 0, Vegan: 0 },
-  coffeeAndTea: { Mixed: 3899, Vegetarian: 3899, Vegan: 3899 },
+  coffeeAndTea: { Mixed: 3.899, Vegetarian: 3.899, Vegan: 3.899 },
   dryPlantBasedProtein: { Mixed: 0, Vegetarian: 0, Vegan: 38 },
   eggs: { Mixed: 3, Vegetarian: 3, Vegan: 0 },
   fermentedMilkProducts: { Mixed: 816, Vegetarian: 816, Vegan: 0 },
@@ -38,12 +40,12 @@ export const consumptionAverageKgPerCapPerWeek: {
   legumesAndNuts: { Mixed: 96, Vegetarian: 216, Vegan: 216 },
   margarine: { Mixed: 78, Vegetarian: 78, Vegan: 97 },
   meatProducts: { Mixed: 161, Vegetarian: 0, Vegan: 0 },
-  milk: { Mixed: 1767, Vegetarian: 1767, Vegan: 0 },
+  milk: { Mixed: 1.767, Vegetarian: 1.767, Vegan: 0 },
   otherDairyProducts: { Mixed: 178, Vegetarian: 178, Vegan: 0 },
-  otherDrinks: { Mixed: 1086, Vegetarian: 1086, Vegan: 1086 },
+  otherDrinks: { Mixed: 1.086, Vegetarian: 1.086, Vegan: 1.086 },
   otherFoodProducts: { Mixed: 132, Vegetarian: 132, Vegan: 132 },
   otherMeatsAndOffal: { Mixed: 50, Vegetarian: 0, Vegan: 0 },
-  plantBasedDrinks: { Mixed: 84, Vegetarian: 84, Vegan: 1767 },
+  plantBasedDrinks: { Mixed: 0.084, Vegetarian: 0.084, Vegan: 1.767 },
   plantBasedProteinProducts: { Mixed: 0, Vegetarian: 0, Vegan: 767 },
   pork: { Mixed: 189, Vegetarian: 0, Vegan: 0 },
   potatoes: { Mixed: 510, Vegetarian: 510, Vegan: 637 },
