@@ -17,7 +17,7 @@
         :id="props.inputName"
         type="number"
         min="0"
-        :step="0.001"
+        :step="props.step"
         :max="props.maxValue"
         v-model.number="model"
       />
