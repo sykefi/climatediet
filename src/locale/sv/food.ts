@@ -41,6 +41,7 @@ const sv: IFoodTranslations = {
   $fruitAndBerryPreserves: 'Frukt- och bärkonserver',
   $fruits: 'Frukter',
   $grainsAndGrainProducts: 'Spannmål och spannmålsprodukter',
+  $grainsAndGrainProductsDescription: 'Inkluderar också t.ex. bröd och pasta',
   $legumesAndNuts: 'Baljväxter och nötter',
   $margarine: 'Margarin',
   $meatProducts: 'Köttprodukter',

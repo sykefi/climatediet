@@ -179,6 +179,7 @@ export interface IFoodTranslations {
   $fruitAndBerryPreserves: string
   $fruits: string
   $grainsAndGrainProducts: string
+  $grainsAndGrainProductsDescription: string
   $legumesAndNuts: string
   $margarine: string
   $meatProducts: string

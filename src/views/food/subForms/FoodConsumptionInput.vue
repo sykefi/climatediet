@@ -2,6 +2,9 @@
   <div class="range-item">
     <label class="range-label" :for="props.inputName">
       {{ $t('$' + props.inputName) }}
+      <span v-if="props.inputDescription != ''" class="range-label-description">
+        {{ $t('$' + props.inputDescription) }}
+      </span>
     </label>
     <input
       :id="props.inputName"
@@ -37,6 +40,11 @@ const props = defineProps({
   inputName: {
     type: String,
     required: true,
+  },
+  inputDescription: {
+    type: String,
+    required: false,
+    default: '',
   },
   maxValue: {
     type: String,
