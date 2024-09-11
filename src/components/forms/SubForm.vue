@@ -17,7 +17,10 @@
       <summary v-if="summary" class="wrapped-text">
         {{ summary }}
       </summary>
-      <div id="calc-info" v-if="calcInfoHash">
+      <div v-if="details" class="info">
+        {{ details }}
+      </div>
+      <div class="info" v-if="calcInfoHash">
         <span>{{ $t('$calcInfoText') }}</span>
         <router-link
           :to="{ name: 'calculationInfo', hash: '#' + calcInfoHash }"
@@ -40,6 +43,10 @@ export default defineComponent({
       required: true,
     },
     summary: {
+      type: String,
+      required: false,
+    },
+    details: {
       type: String,
       required: false,
     },
@@ -145,7 +152,7 @@ export default defineComponent({
   margin-top: 10px;
 }
 
-#calc-info {
+.info {
   font-size: $font-size-m;
   margin-top: 1em;
 }
@@ -167,5 +174,15 @@ export default defineComponent({
     font-weight: $semi-bold;
     text-transform: none;
   }
+}
+
+.section-title-food {
+  font-weight: bold;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  word-wrap: break-word;
+  display: inline-block;
 }
 </style>

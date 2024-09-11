@@ -1,11 +1,8 @@
-export function eggCountToRatio(count: number) {
+export function eggsCountToKilograms(count: number) {
   if (count === 0) {
     return 0
   }
-  const singleEggWeight = 58 // in grams, https://munax.fi/munamestarilta-kysyttya
-  const averageConsumptionWeight = 205 // the average Finnish consumption, in grams. 10.7kg/year * 1000 / 52
+  const singleEggWeight = 0.058 // in kilograms, https://munax.fi/munamestarilta-kysyttya
 
-  const singleEggPercentage = (singleEggWeight / averageConsumptionWeight) * 100
-
-  return Math.round(singleEggPercentage * count)
+  return singleEggWeight * count
 }

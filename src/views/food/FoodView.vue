@@ -2,7 +2,6 @@
   <form ref="form" @submit.prevent="submit()" class="calc-form">
     <FoodDiet @dietTitleClicked="changeSection" />
     <FoodConsumption @consumptionTitleClicked="changeSection" />
-    <FoodRestaurant @restaurantTitleClicked="changeSection" />
     <div class="action-wrapper">
       <input
         type="submit"
@@ -29,7 +28,6 @@ import { scrollToElement, validateForm } from '@/utilities/utils'
 import { defineComponent } from 'vue'
 import FoodConsumption from './subForms/FoodConsumption.vue'
 import FoodDiet from './subForms/FoodDiet.vue'
-import FoodRestaurant from './subForms/FoodRestaurant.vue'
 import { mapStores } from 'pinia'
 import { useFoodStore } from '@/stores/food/store'
 import { useBaseDataStore } from '@/stores/startView/store'
@@ -42,7 +40,6 @@ export default defineComponent({
   components: {
     FoodConsumption,
     FoodDiet,
-    FoodRestaurant,
     ResultBase,
     DialogBase,
   },

@@ -148,35 +148,65 @@ export interface IHousingTranslations {
 }
 
 export interface IFoodTranslations {
-  $beefAndLamb: string
-  $cafesAndRestaurants: string
-  $cafesAndRestaurantsSummary: string
-  $cheese: string
-  $dairy: string
+  $alcoholicBeverages: string
+  $beef: string
+  $berries: string
+  $butterAndAnimalFats: string
+  $cheeses: string
+  $chickenAndTurkey: string
+  $coffeeAndTea: string
   $diet: string
   $dietSummary: string
-  $dietOmnivore: string
+  $dietMixed: string
   $dietVegan: string
   $dietVegetarian: string
+  $dryPlantBasedProtein: string
+  $dryPlantBasedProteinDescription: string
   $eggs: string
-  $fishAndSeafood: string
-  $foodActionOmnivore: string
+  $fermentedMilkProducts: string
+  $fermentedMilkProductsDescription: string
+  $fishAndShellfishAndFishProducts: string
+  $foodActionMixed: string
   $foodActionVegan: string
   $foodActionVegetarian: string
   $foodIngredients: string
+  $foodIngredientsDetails: string
   $foodIngredientsSummary: string
   $foodIngredientsRangeDetails: string
-  $foodLowCarbonDetails: string
   $foodResultsSummary: string
   $foodResultsTitle: string
-  $lowCarbonFoodPrefence: string
-  $porkAndPoultry: string
-  $restaurantSpending: string
-  $resultCategoryDairy: string
+  $frozenVegetables: string
+  $fruitAndBerryPreserves: string
+  $fruits: string
+  $grainsAndGrainProducts: string
+  $legumesAndNuts: string
+  $margarine: string
+  $meatProducts: string
+  $milk: string
+  $otherDairyProducts: string
+  $otherDairyProductsDescription: string
+  $otherDrinks: string
+  $otherDrinksDescription: string
+  $otherFoodProducts: string
+  $otherMeatsAndOffal: string
+  $plantBasedDrinks: string
+  $plantBasedDrinksDescription: string
+  $plantBasedProteinProducts: string
+  $plantBasedProteinProductsDescription: string
+  $pork: string
+  $potatoes: string
+  $resultCategoryDairyEggs: string
+  $resultCategoryDrinks: string
+  $resultCategoryFat: string
+  $resultCategoryFish: string
+  $resultCategoryGrainsPotatoes: string
   $resultCategoryMeat: string
-  $resultCategoryPlants: string
+  $resultCategoryOther: string
+  $resultCategoryPlantBasedProtein: string
+  $resultCategorySweets: string
+  $resultCategoryVegetablesFruitsBerries: string
   $rice: string
-  $winterSalad: string
+  $rootVegetables: string
   $saaSyoda: string
   $saaSyodaDetails: string
   $saaSyodaUrl: string
@@ -184,6 +214,11 @@ export interface IFoodTranslations {
   $sitraVarietyWithVegetablesUrl: string
   $sitraAvoidFoodWaste: string
   $sitraAvoidFoodWasteUrl: string
+  $sausages: string
+  $sausagesDescription: string
+  $sugarCandiesAndChocolate: string
+  $vegetablesAndMushrooms: string
+  $vegetableOils: string
 }
 
 export interface ITransportTranslations {

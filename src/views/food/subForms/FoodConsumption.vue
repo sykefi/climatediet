@@ -6,139 +6,285 @@
     :is-enabled="baseDataStore.submitted"
     @titleClicked="consumptionTitleClicked"
     :summary="$t('$foodIngredientsSummary')"
+    :details="$t('$foodIngredientsDetails')"
     calc-info-hash="food"
   >
     <button
       type="button"
       :class="{ invisible: !foodStore.consumptionDefaultsChanged }"
-      id="reset-button"
+      class="reset-button"
       @click="reset"
     >
       {{ $t('$resetToDefaults') }}
     </button>
-    <b id="range-details-text">{{ $t('$foodIngredientsRangeDetails') }}</b>
-    <div class="range-item" v-if="food.diet === 'Omnivore'">
-      <label class="range-label" for="beef">
-        {{ $t('$beefAndLamb') }}
+    <p class="range-details-text">{{ $t('$foodIngredientsRangeDetails') }}</p>
+
+    <div>
+      <label class="section-title-food">
+        {{ $t('$resultCategoryGrainsPotatoes') }}
       </label>
-      <input id="beef" type="range" min="0" max="200" v-model.number="beef" />
-      <span class="field-unit">
-        {{
-          foodStore.consumptionAmount('beef', beef) + ' kg/' + $t('$weekLong')
-        }}
-      </span>
+      <FoodConsumptionInput
+        inputName="grainsAndGrainProducts"
+        maxValue="20000"
+        v-model.number="grainsAndGrainProducts"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="rice"
+        maxValue="5000"
+        v-model.number="rice"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="potatoes"
+        maxValue="10000"
+        v-model.number="potatoes"
+      ></FoodConsumptionInput>
     </div>
-    <div class="range-item" v-if="food.diet === 'Omnivore'">
-      <label class="range-label" for="pork">{{ $t('$porkAndPoultry') }}</label>
-      <input
-        id="pork"
-        type="range"
-        min="0"
-        max="200"
-        v-model.number="porkPoultry"
-      />
-      <span class="field-unit">
-        {{
-          foodStore.consumptionAmount('porkPoultry', porkPoultry) +
-          ' kg/' +
-          $t('$weekLong')
-        }}
-      </span>
-    </div>
-    <div class="range-item" v-if="food.diet === 'Omnivore'">
-      <label class="range-label" for="fish">{{ $t('$fishAndSeafood') }}</label>
-      <input id="fish" type="range" min="0" max="200" v-model.number="fish" />
-      <span class="field-unit">
-        {{
-          foodStore.consumptionAmount('fish', fish) + ' kg/' + $t('$weekLong')
-        }}
-      </span>
-    </div>
-    <div
-      class="range-item"
-      v-if="food.diet === 'Omnivore' || food.diet === 'Vegetarian'"
-    >
-      <label class="range-label" for="cheese">{{ $t('$cheese') }}</label>
-      <input
-        id="cheese"
-        type="range"
-        min="0"
-        max="200"
-        v-model.number="cheese"
-      />
-      <span class="field-unit">
-        {{
-          foodStore.consumptionAmount('cheese', cheese) +
-          ' kg/' +
-          $t('$weekLong')
-        }}
-      </span>
-    </div>
-    <div
-      class="range-item"
-      v-if="food.diet === 'Omnivore' || food.diet === 'Vegetarian'"
-    >
-      <label class="range-label" for="dairy">
-        {{ $t('$dairy') }}
+    <div>
+      <label class="section-title-food">
+        {{ $t('$resultCategoryVegetablesFruitsBerries') }}
       </label>
-      <input id="dairy" type="range" min="0" max="200" v-model.number="dairy" />
-      <span class="field-unit">
-        {{
-          foodStore.consumptionAmount('dairy', dairy) + ' kg/' + $t('$weekLong')
-        }}
-      </span>
+      <FoodConsumptionInput
+        inputName="vegetablesAndMushrooms"
+        maxValue="20000"
+        v-model.number="vegetablesAndMushrooms"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="rootVegetables"
+        maxValue="5000"
+        v-model.number="rootVegetables"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="frozenVegetables"
+        maxValue="5000"
+        v-model.number="frozenVegetables"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="fruits"
+        maxValue="10000"
+        v-model.number="fruits"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="fruitAndBerryPreserves"
+        maxValue="1000"
+        v-model.number="fruitAndBerryPreserves"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="berries"
+        maxValue="5000"
+        v-model.number="berries"
+      ></FoodConsumptionInput>
     </div>
-    <div class="range-item">
-      <label class="range-label" for="rice">{{ $t('$rice') }}</label>
-      <input id="rice" type="range" min="0" max="200" v-model.number="rice" />
-      <span class="field-unit">
-        {{
-          foodStore.consumptionAmount('rice', rice) + ' kg/' + $t('$weekLong')
-        }}
-      </span>
-    </div>
-    <div class="range-item">
-      <label class="range-label" for="winterSalad">
-        {{ $t('$winterSalad') }}
+
+    <div>
+      <label class="section-title-food">
+        {{ $t('$resultCategoryDairyEggs') }}
       </label>
-      <input
-        id="winterSalad"
-        type="range"
-        min="0"
-        max="200"
-        v-model.number="winterSalad"
-      />
-      <span class="field-unit">
-        {{
-          foodStore.consumptionAmount('winterSalad', winterSalad) +
-          ' kg/' +
-          $t('$weekLong')
-        }}
-      </span>
+
+      <FoodConsumptionInput
+        inputName="milk"
+        maxValue="20"
+        unit="l/ "
+        step="0.1"
+        v-model.number="milk"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="cheeses"
+        maxValue="5000"
+        v-model.number="cheeses"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="fermentedMilkProducts"
+        maxValue="10000"
+        v-model.number="fermentedMilkProducts"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="otherDairyProducts"
+        maxValue="5000"
+        v-model.number="otherDairyProducts"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="eggs"
+        maxValue="100"
+        unit="$piecesShort"
+        step="1"
+        v-model.number="eggsCount"
+      ></FoodConsumptionInput>
     </div>
-    <div
-      class="range-item"
-      v-if="food.diet === 'Omnivore' || food.diet === 'Vegetarian'"
-    >
-      <label class="range-label" for="eggs">{{ $t('$eggs') }}</label>
-      <input
-        id="eggs"
-        type="range"
-        min="0"
-        max="30"
-        v-model.number="eggCount"
-      />
-      <span class="field-unit">
-        {{ eggCount + ' ' + $t('$piecesShort') + '/' + $t('$weekLong') }}
-      </span>
+
+    <div>
+      <label class="section-title-food">
+        {{ $t('$resultCategoryMeat') }}
+      </label>
+
+      <FoodConsumptionInput
+        inputName="beef"
+        maxValue="5000"
+        v-model.number="beef"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="pork"
+        maxValue="5000"
+        v-model.number="pork"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="chickenAndTurkey"
+        maxValue="5000"
+        v-model.number="chickenAndTurkey"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="sausages"
+        maxValue="5000"
+        v-model.number="sausages"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="meatProducts"
+        maxValue="5000"
+        v-model.number="meatProducts"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="otherMeatsAndOffal"
+        maxValue="1000"
+        v-model.number="otherMeatsAndOffal"
+      ></FoodConsumptionInput>
+    </div>
+
+    <div>
+      <label class="section-title-food">
+        {{ $t('$resultCategoryFish') }}
+      </label>
+      <FoodConsumptionInput
+        inputName="fishAndShellfishAndFishProducts"
+        maxValue="5000"
+        v-model.number="fishAndShellfishAndFishProducts"
+      ></FoodConsumptionInput>
+    </div>
+
+    <div>
+      <label class="section-title-food">
+        {{ $t('$resultCategoryPlantBasedProtein') }}
+      </label>
+      <FoodConsumptionInput
+        inputName="legumesAndNuts"
+        maxValue="5000"
+        v-model.number="legumesAndNuts"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="plantBasedProteinProducts"
+        maxValue="10000"
+        v-model.number="plantBasedProteinProducts"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="dryPlantBasedProtein"
+        maxValue="5000"
+        v-model.number="dryPlantBasedProtein"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="plantBasedDrinks"
+        maxValue="20"
+        unit="l/ "
+        step="0.1"
+        v-model.number="plantBasedDrinks"
+      ></FoodConsumptionInput>
+    </div>
+
+    <div>
+      <label class="section-title-food">
+        {{ $t('$resultCategoryDrinks') }}
+      </label>
+      <FoodConsumptionInput
+        inputName="coffeeAndTea"
+        maxValue="20"
+        unit="l/ "
+        step="0.1"
+        v-model.number="coffeeAndTea"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="alcoholicBeverages"
+        maxValue="10"
+        unit="l/ "
+        step="0.1"
+        v-model.number="alcoholicBeverages"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="otherDrinks"
+        maxValue="20"
+        unit="l/ "
+        step="0.1"
+        v-model.number="otherDrinks"
+      ></FoodConsumptionInput>
+    </div>
+
+    <div>
+      <label class="section-title-food">
+        {{ $t('$resultCategoryFat') }}
+      </label>
+      <FoodConsumptionInput
+        inputName="butterAndAnimalFats"
+        maxValue="1000"
+        v-model.number="butterAndAnimalFats"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="margarine"
+        maxValue="1000"
+        v-model.number="margarine"
+      ></FoodConsumptionInput>
+
+      <FoodConsumptionInput
+        inputName="vegetableOils"
+        maxValue="1000"
+        v-model.number="vegetableOils"
+      ></FoodConsumptionInput>
+    </div>
+
+    <div>
+      <label class="section-title-food">
+        {{ $t('$resultCategorySweets') }}
+      </label>
+      <FoodConsumptionInput
+        inputName="sugarCandiesAndChocolate"
+        maxValue="5000"
+        v-model.number="sugarCandiesAndChocolate"
+      ></FoodConsumptionInput>
+    </div>
+    <div>
+      <label class="section-title-food">
+        {{ $t('$resultCategoryOther') }}
+      </label>
+      <FoodConsumptionInput
+        inputName="otherFoodProducts"
+        maxValue="5000"
+        v-model.number="otherFoodProducts"
+      ></FoodConsumptionInput>
     </div>
   </SubForm>
 </template>
 
 <style lang="scss" scoped>
-#range-details-text {
-  text-align: center;
+.range-details-text {
   display: block;
+  margin-top: 1em;
 }
 </style>
 <script lang="ts">
@@ -147,75 +293,277 @@ import { FoodSections, IFoodState } from '@/stores/food/types'
 import { useBaseDataStore } from '@/stores/startView/store'
 import { mapStores } from 'pinia'
 import { defineComponent } from 'vue'
+import FoodConsumptionInput from './FoodConsumptionInput.vue'
 
 export default defineComponent({
+  components: { FoodConsumptionInput },
   computed: {
     ...mapStores(useFoodStore, useBaseDataStore),
     food(): IFoodState {
       return this.foodStore.$state
     },
+    alcoholicBeverages: {
+      get(): number {
+        return this.food.alcoholicBeveragesValue
+      },
+      set(value: number) {
+        this.foodStore.setAlcoholicBeverages(value)
+      },
+    },
     beef: {
       get(): number {
-        return this.food.beefRatio
+        return this.food.beefValue
       },
       set(value: number) {
         this.foodStore.setBeef(value)
       },
     },
-    cheese: {
+    berries: {
       get(): number {
-        return this.food.cheeseRatio
+        return this.food.berriesValue
       },
       set(value: number) {
-        this.foodStore.setCheese(value)
+        this.foodStore.setBerries(value)
       },
     },
-    dairy: {
+    butterAndAnimalFats: {
       get(): number {
-        return this.food.dairyRatio
+        return this.food.butterAndAnimalFatsValue
       },
       set(value: number) {
-        this.foodStore.setDairy(value)
+        this.foodStore.setButterAndAnimalFats(value)
       },
     },
-    eggCount: {
+    cheeses: {
       get(): number {
-        return this.food.eggCount
+        return this.food.cheesesValue
+      },
+      set(value: number) {
+        this.foodStore.setCheeses(value)
+      },
+    },
+    chickenAndTurkey: {
+      get(): number {
+        return this.food.chickenAndTurkeyValue
+      },
+      set(value: number) {
+        this.foodStore.setChickenAndTurkey(value)
+      },
+    },
+    coffeeAndTea: {
+      get(): number {
+        return this.food.coffeeAndTeaValue
+      },
+      set(value: number) {
+        this.foodStore.setCoffeeAndTea(value)
+      },
+    },
+    dryPlantBasedProtein: {
+      get(): number {
+        return this.food.dryPlantBasedProteinValue
+      },
+      set(value: number) {
+        this.foodStore.setDryPlantBasedProtein(value)
+      },
+    },
+    eggsCount: {
+      get(): number {
+        return this.food.eggsCount
       },
       set(value: number) {
         this.foodStore.setEggs(value)
       },
     },
-    fish: {
+    fermentedMilkProducts: {
       get(): number {
-        return this.food.fishRatio
+        return this.food.fermentedMilkProductsValue
       },
       set(value: number) {
-        this.foodStore.setFish(value)
+        this.foodStore.setFermentedMilkProducts(value)
       },
     },
-    porkPoultry: {
+    fishAndShellfishAndFishProducts: {
       get(): number {
-        return this.food.porkPoultryRatio
+        return this.food.fishAndShellfishAndFishProductsValue
       },
       set(value: number) {
-        this.foodStore.setPorkPoultry(value)
+        this.foodStore.setFishAndShellfishAndFishProducts(value)
+      },
+    },
+    frozenVegetables: {
+      get(): number {
+        return this.food.frozenVegetablesValue
+      },
+      set(value: number) {
+        this.foodStore.setFrozenVegetables(value)
+      },
+    },
+    fruitAndBerryPreserves: {
+      get(): number {
+        return this.food.fruitAndBerryPreservesValue
+      },
+      set(value: number) {
+        this.foodStore.setFruitAndBerryPreserves(value)
+      },
+    },
+    fruits: {
+      get(): number {
+        return this.food.fruitsValue
+      },
+      set(value: number) {
+        this.foodStore.setFruits(value)
+      },
+    },
+    grainsAndGrainProducts: {
+      get(): number {
+        return this.food.grainsAndGrainProductsValue
+      },
+      set(value: number) {
+        this.foodStore.setGrainsAndGrainProducts(value)
+      },
+    },
+    legumesAndNuts: {
+      get(): number {
+        return this.food.legumesAndNutsValue
+      },
+      set(value: number) {
+        this.foodStore.setLegumesAndNuts(value)
+      },
+    },
+    margarine: {
+      get(): number {
+        return this.food.margarineValue
+      },
+      set(value: number) {
+        this.foodStore.setMargarine(value)
+      },
+    },
+    meatProducts: {
+      get(): number {
+        return this.food.meatProductsValue
+      },
+      set(value: number) {
+        this.foodStore.setMeatProducts(value)
+      },
+    },
+    milk: {
+      get(): number {
+        return this.food.milkValue
+      },
+      set(value: number) {
+        this.foodStore.setMilk(value)
+      },
+    },
+    otherDairyProducts: {
+      get(): number {
+        return this.food.otherDairyProductsValue
+      },
+      set(value: number) {
+        this.foodStore.setOtherDairyProducts(value)
+      },
+    },
+    otherDrinks: {
+      get(): number {
+        return this.food.otherDrinksValue
+      },
+      set(value: number) {
+        this.foodStore.setOtherDrinks(value)
+      },
+    },
+    otherFoodProducts: {
+      get(): number {
+        return this.food.otherFoodProductsValue
+      },
+      set(value: number) {
+        this.foodStore.setOtherFoodProducts(value)
+      },
+    },
+    otherMeatsAndOffal: {
+      get(): number {
+        return this.food.otherMeatsAndOffalValue
+      },
+      set(value: number) {
+        this.foodStore.setOtherMeatsAndOffal(value)
+      },
+    },
+    plantBasedDrinks: {
+      get(): number {
+        return this.food.plantBasedDrinksValue
+      },
+      set(value: number) {
+        this.foodStore.setPlantBasedDrinks(value)
+      },
+    },
+    plantBasedProteinProducts: {
+      get(): number {
+        return this.food.plantBasedProteinProductsValue
+      },
+      set(value: number) {
+        this.foodStore.setPlantBasedProteinProducts(value)
+      },
+    },
+    pork: {
+      get(): number {
+        return this.food.porkValue
+      },
+      set(value: number) {
+        this.foodStore.setPork(value)
+      },
+    },
+    potatoes: {
+      get(): number {
+        return this.food.potatoesValue
+      },
+      set(value: number) {
+        this.foodStore.setPotatoes(value)
       },
     },
     rice: {
       get(): number {
-        return this.food.riceRatio
+        return this.food.riceValue
       },
       set(value: number) {
         this.foodStore.setRice(value)
       },
     },
-    winterSalad: {
+    rootVegetables: {
       get(): number {
-        return this.food.winterSaladRatio
+        return this.food.rootVegetablesValue
       },
       set(value: number) {
-        this.foodStore.setWinterSalad(value)
+        this.foodStore.setRootVegetables(value)
+      },
+    },
+    sausages: {
+      get(): number {
+        return this.food.sausagesValue
+      },
+      set(value: number) {
+        this.foodStore.setSausages(value)
+      },
+    },
+    sugarCandiesAndChocolate: {
+      get(): number {
+        return this.food.sugarCandiesAndChocolateValue
+      },
+      set(value: number) {
+        this.foodStore.setSugarCandiesAndChocolate(value)
+      },
+    },
+    vegetablesAndMushrooms: {
+      get(): number {
+        return this.food.vegetablesAndMushroomsValue
+      },
+      set(value: number) {
+        this.foodStore.setVegetablesAndMushrooms(value)
+      },
+    },
+    vegetableOils: {
+      get(): number {
+        return this.food.vegetableOilsValue
+      },
+      set(value: number) {
+        this.foodStore.setVegetableOils(value)
       },
     },
     isActive(): boolean {

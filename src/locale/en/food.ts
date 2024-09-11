@@ -2,47 +2,78 @@ import { IFoodTranslations } from '../interfaces'
 
 /* tslint:disable:max-line-length */
 const en: IFoodTranslations = {
-  $beefAndLamb: 'Beef and lamb',
-  $cafesAndRestaurants: 'Cafes and restaurants',
-  $cafesAndRestaurantsSummary:
-    'Insert your personal spending for eating out (restaurants, cafes) per month. Include restaurant lunches as well. The default estimate is based on statistics.',
-  $cheese: 'Cheese',
-  $dairy: 'Dairy',
+  $alcoholicBeverages: 'Alcoholic beverages',
+  $beef: 'Beef',
+  $berries: 'Berries',
+  $butterAndAnimalFats: 'Butter and animal fats',
+  $cheeses: 'Cheeses',
+  $chickenAndTurkey: 'Chicken and turkey',
+  $coffeeAndTea: 'Coffee and tea',
   $diet: 'Diet',
   $dietSummary: `An omnivorous diet represents the average Finnish diet. If you are mainly a vegetarian but sometimes eat e.g. fish, choose the omnivorous diet and adjust the amounts on the next page.
 
 A vegetarian diet does not include fish or meat.
 
 A vegan diet excludes all animal products. If meat, fish or dairy consumption is below the average or not eaten at all, plant-based protein sources are added to compensate for the animal-based food items.`,
-  $dietOmnivore: 'Omnivore',
+  $dietMixed: 'Omnivore',
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
+  $dryPlantBasedProtein: 'Dry plant proteins',
+  $dryPlantBasedProteinDescription:
+    'E.g., soy, pea, and broad bean crumbles and strips',
   $eggs: 'Eggs',
-  $fishAndSeafood: 'Fish and seafood',
-  $foodActionOmnivore: `Seasonal greens should have a large share of your plate to help the climate's health as well as yours. Try out the vegetarian options in restaurants, favor Finnish wild fish and increase the portion of greens at home.`,
+  $fermentedMilkProducts: 'Fermented milk products',
+  $fermentedMilkProductsDescription:
+    'E.g., yogurt, curdled milk, quark, buttermilk, sour cream',
+  $fishAndShellfishAndFishProducts: 'Fish, shellfish, and fish products',
+  $foodActionMixed: `Seasonal greens should have a large share of your plate to help the climate's health as well as yours. Try out the vegetarian options in restaurants, favor Finnish wild fish and increase the portion of greens at home.`,
   $foodActionVegan:
     'A vegan diet is often climate friendly. The most effective way of reducing your food climate footprint even more is to favour seasonal produce.',
   $foodActionVegetarian: `Seasonal produce is climate friendly. If you are a heavy user of dairy products, try replacing some of them with plant-based alternatives, such as nut or oat products.`,
   $foodIngredients: 'Food items',
-  $foodIngredientsSummary: `Estimate your personal consumption of the listed food items. Take into account meals eaten at home and in restaurants etc.
-
-Food items are grouped according to their typical emission intensity. Therefore pork and poultry are presented as one group. In beef consumption, lamb and other ruminant meat are also included.
-The selection is filtered by the diet you chose.
-
-Note that dairy products and eggs are also included in various ready-made foods and bakery products.`,
+  $foodIngredientsDetails:
+    'Take into account meals eaten at home and in restaurants etc. Note that dairy products and eggs are also included in various ready-made foods and bakery products.',
+  $foodIngredientsSummary:
+    'Estimate your personal weekly consumption of the listed food items.',
   $foodIngredientsRangeDetails:
-    'The selected default value is based on Finnish averages. ',
-  $foodLowCarbonDetails: `Low carbon food choices include seasonal vegetables, carbon compensated products, products that have a carbon label indicating low emissions and fresh produce instead of frozen products.`,
+    'The default values are based on the Finnish averages according to the selected diet.',
   $foodResultsSummary: `Typically, food contributes about one fifth of an average personal carbon footprint.`,
   $foodResultsTitle: 'Food carbon footprint',
-  $lowCarbonFoodPrefence: 'I prefer low-carbon choices in my diet',
-  $porkAndPoultry: 'Pork and poultry',
-  $restaurantSpending: 'Monthly expenditure',
-  $resultCategoryDairy: 'Dairy products',
-  $resultCategoryMeat: 'Meat and fish',
-  $resultCategoryPlants: 'Plant based foods',
+  $frozenVegetables: 'Frozen vegetables',
+  $fruitAndBerryPreserves: 'Fruit and berry preserves',
+  $fruits: 'Fruits',
+  $grainsAndGrainProducts: 'Grains and grain products',
+  $legumesAndNuts: 'Legumes and nuts',
+  $margarine: 'Margarine',
+  $meatProducts: 'Meat products',
+  $milk: 'Milk',
+  $otherDairyProducts: 'Other dairy products',
+  $otherDairyProductsDescription: 'E.g., ice cream, milk powder',
+  $otherDrinks: 'Other drinks',
+  $otherDrinksDescription:
+    'Fruit, berry, and vegetable juices, soft drinks, and other non-alcoholic beverages',
+  $otherFoodProducts: 'Other food products',
+  $otherMeatsAndOffal: 'Other meats and offal',
+  $plantBasedDrinks: 'Plant-based drinks',
+  $plantBasedDrinksDescription: 'Soy and oat drinks, and other similar ones',
+  $plantBasedProteinProducts: 'Plant-based protein products',
+  $plantBasedProteinProductsDescription:
+    'E.g., tofu, vegetable balls and patties, vegetable cold cuts, sausages, seitan, vöner',
+  $pork: 'Pork',
+  $potatoes: 'Potatoes',
+  $resultCategoryDairyEggs: 'Dairy products and eggs',
+  $resultCategoryDrinks: 'Drinks (excl. milk and plant-based drinks)',
+  $resultCategoryFat: 'Fats and oils',
+  $resultCategoryFish: 'Fish',
+  $resultCategoryGrainsPotatoes: 'Grains and potatoes',
+  $resultCategoryMeat: 'Meat',
+  $resultCategoryOther: 'Other',
+  $resultCategoryPlantBasedProtein:
+    'Legumes, nuts, and plant-based proteins and drinks',
+  $resultCategorySweets: 'Sugar and sweets',
+  $resultCategoryVegetablesFruitsBerries: 'Vegetables, fruits, and berries',
   $rice: 'Rice',
-  $winterSalad: 'Salad, cucumber, tomatoes in the winter',
+  $rootVegetables: 'Root vegetables',
   $saaSyoda: 'Saa Syödä! (only in Finnish)',
   $saaSyodaDetails:
     'The website has a recipe tool to help you utilise the ingredients in your cupboards and a calculator for estimating the food amounts required for a party.',
@@ -53,5 +84,10 @@ Note that dairy products and eggs are also included in various ready-made foods 
   $sitraAvoidFoodWaste: `Today's leftovers, tomorrow's treats`,
   $sitraAvoidFoodWasteUrl:
     'https://www.sitra.fi/en/cases/todays-leftovers-tomorrows-treats/',
+  $sausages: 'Sausages',
+  $sausagesDescription: 'Not vegetarian sausages',
+  $sugarCandiesAndChocolate: 'Sugar, candies, and chocolate',
+  $vegetablesAndMushrooms: 'Vegetables and mushrooms',
+  $vegetableOils: 'Vegetable oils',
 }
 export default en

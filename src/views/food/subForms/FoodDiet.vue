@@ -19,11 +19,6 @@
         <label :for="'diet' + option">{{ $t('$diet' + option) }}</label>
       </div>
     </SubFormSection>
-    <div class="checkbox-item">
-      <input id="lowCarbonPref" type="checkbox" v-model="lowCarbonPreference" />
-      <label for="lowCarbonPref">{{ $t('$lowCarbonFoodPrefence') }}</label>
-      <DetailsButton content-key="$foodLowCarbonDetails" />
-    </div>
   </SubForm>
 </template>
 
@@ -40,14 +35,6 @@ export default defineComponent({
     food(): IFoodState {
       return this.foodStore.$state
     },
-    lowCarbonPreference: {
-      get(): boolean {
-        return this.food.lowCarbonPreference
-      },
-      set(value: boolean) {
-        this.foodStore.setLowCarbonPreference(value)
-      },
-    },
     diet: {
       get(): Diets {
         return this.food.diet
@@ -62,7 +49,7 @@ export default defineComponent({
   },
   data() {
     return {
-      diets: [Diets.Vegan, Diets.Vegetarian, Diets.Omnivore],
+      diets: [Diets.Vegan, Diets.Vegetarian, Diets.Mixed],
     }
   },
   methods: {
