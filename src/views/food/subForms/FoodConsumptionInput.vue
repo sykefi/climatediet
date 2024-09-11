@@ -15,12 +15,11 @@
       v-model="model"
     />
     <span class="field-unit">
-      <!-- Step is needed to allow floating point numbers -->
       <input
         :id="props.inputName"
         type="number"
         min="0"
-        :step="0.001"
+        :step="props.step"
         :max="props.maxValue"
         v-model.number="model"
       />
