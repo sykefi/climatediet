@@ -25,6 +25,7 @@
       </label>
       <FoodConsumptionInput
         inputName="grainsAndGrainProducts"
+        inputDescription="grainsAndGrainProductsDescription"
         maxValue="20000"
         v-model.number="grainsAndGrainProducts"
       ></FoodConsumptionInput>
@@ -103,12 +104,14 @@
 
       <FoodConsumptionInput
         inputName="fermentedMilkProducts"
+        inputDescription="fermentedMilkProductsDescription"
         maxValue="10000"
         v-model.number="fermentedMilkProducts"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="otherDairyProducts"
+        inputDescription="otherDairyProductsDescription"
         maxValue="5000"
         v-model.number="otherDairyProducts"
       ></FoodConsumptionInput>
@@ -147,6 +150,7 @@
 
       <FoodConsumptionInput
         inputName="sausages"
+        inputDescription="sausagesDescription"
         maxValue="5000"
         v-model.number="sausages"
       ></FoodConsumptionInput>
@@ -187,18 +191,21 @@
 
       <FoodConsumptionInput
         inputName="plantBasedProteinProducts"
+        inputDescription="plantBasedProteinProductsDescription"
         maxValue="10000"
         v-model.number="plantBasedProteinProducts"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="dryPlantBasedProtein"
+        inputDescription="dryPlantBasedProteinDescription"
         maxValue="5000"
         v-model.number="dryPlantBasedProtein"
       ></FoodConsumptionInput>
 
       <FoodConsumptionInput
         inputName="plantBasedDrinks"
+        inputDescription="plantBasedDrinksDescription"
         maxValue="20"
         unit="l/ "
         step="0.1"
@@ -228,6 +235,7 @@
 
       <FoodConsumptionInput
         inputName="otherDrinks"
+        inputDescription="otherDrinksDescription"
         maxValue="20"
         unit="l/ "
         step="0.1"

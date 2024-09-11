@@ -43,6 +43,7 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
   $fruitAndBerryPreserves: 'Fruit and berry preserves',
   $fruits: 'Fruits',
   $grainsAndGrainProducts: 'Grains and grain products',
+  $grainsAndGrainProductsDescription: 'Includes also e.g. breads and pasta',
   $legumesAndNuts: 'Legumes and nuts',
   $margarine: 'Margarine',
   $meatProducts: 'Meat products',

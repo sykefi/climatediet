@@ -39,7 +39,7 @@ const fi: IFoodTranslations = {
   $foodIngredientsSummary:
     'Arvioi henkilökohtainen viikoittainen kulutuksesi listatuista ruoka-aineista.',
   $foodIngredientsRangeDetails:
-    'Oletusarvot perustuvat valitun ruokavalion mukaisiin suomaisten keskiarvoihin.',
+    'Oletusarvot perustuvat valitun ruokavalion mukaisiin suomalaisten keskiarvoihin.',
   $foodResultsSummary:
     'Noin viidennes kansalaisen ilmastovaikutuksista syntyy ruoasta.',
   $foodResultsTitle: 'Ruuan hiilijalanjälki',
@@ -47,6 +47,7 @@ const fi: IFoodTranslations = {
   $fruitAndBerryPreserves: 'Hedelmä- ja marjasäilykkeet',
   $fruits: 'Hedelmät',
   $grainsAndGrainProducts: 'Viljat ja viljatuotteet',
+  $grainsAndGrainProductsDescription: 'Sisältää myös esim. leivät ja pastat',
   $legumesAndNuts: 'Palkokasvit ja pähkinät',
   $margarine: 'Margariini',
   $meatProducts: 'Lihavalmisteet',
