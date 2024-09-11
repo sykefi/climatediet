@@ -12,7 +12,6 @@
       v-model="model"
     />
     <span class="field-unit">
-      <!-- Step is needed to allow floating point numbers -->
       <input
         :id="props.inputName"
         type="number"
