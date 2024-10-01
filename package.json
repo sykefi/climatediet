@@ -19,7 +19,7 @@
     "html2canvas": "^1.4.1",
     "jsdom": "^24.1.0",
     "pinia": "^2.2.2",
-    "pinia-plugin-persistedstate": "^3.2.3",
+    "pinia-plugin-persistedstate": "^4.0.2",
     "vite": "^5.4.2",
     "vue": "^3.4.38",
     "vue-chartjs": "^5.3.1",
