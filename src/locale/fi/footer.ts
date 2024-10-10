@@ -8,5 +8,7 @@ const fi: IFooterTranslations = {
   $termsOfUse: 'Käyttöehdot',
   $share: 'Jaa',
   $accessibility: 'Saavutettavuusseloste',
+  $changeLogLink: 'Muutosloki',
+  $openSource: 'Avoin lähdekoodi',
 }
 export default fi

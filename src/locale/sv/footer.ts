@@ -7,5 +7,7 @@ const sv: IFooterTranslations = {
   $calculationInfo: 'Beräkningsgrunder',
   $termsOfUse: 'Användarvillkor',
   $share: 'Dela',
+  $changeLogLink: 'Ändringsloggen',
+  $openSource: 'Öppen källkod',
 }
 export default sv

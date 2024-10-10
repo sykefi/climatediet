@@ -23,6 +23,7 @@ export interface IStartViewTranslations {
   $yearlyIncome: string
   $siteSlogan: string
   $termsOfUseInfo: string
+  $changelog: string
 }
 
 export interface ICreateGroupCodeTranslations {
@@ -481,6 +482,8 @@ export interface IFooterTranslations {
   $termsOfUse: string
   $share: string
   $accessibility: string
+  $openSource: string
+  $changeLogLink: string
 }
 
 export interface IGlobalTranslations {

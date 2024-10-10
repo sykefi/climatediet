@@ -68,6 +68,20 @@
       >
         API
       </a>
+      <a
+        href="https://github.com/sykefi/climatediet"
+        target="_blank"
+        rel="noopener"
+      >
+        {{ $t('$openSource') }}
+      </a>
+      <a
+        href="https://github.com/sykefi/climatediet/releases"
+        target="_blank"
+        rel="noopener"
+      >
+        {{ $t('$changeLogLink') }}
+      </a>
       <a href="mailto:ilmastotohtori@syke.fi">ilmastotohtori@syke.fi</a>
     </div>
     <div id="foot-fill2" />
