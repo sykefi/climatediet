@@ -8,5 +8,7 @@ const en: IFooterTranslations = {
   $termsOfUse: 'Terms of use',
   $share: 'Share on',
   $accessibility: 'Accessibility',
+  $changeLogLink: 'Change log',
+  $openSource: 'Open source',
 }
 export default en

@@ -3,6 +3,13 @@
     <h1>{{ $t('$siteSlogan') }}</h1>
     <div v-if="$t('$infoForUsers') != ''" class="infoBox">
       {{ $t('$infoForUsers') }}
+      <a
+        href="https://github.com/sykefi/climatediet/releases"
+        target="_blank"
+        rel="noopener"
+      >
+        {{ $t('$changelog') }}
+      </a>
     </div>
     <form @submit.prevent="submit(false)" class="calc-form">
       <SubForm
