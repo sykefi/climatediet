@@ -17,7 +17,7 @@
     "axios": "^1.7.7",
     "chart.js": "^4.4.4",
     "html2canvas": "^1.4.1",
-    "jsdom": "^24.1.0",
+    "jsdom": "^25.0.1",
     "pinia": "^2.2.4",
     "pinia-plugin-persistedstate": "^3.2.3",
     "vite": "^5.4.9",
