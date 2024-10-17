@@ -33,5 +33,6 @@ const sv: IGlobalTranslations = {
   $notFoundDescription:
     'Den angivna adressen har inget innehåll. Kontrollera adressen eller klicka på en länk i navigationsbalken för att fortsätta.',
   $piecesShort: 'st.',
+  $sitra100WaysLinkDescription: 'Välj lämpliga klimatåtgärder',
 }
 export default sv
