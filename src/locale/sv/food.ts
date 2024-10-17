@@ -21,9 +21,12 @@ const sv: IFoodTranslations = {
   $fermentedMilkProductsDescription:
     'T.ex. yoghurt, fil, kvarg, kärnmjölk, gräddfil',
   $fishAndShellfishAndFishProducts: 'Fisk, skaldjur och fiskprodukter',
-  $foodActionMixed: `Det är värt att äta rikligt med säsongens grönsaker tillsammans med fisk och kött, inte bara av hälsoskäl utan också för att diversifiera dina måltider. Testa lunchrestaurangernas vegetariska alternativ, välj finsk vild fisk och öka andelen grönsaker i den hemlagade maten.`,
-  $foodActionVegan: `En vegansk kost är ofta klimatvänlig. Du kan ytterligare minska kostens klimatpåverkan genom att välja säsongens grönsaker.`,
-  $foodActionVegetarian: `Grönsaker är klimatvänlig mat. Det är särskilt värt att öka användningen av säsongens grönsaker. Om du använder mycket ost och mejeriprodukter, prova att ibland ersätta dem med växtbaserade alternativ.`,
+  $foodActionMixed:
+    'Det är värt att äta rikligt med säsongens grönsaker tillsammans med fisk och kött, inte bara av hälsoskäl utan också för att diversifiera dina måltider. Testa lunchrestaurangernas vegetariska alternativ, välj finsk vild fisk och öka andelen grönsaker i den hemlagade maten.',
+  $foodActionVegan:
+    'En vegansk kost är ofta klimatvänlig. Du kan ytterligare minska kostens klimatpåverkan genom att välja säsongens grönsaker.',
+  $foodActionVegetarian:
+    'Grönsaker är klimatvänlig mat. Det är särskilt värt att öka användningen av säsongens grönsaker. Om du använder mycket ost och mejeriprodukter, prova att ibland ersätta dem med växtbaserade alternativ.',
   $foodIngredients: 'Födoämnen',
   $foodIngredientsDetails:
     'Inkludera all konsumtion såväl hemma som på restaurang, café och skolan eller jobbet. Kom ihåg under punkten om mjölkprodukter, ost och ägg, att vi också äter dem i olika maträtter och bakverk.',

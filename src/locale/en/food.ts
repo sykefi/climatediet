@@ -27,7 +27,8 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
     'E.g., yogurt, curdled milk, quark, buttermilk, sour cream',
   $fishAndShellfishAndFishProducts: 'Fish, shellfish, and fish products',
   $foodActionMixed: `It's worth consuming plenty of seasonal vegetables alongside fish and meat for health reasons and to diversify your meals. Try vegetarian options in lunch restaurants, choose Finnish wild fish, and increase the amount of vegetables in your home-cooked meals.`,
-  $foodActionVegan: `A vegan diet is often climate-friendly. You can further reduce the climate impact of your diet by favoring seasonal vegetables.`,
+  $foodActionVegan:
+    'A vegan diet is often climate-friendly. You can further reduce the climate impact of your diet by favoring seasonal vegetables.',
   $foodActionVegetarian: `Vegetables are climate-friendly food. It's especially worth increasing the use of seasonal vegetables. If you consume a lot of cheese and dairy products, try occasionally replacing them with plant-based alternatives.`,
   $foodIngredients: 'Food items',
   $foodIngredientsDetails:

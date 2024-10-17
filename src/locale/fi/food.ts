@@ -26,9 +26,12 @@ const fi: IFoodTranslations = {
   $fermentedMilkProductsDescription:
     'Esim. jogurtti, viili, rahka, piimä, kermaviili',
   $fishAndShellfishAndFishProducts: 'Kala, äyriäiset ja kalavalmisteet',
-  $foodActionMixed: `Kauden kasviksia kannattaa nauttia runsaasti kalan ja lihan kanssa jo terveyssyistä. Kokeile lounasravintoloiden kasvisvaihtoehtoa, suomalaista villiä kalaa ja lisää kasvisten osuutta kotiruoassa.`,
-  $foodActionVegan: `Vegaaniruokavalio on usein ilmastoystävällinen. Ruokailun ilmastovaikutuksia voit edelleen vähentää suosimalla kauden kasviksia.`,
-  $foodActionVegetarian: `Kasvikset ovat ilmastoystävällistä ravintoa. Erityisesti satokauden kasvisten käyttöä kannattaa lisätä. Jos käytät paljon juustoa ja maitotuotteita, kokeile toisinaan korvata ne kasvirasvapohjaisilla tuotteilla.`,
+  $foodActionMixed:
+    'Kauden kasviksia kannattaa nauttia runsaasti kalan ja lihan kanssa jo terveyssyistä. Kokeile lounasravintoloiden kasvisvaihtoehtoa, suomalaista villiä kalaa ja lisää kasvisten osuutta kotiruoassa.',
+  $foodActionVegan:
+    'Vegaaniruokavalio on usein ilmastoystävällinen. Ruokailun ilmastovaikutuksia voit edelleen vähentää suosimalla kauden kasviksia.',
+  $foodActionVegetarian:
+    'Kasvikset ovat ilmastoystävällistä ravintoa. Erityisesti satokauden kasvisten käyttöä kannattaa lisätä. Jos käytät paljon juustoa ja maitotuotteita, kokeile toisinaan korvata ne kasvirasvapohjaisilla tuotteilla.',
   $foodIngredients: 'Ruoka-aineet',
   $foodIngredientsDetails:
     'Huomioi kaikki kulutus eli kotiruokailun lisäksi myös ravintolat, kahvilat ja ruokalat. Muista maitotuotteiden, juuston ja kananmunien kohdalla, että nautimme niitä myös erilaisten ruokien ja leivonnaisten osana.',
