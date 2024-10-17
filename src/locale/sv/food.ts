@@ -21,15 +21,9 @@ const sv: IFoodTranslations = {
   $fermentedMilkProductsDescription:
     'T.ex. yoghurt, fil, kvarg, kärnmjölk, gräddfil',
   $fishAndShellfishAndFishProducts: 'Fisk, skaldjur och fiskprodukter',
-  $foodActionMixed: `Det är värt att äta rikligt med säsongens grönsaker tillsammans med fisk och kött, inte bara av hälsoskäl utan också för att diversifiera dina måltider. Testa lunchrestaurangernas vegetariska alternativ, välj finsk vild fisk och öka andelen grönsaker i den hemlagade maten.
-
-Du kan läsa mer om beräkningsgrunderna för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.`,
-  $foodActionVegan: `En vegansk kost är ofta klimatvänlig. Du kan ytterligare minska kostens klimatpåverkan genom att välja säsongens grönsaker.
-
-Du kan läsa mer om beräkningsgrunderna för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.`,
-  $foodActionVegetarian: `Grönsaker är klimatvänlig mat. Det är särskilt värt att öka användningen av säsongens grönsaker. Om du använder mycket ost och mejeriprodukter, prova att ibland ersätta dem med växtbaserade alternativ.
-
-Du kan läsa mer om beräkningsgrunderna för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.`,
+  $foodActionMixed: `Det är värt att äta rikligt med säsongens grönsaker tillsammans med fisk och kött, inte bara av hälsoskäl utan också för att diversifiera dina måltider. Testa lunchrestaurangernas vegetariska alternativ, välj finsk vild fisk och öka andelen grönsaker i den hemlagade maten.`,
+  $foodActionVegan: `En vegansk kost är ofta klimatvänlig. Du kan ytterligare minska kostens klimatpåverkan genom att välja säsongens grönsaker.`,
+  $foodActionVegetarian: `Grönsaker är klimatvänlig mat. Det är särskilt värt att öka användningen av säsongens grönsaker. Om du använder mycket ost och mejeriprodukter, prova att ibland ersätta dem med växtbaserade alternativ.`,
   $foodIngredients: 'Födoämnen',
   $foodIngredientsDetails:
     'Inkludera all konsumtion såväl hemma som på restaurang, café och skolan eller jobbet. Kom ihåg under punkten om mjölkprodukter, ost och ägg, att vi också äter dem i olika maträtter och bakverk.',
@@ -96,5 +90,7 @@ Du kan läsa mer om beräkningsgrunderna för att förstå de begränsningar som
   $wwfFoodUrl: 'https://www.wwf.se/mat-och-jordbruk/vad-ska-jag-ata',
   $wwfFood: 'WWF',
   $wwfFoodDetails: 'Så här äter du miljövänligt',
+  $foodActionGeneric:
+    'Du kan läsa mer om beräkningsgrunderna för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.',
 }
 export default sv

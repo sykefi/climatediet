@@ -535,6 +535,8 @@ export const useFoodStore = defineStore('food', {
           addAction('Mixed')
         }
 
+        addAction('Generic')
+
         return actions
       }
     },
