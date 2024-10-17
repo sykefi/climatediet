@@ -17,7 +17,7 @@ export const useResultsComparisonStore = defineStore('resultsComparison', {
       name: '',
       date: null,
       housing: 2500,
-      food: 1500,
+      food: 2300,
       secondaryHouse: 0,
       transport: 1700,
       consumption: 2000,
