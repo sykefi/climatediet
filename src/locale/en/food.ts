@@ -96,6 +96,7 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
   $wwfFood: 'WWF',
   $wwfFoodDetails: 'Learn more about plant-based diets',
   $foodActionGeneric:
-    'You can learn more about the calculation methods and the limitations that affect the results. In addition to climate impacts, we can also influence the preservation of biodiversity through our food choices.',
+    'You can learn more about the {link} and the limitations that affect the results. In addition to climate impacts, we can also influence the preservation of biodiversity through our food choices.',
+  $foodActionGenericCalcInfo: 'calculation methods',
 }
 export default en

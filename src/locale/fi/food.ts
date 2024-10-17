@@ -99,6 +99,7 @@ const fi: IFoodTranslations = {
   $wwfFood: 'WWF',
   $wwfFoodDetails: 'Näin syöt ympäristöystävällisesti',
   $foodActionGeneric:
-    'Laskentaperusteista voit tutustua tarkemmin tuloksiin vaikuttaviin rajauksiin. Ilmastovaikutusten lisäksi voimme ruokavalintojemme avulla vaikuttaa myös luonnon monimuotoisuuden turvaamiseen.',
+    '{link} voit tutustua tarkemmin tuloksiin vaikuttaviin rajauksiin. Ilmastovaikutusten lisäksi voimme ruokavalintojemme avulla vaikuttaa myös luonnon monimuotoisuuden turvaamiseen.',
+  $foodActionGenericCalcInfo: 'Laskentaperusteista',
 }
 export default fi

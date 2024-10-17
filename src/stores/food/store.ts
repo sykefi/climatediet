@@ -12,6 +12,7 @@ import api from '@/utilities/api'
 import { TranslateResult } from 'vue-i18n'
 import i18n from '@/locale/i18n'
 import { IChartData } from '@/types'
+import { useRouter } from 'vue-router'
 
 export const useFoodStore = defineStore('food', {
   state: (): IFoodState => ({
@@ -535,7 +536,16 @@ export const useFoodStore = defineStore('food', {
           addAction('Mixed')
         }
 
-        addAction('Generic')
+        const router = useRouter()
+        const baseRoute = router.resolve({
+          name: 'calculationInfo',
+          hash: '#food',
+        }).href
+        addAction(
+          'Generic',
+          baseRoute,
+          i18n.global.t('$foodActionGenericCalcInfo')
+        )
 
         return actions
       }

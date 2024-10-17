@@ -171,6 +171,7 @@ export interface IFoodTranslations {
   $foodActionVegan: string
   $foodActionVegetarian: string
   $foodActionGeneric: string
+  $foodActionGenericCalcInfo: string
   $foodIngredients: string
   $foodIngredientsDetails: string
   $foodIngredientsSummary: string

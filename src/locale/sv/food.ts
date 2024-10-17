@@ -94,6 +94,7 @@ const sv: IFoodTranslations = {
   $wwfFood: 'WWF',
   $wwfFoodDetails: 'Så här äter du miljövänligt',
   $foodActionGeneric:
-    'Du kan läsa mer om beräkningsgrunderna för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.',
+    'Du kan läsa mer om {link} för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.',
+  $foodActionGenericCalcInfo: 'beräkningsgrunderna',
 }
 export default sv
