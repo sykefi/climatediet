@@ -572,16 +572,7 @@ export const useFoodStore = defineStore('food', {
       }
     },
     sitraCases: (state) => {
-      // TODO: remove or  fix
-      if (
-        state.beefValue >= 100 ||
-        state.fishAndShellfishAndFishProductsValue >= 100 ||
-        state.porkValue >= 100 ||
-        state.chickenAndTurkeyValue >= 100 ||
-        state.meatProductsValue >= 100 ||
-        state.otherMeatsAndOffalValue >= 100 ||
-        state.sausagesValue >= 100
-      ) {
+      if (state.diet === Diets.Mixed) {
         return '$sitraVarietyWithVegetables'
       }
       return '$sitraAvoidFoodWaste'
