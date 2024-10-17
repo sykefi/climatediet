@@ -22,7 +22,7 @@ const sv: IStartViewTranslations = {
   $groupCodeError:
     'Det gick inte att bekräfta gruppkoden. Koden är antingen förfallen eller så existerar den inte. Kontrollera koden och försök igen.',
   $infoForUsers:
-    'OBS! Utsläppsfaktorerna för räknaren uppdateras. Därför kommer ditt resultat att förändras, även om du matar in samma uppgifter om din konsumtion som tidigare. Även jämförelsevärden såsom genomsnittsresultaten för finländarnas konsumtion (i resultatbilden) kommer att ändras. Din egen resultatshistorik förblir oförändrad.',
+    'Utsläppsfaktorerna för boende, mat och konsumtion har uppdaterats med den senaste forskningsdatan. Resultaten från den tidigare kalkylatorversionen är inte längre tillgängliga i genomsnitt, men för inloggade användare kommer resultathistoriken att vara tillgänglig för granskning. Se vad som har ändrats i',
   $postalCode: 'Postnummer',
   $postalCodeDetails:
     'Postnumret används för uppskattning av boendets energiförbrukning och för områdesjämförelser.',
@@ -30,6 +30,7 @@ const sv: IStartViewTranslations = {
   $siteSlogan: 'Räkna ut din klimatpåverkan och börja Klimatdieten!',
   $registrationInfo: `Logga in med e-postadress och den engångskod du får per e-post varje gång du använder kalkylatorn. Då sparas dina resultat automatiskt. Du kommer åt dina tidigare klimatavtryck på fliken Resultat.`,
   $termsOfUseInfo: 'Innan du fortsätter, säkerställ att du har läst ',
+  $changelog: 'ändringsloggen',
 }
 
 export default sv
