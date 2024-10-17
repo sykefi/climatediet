@@ -19,24 +19,20 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
   $dryPlantBasedProtein: 'Dry plant proteins',
-  $dryPlantBasedProteinDescription:
-    'E.g., soy, pea, and broad bean crumbles and strips',
+  $dryPlantBasedProteinDescription: 'E.g., soy, pea, and broad bean crumbles and strips',
   $eggs: 'Eggs',
   $fermentedMilkProducts: 'Fermented milk products',
-  $fermentedMilkProductsDescription:
-    'E.g., yogurt, curdled milk, quark, buttermilk, sour cream',
+  $fermentedMilkProductsDescription: 'E.g., yogurt, curdled milk, quark, buttermilk, sour cream',
   $fishAndShellfishAndFishProducts: 'Fish, shellfish, and fish products',
-  $foodActionMixed: `Seasonal greens should have a large share of your plate to help the climate's health as well as yours. Try out the vegetarian options in restaurants, favor Finnish wild fish and increase the portion of greens at home.`,
-  $foodActionVegan:
-    'A vegan diet is often climate friendly. The most effective way of reducing your food climate footprint even more is to favour seasonal produce.',
+  $foodActionMixed: `It's worth consuming plenty of seasonal vegetables alongside fish and meat for health reasons and to diversify your meals. Try vegetarian options in lunch restaurants, choose Finnish wild fish, and increase the amount of vegetables in your home-cooked meals.
+
+You can learn more about the calculation methods (link) and the limitations that affect the results. In addition to climate impacts, we can also influence the preservation of biodiversity through our food choices.`,
+  $foodActionVegan: 'A vegan diet is often climate friendly. The most effective way of reducing your food climate footprint even more is to favour seasonal produce.',
   $foodActionVegetarian: `Seasonal produce is climate friendly. If you are a heavy user of dairy products, try replacing some of them with plant-based alternatives, such as nut or oat products.`,
   $foodIngredients: 'Food items',
-  $foodIngredientsDetails:
-    'Take into account meals eaten at home and in restaurants etc. Note that dairy products and eggs are also included in various ready-made foods and bakery products.',
-  $foodIngredientsSummary:
-    'Estimate your personal weekly consumption of the listed food items.',
-  $foodIngredientsRangeDetails:
-    'The default values are based on the Finnish averages according to the selected diet.',
+  $foodIngredientsDetails: 'Take into account meals eaten at home and in restaurants etc. Note that dairy products and eggs are also included in various ready-made foods and bakery products.',
+  $foodIngredientsSummary: 'Estimate your personal weekly consumption of the listed food items.',
+  $foodIngredientsRangeDetails: 'The default values are based on the Finnish averages according to the selected diet.',
   $foodResultsSummary: `Typically, food contributes about one fifth of an average personal carbon footprint.`,
   $foodResultsTitle: 'Food carbon footprint',
   $frozenVegetables: 'Frozen vegetables',
@@ -51,15 +47,13 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
   $otherDairyProducts: 'Other dairy products',
   $otherDairyProductsDescription: 'E.g., ice cream, milk powder',
   $otherDrinks: 'Other drinks',
-  $otherDrinksDescription:
-    'Fruit, berry, and vegetable juices, soft drinks, and other non-alcoholic beverages',
+  $otherDrinksDescription: 'Fruit, berry, and vegetable juices, soft drinks, and other non-alcoholic beverages',
   $otherFoodProducts: 'Other food products',
   $otherMeatsAndOffal: 'Other meats and offal',
   $plantBasedDrinks: 'Plant-based drinks',
   $plantBasedDrinksDescription: 'Soy and oat drinks, and other similar ones',
   $plantBasedProteinProducts: 'Plant-based protein products',
-  $plantBasedProteinProductsDescription:
-    'E.g., tofu, vegetable balls and patties, vegetable cold cuts, sausages, seitan, vöner',
+  $plantBasedProteinProductsDescription: 'E.g., tofu, vegetable balls and patties, vegetable cold cuts, sausages, seitan, vöner',
   $pork: 'Pork',
   $potatoes: 'Potatoes',
   $resultCategoryDairyEggs: 'Dairy products and eggs',
@@ -69,26 +63,28 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
   $resultCategoryGrainsPotatoes: 'Grains and potatoes',
   $resultCategoryMeat: 'Meat',
   $resultCategoryOther: 'Other',
-  $resultCategoryPlantBasedProtein:
-    'Legumes, nuts, and plant-based proteins and drinks',
+  $resultCategoryPlantBasedProtein: 'Legumes, nuts, and plant-based proteins and drinks',
   $resultCategorySweets: 'Sugar and sweets',
   $resultCategoryVegetablesFruitsBerries: 'Vegetables, fruits, and berries',
   $rice: 'Rice',
   $rootVegetables: 'Root vegetables',
-  $saaSyoda: 'Saa Syödä! (only in Finnish)',
-  $saaSyodaDetails:
-    'The website has a recipe tool to help you utilise the ingredients in your cupboards and a calculator for estimating the food amounts required for a party.',
+  $saaSyoda: 'Saa Syödä!',
+  $saaSyodaDetails: 'Tips for reducing food waste (only in Finnish)',
   $saaSyodaUrl: 'http://www.saasyoda.fi/',
   $sitraVarietyWithVegetables: 'Refreshing variety with vegetables',
-  $sitraVarietyWithVegetablesUrl:
-    'https://www.sitra.fi/en/cases/refreshing-change-vegetables/',
+  $sitraVarietyWithVegetablesUrl: 'https://www.sitra.fi/en/cases/refreshing-change-vegetables/',
   $sitraAvoidFoodWaste: `Today's leftovers, tomorrow's treats`,
-  $sitraAvoidFoodWasteUrl:
-    'https://www.sitra.fi/en/cases/todays-leftovers-tomorrows-treats/',
+  $sitraAvoidFoodWasteUrl: 'https://www.sitra.fi/en/cases/todays-leftovers-tomorrows-treats/',
   $sausages: 'Sausages',
   $sausagesDescription: 'Not vegetarian sausages',
   $sugarCandiesAndChocolate: 'Sugar, candies, and chocolate',
   $vegetablesAndMushrooms: 'Vegetables and mushrooms',
   $vegetableOils: 'Vegetable oils',
+  $climateGuideUrl: 'https://www.climateguide.fi',
+  $climateGuide: 'Climateguide.fi',
+  $climateGuideDetails: 'Read more about climate change',
+  $wwfFoodUrl: 'https://planetbaseddiets.panda.org',
+  $wwfFood: 'WWF',
+  $wwfFoodDetails: 'Learn more about plant-based diets'
 }
 export default en

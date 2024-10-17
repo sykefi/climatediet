@@ -542,6 +542,16 @@ export const useFoodStore = defineStore('food', {
       return () => {
         return [
           {
+            title: i18n.global.t('$climateGuide'),
+            description: i18n.global.t('$climateGuideDetails'),
+            url: i18n.global.t('$climateGuideUrl')
+          },
+          {
+            title: i18n.global.t('$wwfFood'),
+            description: i18n.global.t('$wwfFoodDetails'),
+            url: i18n.global.t('$wwfFoodUrl')
+          },
+          {
             title: i18n.global.t('$saaSyoda'),
             description: i18n.global.t('$saaSyodaDetails'),
             url: i18n.global.t('$saaSyodaUrl'),

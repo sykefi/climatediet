@@ -14,28 +14,21 @@ const sv: IFoodTranslations = {
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
   $dryPlantBasedProtein: 'Torra växtproteiner',
-  $dryPlantBasedProteinDescription:
-    'T.ex. soja-, ärt- och bondbönsbitar och strimlor',
+  $dryPlantBasedProteinDescription: 'T.ex. soja-, ärt- och bondbönsbitar och strimlor',
   $eggs: 'Ägg',
   $fermentedMilkProducts: 'Surmjölksprodukter',
-  $fermentedMilkProductsDescription:
-    'T.ex. yoghurt, fil, kvarg, kärnmjölk, gräddfil',
+  $fermentedMilkProductsDescription: 'T.ex. yoghurt, fil, kvarg, kärnmjölk, gräddfil',
   $fishAndShellfishAndFishProducts: 'Fisk, skaldjur och fiskprodukter',
-  $foodActionMixed:
-    'Det lönar sig även av hälsoskäl att äta rikligt med säsongens grönsaker till fisk och kött. Testa lunchrestaurangernas vegetariska alternativ, finsk vild fisk och öka andelen grönsaker i den hemlagade maten.',
-  $foodActionVegan:
-    'Vegankost är ofta klimatvänlig. Måltidernas klimatpåverkan kan minskas ytterligare genom att välja säsongens grönsaker.',
-  $foodActionVegetarian:
-    'Säsongens grönsaker är klimatvänliga. Om du använder mycket ost och mjölkprodukter, testa att byta ut dem ibland mot vegetabiliska ingredienser, såsom nötter och produkter baserade på vegetabiliskt fett.',
+  $foodActionMixed: `Det är värt att äta rikligt med säsongens grönsaker tillsammans med fisk och kött, inte bara av hälsoskäl utan också för att diversifiera dina måltider. Testa lunchrestaurangernas vegetariska alternativ, välj finsk vild fisk och öka andelen grönsaker i den hemlagade maten.
+
+  Du kan läsa mer om beräkningsgrunderna (länk) för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.`,
+  $foodActionVegan: 'Vegankost är ofta klimatvänlig. Måltidernas klimatpåverkan kan minskas ytterligare genom att välja säsongens grönsaker.',
+  $foodActionVegetarian: 'Säsongens grönsaker är klimatvänliga. Om du använder mycket ost och mjölkprodukter, testa att byta ut dem ibland mot vegetabiliska ingredienser, såsom nötter och produkter baserade på vegetabiliskt fett.',
   $foodIngredients: 'Födoämnen',
-  $foodIngredientsDetails:
-    'Inkludera all konsumtion såväl hemma som på restaurang, café och skolan eller jobbet. Kom ihåg under punkten om mjölkprodukter, ost och ägg, att vi också äter dem i olika maträtter och bakverk.',
-  $foodIngredientsSummary:
-    'Utvärdera din personliga veckokonsumtion av de listade livsmedlen.',
-  $foodIngredientsRangeDetails:
-    'Standardvärdena baseras på finska medelvärden enligt den valda kosten.',
-  $foodResultsSummary:
-    'Cirka en femtedel av en medborgares klimatpåverkan skapas av mat.',
+  $foodIngredientsDetails: 'Inkludera all konsumtion såväl hemma som på restaurang, café och skolan eller jobbet. Kom ihåg under punkten om mjölkprodukter, ost och ägg, att vi också äter dem i olika maträtter och bakverk.',
+  $foodIngredientsSummary: 'Utvärdera din personliga veckokonsumtion av de listade livsmedlen.',
+  $foodIngredientsRangeDetails: 'Standardvärdena baseras på finska medelvärden enligt den valda kosten.',
+  $foodResultsSummary: 'Cirka en femtedel av en medborgares klimatpåverkan skapas av mat.',
   $foodResultsTitle: 'Matens koldioxidavtryck',
   $frozenVegetables: 'Frysta grönsaker',
   $fruitAndBerryPreserves: 'Frukt- och bärkonserver',
@@ -49,15 +42,13 @@ const sv: IFoodTranslations = {
   $otherDairyProducts: 'Övriga mejeriprodukter',
   $otherDairyProductsDescription: 'T.ex. glass, mjölkpulver',
   $otherDrinks: 'Andra drycker',
-  $otherDrinksDescription:
-    'Frukt-, bär- och grönsaksjuicer, läskedrycker och andra alkoholfria drycker',
+  $otherDrinksDescription: 'Frukt-, bär- och grönsaksjuicer, läskedrycker och andra alkoholfria drycker',
   $otherFoodProducts: 'Övriga livsmedel',
   $otherMeatsAndOffal: 'Övriga kött och inälvor',
   $plantBasedDrinks: 'Växtdrycker',
   $plantBasedDrinksDescription: 'Soja- och havredrycker samt liknande',
   $plantBasedProteinProducts: 'Växtbaserade proteinprodukter',
-  $plantBasedProteinProductsDescription:
-    'T.ex. tofu, vegetariska bullar och biffar, vegetariska pålägg, korvar och grillkorvar, seitan, vöner',
+  $plantBasedProteinProductsDescription: 'T.ex. tofu, vegetariska bullar och biffar, vegetariska pålägg, korvar och grillkorvar, seitan, vöner',
   $pork: 'Fläskkött',
   $potatoes: 'Potatis',
   $resultCategoryDairyEggs: 'Mejeriprodukter och ägg',
@@ -67,26 +58,28 @@ const sv: IFoodTranslations = {
   $resultCategoryGrainsPotatoes: 'Spannmål och potatis',
   $resultCategoryMeat: 'Kött',
   $resultCategoryOther: 'Övrigt',
-  $resultCategoryPlantBasedProtein:
-    'Baljväxter, nötter och växtbaserade proteiner och drycker',
+  $resultCategoryPlantBasedProtein: 'Baljväxter, nötter och växtbaserade proteiner och drycker',
   $resultCategorySweets: 'Socker och sötsaker',
   $resultCategoryVegetablesFruitsBerries: 'Grönsaker, frukt och bär',
   $rice: 'Ris',
   $rootVegetables: 'Rotfrukter',
   $saaSyoda: 'Saa Syödä!',
-  $saaSyodaDetails:
-    'Använd receptsökningen för att utnyttja ingredienser som du har i skåpet samt portionsräknaren för att uppskatta mängden mat för ett sällskap',
+  $saaSyodaDetails: 'Tips för att minska matsvinnet (endast på finska)',
   $saaSyodaUrl: 'http://www.saasyoda.fi/',
   $sitraVarietyWithVegetables: 'Uppiggande variation med grönsaker',
-  $sitraVarietyWithVegetablesUrl:
-    'https://www.sitra.fi/sv/cases/uppiggande-variation-med-gronsaker/',
+  $sitraVarietyWithVegetablesUrl: 'https://www.sitra.fi/sv/cases/uppiggande-variation-med-gronsaker/',
   $sitraAvoidFoodWaste: 'Dagens matrester = morgondagens delikatesser',
-  $sitraAvoidFoodWasteUrl:
-    'https://www.sitra.fi/sv/cases/dagens-matrester-morgondagens-delikatesser/',
+  $sitraAvoidFoodWasteUrl: 'https://www.sitra.fi/sv/cases/dagens-matrester-morgondagens-delikatesser/',
   $sausages: 'Korvar',
   $sausagesDescription: 'Inte vegetariska korvar',
   $sugarCandiesAndChocolate: 'Socker, godis och choklad',
   $vegetablesAndMushrooms: 'Grönsaker och svampar',
   $vegetableOils: 'Vegetabiliska oljor',
+  $climateGuideUrl: 'https://www.klimatguiden.fi',
+  $climateGuide: 'Klimatguiden.fi',
+  $climateGuideDetails: 'Läs mer om klimatförändringen',
+  $wwfFoodUrl: 'https://www.wwf.se/mat-och-jordbruk/vad-ska-jag-ata',
+  $wwfFood: 'WWF',
+  $wwfFoodDetails: 'Så här äter du miljövänligt'
 }
 export default sv

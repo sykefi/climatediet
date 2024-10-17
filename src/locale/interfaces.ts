@@ -220,7 +220,13 @@ export interface IFoodTranslations {
   $sausagesDescription: string
   $sugarCandiesAndChocolate: string
   $vegetablesAndMushrooms: string
-  $vegetableOils: string
+  $vegetableOils: string,
+  $climateGuideUrl: string,
+  $climateGuide: string
+  $climateGuideDetails: string,
+  $wwfFoodUrl:string,
+  $wwfFood:string,
+  $wwfFoodDetails:string
 }
 
 export interface ITransportTranslations {

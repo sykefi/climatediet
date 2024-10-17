@@ -65,6 +65,7 @@ export default defineComponent({
 
 .sub-section {
   margin: 10px 0;
+  white-space: pre-line;
 }
 
 h3 {
