@@ -19,10 +19,12 @@ const fi: IFoodTranslations = {
   $dietVegan: 'Vegaani',
   $dietVegetarian: 'Kasvissyöjä',
   $dryPlantBasedProtein: 'Kuivat kasviproteiinit',
-  $dryPlantBasedProteinDescription: 'Esim. soija-, herne- ja härkäpapurouhe ja -suikaleet',
+  $dryPlantBasedProteinDescription:
+    'Esim. soija-, herne- ja härkäpapurouhe ja -suikaleet',
   $eggs: 'Munat',
   $fermentedMilkProducts: 'Hapanmaitotuotteet',
-  $fermentedMilkProductsDescription: 'Esim. jogurtti, viili, rahka, piimä, kermaviili',
+  $fermentedMilkProductsDescription:
+    'Esim. jogurtti, viili, rahka, piimä, kermaviili',
   $fishAndShellfishAndFishProducts: 'Kala, äyriäiset ja kalavalmisteet',
   $foodActionMixed: `Kauden kasviksia kannattaa nauttia runsaasti kalan ja lihan kanssa jo terveyssyistä. Kokeile lounasravintoloiden kasvisvaihtoehtoa, suomalaista villiä kalaa ja lisää kasvisten osuutta kotiruoassa.
   
@@ -34,10 +36,14 @@ Laskentaperusteista voit tutustua tarkemmin tuloksiin vaikuttaviin rajauksiin. I
 
 Laskentaperusteista voit tutustua tarkemmin tuloksiin vaikuttaviin rajauksiin. Ilmastovaikutusten lisäksi voimme ruokavalintojemme avulla vaikuttaa myös luonnon monimuotoisuuden turvaamiseen.`,
   $foodIngredients: 'Ruoka-aineet',
-  $foodIngredientsDetails: 'Huomioi kaikki kulutus eli kotiruokailun lisäksi myös ravintolat, kahvilat ja ruokalat. Muista maitotuotteiden, juuston ja kananmunien kohdalla, että nautimme niitä myös erilaisten ruokien ja leivonnaisten osana.',
-  $foodIngredientsSummary: 'Arvioi henkilökohtainen viikoittainen kulutuksesi listatuista ruoka-aineista.',
-  $foodIngredientsRangeDetails: 'Oletusarvot perustuvat valitun ruokavalion mukaisiin suomalaisten keskiarvoihin.',
-  $foodResultsSummary: 'Noin viidennes kansalaisen ilmastovaikutuksista syntyy ruoasta.',
+  $foodIngredientsDetails:
+    'Huomioi kaikki kulutus eli kotiruokailun lisäksi myös ravintolat, kahvilat ja ruokalat. Muista maitotuotteiden, juuston ja kananmunien kohdalla, että nautimme niitä myös erilaisten ruokien ja leivonnaisten osana.',
+  $foodIngredientsSummary:
+    'Arvioi henkilökohtainen viikoittainen kulutuksesi listatuista ruoka-aineista.',
+  $foodIngredientsRangeDetails:
+    'Oletusarvot perustuvat valitun ruokavalion mukaisiin suomalaisten keskiarvoihin.',
+  $foodResultsSummary:
+    'Noin viidennes kansalaisen ilmastovaikutuksista syntyy ruoasta.',
   $foodResultsTitle: 'Ruuan hiilijalanjälki',
   $frozenVegetables: 'Pakastevihannekset',
   $fruitAndBerryPreserves: 'Hedelmä- ja marjasäilykkeet',
@@ -51,13 +57,15 @@ Laskentaperusteista voit tutustua tarkemmin tuloksiin vaikuttaviin rajauksiin. I
   $otherDairyProducts: 'Muut maitovalmisteet',
   $otherDairyProductsDescription: 'Esim. jäätelö, maitojauhe',
   $otherDrinks: 'Muut juomat',
-  $otherDrinksDescription: 'Hedelmä-, marja- ja kasvismehut, virvoitusjuomat ja muut alkoholittomat juomat',
+  $otherDrinksDescription:
+    'Hedelmä-, marja- ja kasvismehut, virvoitusjuomat ja muut alkoholittomat juomat',
   $otherFoodProducts: 'Muut elintarvikkeet',
   $otherMeatsAndOffal: 'Muut lihat ja sisäelimet',
   $plantBasedDrinks: 'Kasvijuomat',
   $plantBasedDrinksDescription: 'Soija- ja kaurajuomat sekä muut vastaavat',
   $plantBasedProteinProducts: 'Kasviproteiinivalmisteet',
-  $plantBasedProteinProductsDescription: 'Esim. tofu, kasvispyörykät ja -pihvit, kasvisleikkeleet, -nakit ja -makkarat, seitan, vöner',
+  $plantBasedProteinProductsDescription:
+    'Esim. tofu, kasvispyörykät ja -pihvit, kasvisleikkeleet, -nakit ja -makkarat, seitan, vöner',
   $pork: 'Sianliha',
   $potatoes: 'Peruna',
   $resultCategoryDairyEggs: 'Maitotuotteet ja kananmunat',
@@ -67,7 +75,8 @@ Laskentaperusteista voit tutustua tarkemmin tuloksiin vaikuttaviin rajauksiin. I
   $resultCategoryGrainsPotatoes: 'Viljat ja peruna',
   $resultCategoryMeat: 'Liha',
   $resultCategoryOther: 'Muut',
-  $resultCategoryPlantBasedProtein: 'Palkokasvit, pähkinät, kasviproteiinit ja -juomat',
+  $resultCategoryPlantBasedProtein:
+    'Palkokasvit, pähkinät, kasviproteiinit ja -juomat',
   $resultCategorySweets: 'Sokeri ja makeiset',
   $resultCategoryVegetablesFruitsBerries: 'Vihannekset, hedelmät ja marjat',
   $rice: 'Riisi',
@@ -76,9 +85,11 @@ Laskentaperusteista voit tutustua tarkemmin tuloksiin vaikuttaviin rajauksiin. I
   $saaSyodaDetails: 'Vinkkejä ruokahävikin vähentämiseen',
   $saaSyodaUrl: 'http://www.saasyoda.fi/',
   $sitraVarietyWithVegetables: 'Virkistävää vaihtelua kasviksilla',
-  $sitraVarietyWithVegetablesUrl: 'https://www.sitra.fi/caset/virkistavaa-vaihtelua-kasviksilla/',
+  $sitraVarietyWithVegetablesUrl:
+    'https://www.sitra.fi/caset/virkistavaa-vaihtelua-kasviksilla/',
   $sitraAvoidFoodWaste: 'Tämän päivän tähteet, huomisen herkut',
-  $sitraAvoidFoodWasteUrl: 'https://www.sitra.fi/caset/taman-paivan-tahteet-huomisen-herkut/',
+  $sitraAvoidFoodWasteUrl:
+    'https://www.sitra.fi/caset/taman-paivan-tahteet-huomisen-herkut/',
   $sausages: 'Makkarat',
   $sausagesDescription: 'Ei kasvismakkarat',
   $sugarCandiesAndChocolate: 'Sokeri, makeiset ja suklaa',
@@ -89,6 +100,6 @@ Laskentaperusteista voit tutustua tarkemmin tuloksiin vaikuttaviin rajauksiin. I
   $climateGuideDetails: 'Lue lisää ruoasta ja ilmastonmuutoksesta',
   $wwfFoodUrl: 'https://wwf.fi/ruoka',
   $wwfFood: 'WWF',
-  $wwfFoodDetails: 'Näin syöt ympäristöystävällisesti'
+  $wwfFoodDetails: 'Näin syöt ympäristöystävällisesti',
 }
 export default fi

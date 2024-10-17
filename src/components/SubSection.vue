@@ -24,6 +24,7 @@
           >
             {{ $t('$sitra100WaysLinkText') }}
           </a>
+          <span>{{ $t('$sitra100WaysLinkDescription') }}</span>
         </li>
       </ul>
 

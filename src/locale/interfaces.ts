@@ -220,13 +220,13 @@ export interface IFoodTranslations {
   $sausagesDescription: string
   $sugarCandiesAndChocolate: string
   $vegetablesAndMushrooms: string
-  $vegetableOils: string,
-  $climateGuideUrl: string,
+  $vegetableOils: string
+  $climateGuideUrl: string
   $climateGuide: string
-  $climateGuideDetails: string,
-  $wwfFoodUrl:string,
-  $wwfFood:string,
-  $wwfFoodDetails:string
+  $climateGuideDetails: string
+  $wwfFoodUrl: string
+  $wwfFood: string
+  $wwfFoodDetails: string
 }
 
 export interface ITransportTranslations {
@@ -518,6 +518,7 @@ export interface IGlobalTranslations {
   $orMore: string
   $baseDataNotSubmittedNotification: string
   $sitra100WaysLinkText: string
+  $sitra100WaysLinkDescription: string
   $sitra100WaysUrl: string
   $notFoundTitle: string
   $notFoundDescription: string

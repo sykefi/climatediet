@@ -544,12 +544,12 @@ export const useFoodStore = defineStore('food', {
           {
             title: i18n.global.t('$climateGuide'),
             description: i18n.global.t('$climateGuideDetails'),
-            url: i18n.global.t('$climateGuideUrl')
+            url: i18n.global.t('$climateGuideUrl'),
           },
           {
             title: i18n.global.t('$wwfFood'),
             description: i18n.global.t('$wwfFoodDetails'),
-            url: i18n.global.t('$wwfFoodUrl')
+            url: i18n.global.t('$wwfFoodUrl'),
           },
           {
             title: i18n.global.t('$saaSyoda'),
@@ -560,7 +560,7 @@ export const useFoodStore = defineStore('food', {
       }
     },
     sitraCases: (state) => {
-      // TODO: Make work with the new model that uses direct amounts instead of ratios
+      // TODO: remove or  fix
       if (
         state.beefValue >= 100 ||
         state.fishAndShellfishAndFishProductsValue >= 100 ||
