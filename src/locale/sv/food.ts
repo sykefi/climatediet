@@ -21,9 +21,13 @@ const sv: IFoodTranslations = {
   $fishAndShellfishAndFishProducts: 'Fisk, skaldjur och fiskprodukter',
   $foodActionMixed: `Det är värt att äta rikligt med säsongens grönsaker tillsammans med fisk och kött, inte bara av hälsoskäl utan också för att diversifiera dina måltider. Testa lunchrestaurangernas vegetariska alternativ, välj finsk vild fisk och öka andelen grönsaker i den hemlagade maten.
 
-  Du kan läsa mer om beräkningsgrunderna (länk) för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.`,
-  $foodActionVegan: 'Vegankost är ofta klimatvänlig. Måltidernas klimatpåverkan kan minskas ytterligare genom att välja säsongens grönsaker.',
-  $foodActionVegetarian: 'Säsongens grönsaker är klimatvänliga. Om du använder mycket ost och mjölkprodukter, testa att byta ut dem ibland mot vegetabiliska ingredienser, såsom nötter och produkter baserade på vegetabiliskt fett.',
+Du kan läsa mer om beräkningsgrunderna för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.`,
+  $foodActionVegan: `En vegansk kost är ofta klimatvänlig. Du kan ytterligare minska kostens klimatpåverkan genom att välja säsongens grönsaker.
+
+Du kan läsa mer om beräkningsgrunderna för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.`,
+  $foodActionVegetarian: `Grönsaker är klimatvänlig mat. Det är särskilt värt att öka användningen av säsongens grönsaker. Om du använder mycket ost och mejeriprodukter, prova att ibland ersätta dem med växtbaserade alternativ.
+
+Du kan läsa mer om beräkningsgrunderna för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.`,
   $foodIngredients: 'Födoämnen',
   $foodIngredientsDetails: 'Inkludera all konsumtion såväl hemma som på restaurang, café och skolan eller jobbet. Kom ihåg under punkten om mjölkprodukter, ost och ägg, att vi också äter dem i olika maträtter och bakverk.',
   $foodIngredientsSummary: 'Utvärdera din personliga veckokonsumtion av de listade livsmedlen.',

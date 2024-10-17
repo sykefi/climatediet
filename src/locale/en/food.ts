@@ -26,9 +26,13 @@ A vegan diet excludes all animal products. If meat, fish or dairy consumption is
   $fishAndShellfishAndFishProducts: 'Fish, shellfish, and fish products',
   $foodActionMixed: `It's worth consuming plenty of seasonal vegetables alongside fish and meat for health reasons and to diversify your meals. Try vegetarian options in lunch restaurants, choose Finnish wild fish, and increase the amount of vegetables in your home-cooked meals.
 
-You can learn more about the calculation methods (link) and the limitations that affect the results. In addition to climate impacts, we can also influence the preservation of biodiversity through our food choices.`,
-  $foodActionVegan: 'A vegan diet is often climate friendly. The most effective way of reducing your food climate footprint even more is to favour seasonal produce.',
-  $foodActionVegetarian: `Seasonal produce is climate friendly. If you are a heavy user of dairy products, try replacing some of them with plant-based alternatives, such as nut or oat products.`,
+You can learn more about the calculation methods and the limitations that affect the results. In addition to climate impacts, we can also influence the preservation of biodiversity through our food choices.`,
+  $foodActionVegan: `A vegan diet is often climate-friendly. You can further reduce the climate impact of your diet by favoring seasonal vegetables.
+
+You can learn more about the calculation methods and the limitations that affect the results. In addition to climate impacts, we can also influence the preservation of biodiversity through our food choices.`,
+  $foodActionVegetarian: `Vegetables are climate-friendly food. It's especially worth increasing the use of seasonal vegetables. If you consume a lot of cheese and dairy products, try occasionally replacing them with plant-based alternatives.
+
+You can learn more about the calculation methods and the limitations that affect the results. In addition to climate impacts, we can also influence the preservation of biodiversity through our food choices.`,
   $foodIngredients: 'Food items',
   $foodIngredientsDetails: 'Take into account meals eaten at home and in restaurants etc. Note that dairy products and eggs are also included in various ready-made foods and bakery products.',
   $foodIngredientsSummary: 'Estimate your personal weekly consumption of the listed food items.',
