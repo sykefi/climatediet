@@ -8,7 +8,7 @@
       :href="documentationUrl + 'Laskentaperusteet.pdf'"
       rel="noopener noreferrer"
       target="_blank"
-      >
+    >
       Linkki koko dokumentaatioon (pdf, versio 14.3.2019)
     </a>
     <a
@@ -16,14 +16,14 @@
       rel="noopener noreferrer"
       target="_blank"
     >
-    Länk till fullständig dokumentation (pdf, version 14.3.2019)
+      Länk till fullständig dokumentation (pdf, version 14.3.2019)
     </a>
     <a
       :href="documentationUrl + 'CalculationInfo.pdf'"
       rel="noopener noreferrer"
       target="_blank"
     >
-    Link to the documentation (pdf, 14 March 2019)
+      Link to the documentation (pdf, 14 March 2019)
     </a>
   </main>
 </template>
