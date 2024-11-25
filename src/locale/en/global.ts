@@ -34,6 +34,7 @@ const en: IGlobalTranslations = {
   $notFoundDescription:
     'The address did not match any of our content. Please check the address or click on a link on the navigation pane to continue.',
   $piecesShort: 'pcs',
+  $sitra100WaysLinkDescription: 'Pick climate friendly actions for yourself',
 }
 
 export default en

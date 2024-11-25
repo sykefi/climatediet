@@ -24,10 +24,10 @@ The default diet for omnivores is based on the average food consumption of Finns
   $fermentedMilkProductsDescription:
     'E.g., yogurt, curdled milk, quark, buttermilk, sour cream',
   $fishAndShellfishAndFishProducts: 'Fish, shellfish, and fish products',
-  $foodActionMixed: `Seasonal greens should have a large share of your plate to help the climate's health as well as yours. Try out the vegetarian options in restaurants, favor Finnish wild fish and increase the portion of greens at home.`,
+  $foodActionMixed: `It's worth consuming plenty of seasonal vegetables alongside fish and meat for health reasons and to diversify your meals. Try vegetarian options in lunch restaurants, choose Finnish wild fish, and increase the amount of vegetables in your home-cooked meals.`,
   $foodActionVegan:
-    'A vegan diet is often climate friendly. The most effective way of reducing your food climate footprint even more is to favour seasonal produce.',
-  $foodActionVegetarian: `Seasonal produce is climate friendly. If you are a heavy user of dairy products, try replacing some of them with plant-based alternatives, such as nut or oat products.`,
+    'A vegan diet is often climate-friendly. You can further reduce the climate impact of your diet by favoring seasonal vegetables.',
+  $foodActionVegetarian: `Vegetables are climate-friendly food. It's especially worth increasing the use of seasonal vegetables. If you consume a lot of cheese and dairy products, try occasionally replacing them with plant-based alternatives.`,
   $foodIngredients: 'Food items',
   $foodIngredientsDetails:
     'Take into account meals eaten at home and in restaurants etc. Note that dairy products and eggs are also included in various ready-made foods and bakery products.',
@@ -73,9 +73,8 @@ The default diet for omnivores is based on the average food consumption of Finns
   $resultCategoryVegetablesFruitsBerries: 'Vegetables, fruits, and berries',
   $rice: 'Rice',
   $rootVegetables: 'Root vegetables',
-  $saaSyoda: 'Saa Syödä! (only in Finnish)',
-  $saaSyodaDetails:
-    'The website has a recipe tool to help you utilise the ingredients in your cupboards and a calculator for estimating the food amounts required for a party.',
+  $saaSyoda: 'Saa Syödä!',
+  $saaSyodaDetails: 'Tips for reducing food waste (only in Finnish)',
   $saaSyodaUrl: 'http://www.saasyoda.fi/',
   $sitraVarietyWithVegetables: 'Refreshing variety with vegetables',
   $sitraVarietyWithVegetablesUrl:
@@ -88,5 +87,14 @@ The default diet for omnivores is based on the average food consumption of Finns
   $sugarCandiesAndChocolate: 'Sugar, candies, and chocolate',
   $vegetablesAndMushrooms: 'Vegetables and mushrooms',
   $vegetableOils: 'Vegetable oils',
+  $climateGuideUrl: 'https://www.climateguide.fi',
+  $climateGuide: 'Climateguide.fi',
+  $climateGuideDetails: 'Read more about climate change',
+  $wwfFoodUrl: 'https://planetbaseddiets.panda.org',
+  $wwfFood: 'WWF',
+  $wwfFoodDetails: 'Learn more about plant-based diets',
+  $foodActionGeneric:
+    'You can learn more about the {link} and the limitations that affect the results. In addition to climate impacts, we can also influence the preservation of biodiversity through our food choices.',
+  $foodActionGenericCalcInfo: 'calculation methods',
 }
 export default en

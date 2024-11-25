@@ -24,6 +24,7 @@
           >
             {{ $t('$sitra100WaysLinkText') }}
           </a>
+          <span>{{ $t('$sitra100WaysLinkDescription') }}</span>
         </li>
       </ul>
 
@@ -65,6 +66,7 @@ export default defineComponent({
 
 .sub-section {
   margin: 10px 0;
+  white-space: pre-line;
 }
 
 h3 {

@@ -12,6 +12,7 @@ import api from '@/utilities/api'
 import { TranslateResult } from 'vue-i18n'
 import i18n from '@/locale/i18n'
 import { IChartData } from '@/types'
+import { useRouter } from 'vue-router'
 
 export const useFoodStore = defineStore('food', {
   state: (): IFoodState => ({
@@ -535,12 +536,33 @@ export const useFoodStore = defineStore('food', {
           addAction('Mixed')
         }
 
+        const router = useRouter()
+        const baseRoute = router.resolve({
+          name: 'calculationInfo',
+          hash: '#food',
+        }).href
+        addAction(
+          'Generic',
+          baseRoute,
+          i18n.global.t('$foodActionGenericCalcInfo')
+        )
+
         return actions
       }
     },
     resultLinks: () => {
       return () => {
         return [
+          {
+            title: i18n.global.t('$climateGuide'),
+            description: i18n.global.t('$climateGuideDetails'),
+            url: i18n.global.t('$climateGuideUrl'),
+          },
+          {
+            title: i18n.global.t('$wwfFood'),
+            description: i18n.global.t('$wwfFoodDetails'),
+            url: i18n.global.t('$wwfFoodUrl'),
+          },
           {
             title: i18n.global.t('$saaSyoda'),
             description: i18n.global.t('$saaSyodaDetails'),
@@ -550,16 +572,7 @@ export const useFoodStore = defineStore('food', {
       }
     },
     sitraCases: (state) => {
-      // TODO: Make work with the new model that uses direct amounts instead of ratios
-      if (
-        state.beefValue >= 100 ||
-        state.fishAndShellfishAndFishProductsValue >= 100 ||
-        state.porkValue >= 100 ||
-        state.chickenAndTurkeyValue >= 100 ||
-        state.meatProductsValue >= 100 ||
-        state.otherMeatsAndOffalValue >= 100 ||
-        state.sausagesValue >= 100
-      ) {
+      if (state.diet === Diets.Mixed) {
         return '$sitraVarietyWithVegetables'
       }
       return '$sitraAvoidFoodWaste'

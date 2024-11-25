@@ -24,11 +24,11 @@ const sv: IFoodTranslations = {
     'T.ex. yoghurt, fil, kvarg, kärnmjölk, gräddfil',
   $fishAndShellfishAndFishProducts: 'Fisk, skaldjur och fiskprodukter',
   $foodActionMixed:
-    'Det lönar sig även av hälsoskäl att äta rikligt med säsongens grönsaker till fisk och kött. Testa lunchrestaurangernas vegetariska alternativ, finsk vild fisk och öka andelen grönsaker i den hemlagade maten.',
+    'Det är värt att äta rikligt med säsongens grönsaker tillsammans med fisk och kött, inte bara av hälsoskäl utan också för att diversifiera dina måltider. Testa lunchrestaurangernas vegetariska alternativ, välj finsk vild fisk och öka andelen grönsaker i den hemlagade maten.',
   $foodActionVegan:
-    'Vegankost är ofta klimatvänlig. Måltidernas klimatpåverkan kan minskas ytterligare genom att välja säsongens grönsaker.',
+    'En vegansk kost är ofta klimatvänlig. Du kan ytterligare minska kostens klimatpåverkan genom att välja säsongens grönsaker.',
   $foodActionVegetarian:
-    'Säsongens grönsaker är klimatvänliga. Om du använder mycket ost och mjölkprodukter, testa att byta ut dem ibland mot vegetabiliska ingredienser, såsom nötter och produkter baserade på vegetabiliskt fett.',
+    'Grönsaker är klimatvänlig mat. Det är särskilt värt att öka användningen av säsongens grönsaker. Om du använder mycket ost och mejeriprodukter, prova att ibland ersätta dem med växtbaserade alternativ.',
   $foodIngredients: 'Födoämnen',
   $foodIngredientsDetails:
     'Inkludera all konsumtion såväl hemma som på restaurang, café och skolan eller jobbet. Kom ihåg under punkten om mjölkprodukter, ost och ägg, att vi också äter dem i olika maträtter och bakverk.',
@@ -76,8 +76,7 @@ const sv: IFoodTranslations = {
   $rice: 'Ris',
   $rootVegetables: 'Rotfrukter',
   $saaSyoda: 'Saa Syödä!',
-  $saaSyodaDetails:
-    'Använd receptsökningen för att utnyttja ingredienser som du har i skåpet samt portionsräknaren för att uppskatta mängden mat för ett sällskap',
+  $saaSyodaDetails: 'Tips för att minska matsvinnet (endast på finska)',
   $saaSyodaUrl: 'http://www.saasyoda.fi/',
   $sitraVarietyWithVegetables: 'Uppiggande variation med grönsaker',
   $sitraVarietyWithVegetablesUrl:
@@ -90,5 +89,14 @@ const sv: IFoodTranslations = {
   $sugarCandiesAndChocolate: 'Socker, godis och choklad',
   $vegetablesAndMushrooms: 'Grönsaker och svampar',
   $vegetableOils: 'Vegetabiliska oljor',
+  $climateGuideUrl: 'https://www.klimatguiden.fi',
+  $climateGuide: 'Klimatguiden.fi',
+  $climateGuideDetails: 'Läs mer om klimatförändringen',
+  $wwfFoodUrl: 'https://www.wwf.se/mat-och-jordbruk/vad-ska-jag-ata',
+  $wwfFood: 'WWF',
+  $wwfFoodDetails: 'Så här äter du miljövänligt',
+  $foodActionGeneric:
+    'Du kan läsa mer om {link} för att förstå de begränsningar som påverkar resultaten. Utöver klimatpåverkan kan våra kostval även bidra till att skydda den biologiska mångfalden.',
+  $foodActionGenericCalcInfo: 'beräkningsgrunderna',
 }
 export default sv

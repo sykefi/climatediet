@@ -33,5 +33,6 @@ const fi: IGlobalTranslations = {
   $notFoundDescription:
     'Antamallasi osoitteella ei löytynyt mitään sisältöä. Tarkista osoite, tai klikkaa jotain navigaatiopalkin linkkiä jatkaaksesi.',
   $piecesShort: 'kpl',
+  $sitra100WaysLinkDescription: 'Poimi itsellesi sopivia ilmastotekoja',
 }
 export default fi

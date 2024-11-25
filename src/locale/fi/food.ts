@@ -20,7 +20,6 @@ Sekasyöjän oletusruokavalio perustuu suomalaisten keskimääräiseen ruoan kul
   $dryPlantBasedProteinDescription:
     'Esim. soija-, herne- ja härkäpapurouhe ja -suikaleet',
   $eggs: 'Munat',
-
   $fermentedMilkProducts: 'Hapanmaitotuotteet',
   $fermentedMilkProductsDescription:
     'Esim. jogurtti, viili, rahka, piimä, kermaviili',
@@ -28,9 +27,9 @@ Sekasyöjän oletusruokavalio perustuu suomalaisten keskimääräiseen ruoan kul
   $foodActionMixed:
     'Kauden kasviksia kannattaa nauttia runsaasti kalan ja lihan kanssa jo terveyssyistä. Kokeile lounasravintoloiden kasvisvaihtoehtoa, suomalaista villiä kalaa ja lisää kasvisten osuutta kotiruoassa.',
   $foodActionVegan:
-    'Vegaaniruokavalio on usein ilmastoystävällinen. Ruokailun ilmastovaikutuksia voi edelleen vähentää suosimalla kauden kasviksia.',
+    'Vegaaniruokavalio on usein ilmastoystävällinen. Ruokailun ilmastovaikutuksia voit edelleen vähentää suosimalla kauden kasviksia.',
   $foodActionVegetarian:
-    'Kauden kasvikset ovat ilmastoystävällisiä. Jos käytät paljon juustoa ja maitotuotteita, kokeile toisinaan korvata ne kasviperäisillä aineksilla kuten pähkinöillä ja kasvirasvapohjaisilla tuotteilla.',
+    'Kasvikset ovat ilmastoystävällistä ravintoa. Erityisesti satokauden kasvisten käyttöä kannattaa lisätä. Jos käytät paljon juustoa ja maitotuotteita, kokeile toisinaan korvata ne kasvirasvapohjaisilla tuotteilla.',
   $foodIngredients: 'Ruoka-aineet',
   $foodIngredientsDetails:
     'Huomioi kaikki kulutus eli kotiruokailun lisäksi myös ravintolat, kahvilat ja ruokalat. Muista maitotuotteiden, juuston ja kananmunien kohdalla, että nautimme niitä myös erilaisten ruokien ja leivonnaisten osana.',
@@ -78,8 +77,7 @@ Sekasyöjän oletusruokavalio perustuu suomalaisten keskimääräiseen ruoan kul
   $rice: 'Riisi',
   $rootVegetables: 'Juurekset',
   $saaSyoda: 'Saa Syödä!',
-  $saaSyodaDetails:
-    'Katso reseptihaku kaapista löytyvien ainesten hyödyntämiseksi sekä annoslaskuri seurueen ruokamäärän arvioimiseksi',
+  $saaSyodaDetails: 'Vinkkejä ruokahävikin vähentämiseen',
   $saaSyodaUrl: 'http://www.saasyoda.fi/',
   $sitraVarietyWithVegetables: 'Virkistävää vaihtelua kasviksilla',
   $sitraVarietyWithVegetablesUrl:
@@ -92,5 +90,14 @@ Sekasyöjän oletusruokavalio perustuu suomalaisten keskimääräiseen ruoan kul
   $sugarCandiesAndChocolate: 'Sokeri, makeiset ja suklaa',
   $vegetablesAndMushrooms: 'Vihannekset ja sienet',
   $vegetableOils: 'Kasviöljyt',
+  $climateGuideUrl: 'https://www.ilmasto-opas.fi',
+  $climateGuide: 'Ilmasto-opas.fi',
+  $climateGuideDetails: 'Lue lisää ruoasta ja ilmastonmuutoksesta',
+  $wwfFoodUrl: 'https://wwf.fi/ruoka',
+  $wwfFood: 'WWF',
+  $wwfFoodDetails: 'Näin syöt ympäristöystävällisesti',
+  $foodActionGeneric:
+    '{link} voit tutustua tarkemmin tuloksiin vaikuttaviin rajauksiin. Ilmastovaikutusten lisäksi voimme ruokavalintojemme avulla vaikuttaa myös luonnon monimuotoisuuden turvaamiseen.',
+  $foodActionGenericCalcInfo: 'Laskentaperusteista',
 }
 export default fi
