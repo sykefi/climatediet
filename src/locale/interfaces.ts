@@ -429,49 +429,7 @@ export interface IActionsTranslations {
 
 export interface ICalculationInfoTranslations {
   $goBack: string
-  $linkToDocumentation: string
   $calculationInfoTitle: string
-  $tableOfContents: string
-  $introductionTitle: string
-  $introductionContent: string
-  $baseDataTitle: string
-  $baseDataContent: string
-  $emissionCreditsTitle: string
-  $emissionCreditsContent: string
-  $housingTitle: string
-  $housingContent: string
-  $housingElectricityTitle: string
-  $housingElectricityContent: string
-  $housingHeatingTitle: string
-  $housingHeatingContent: string
-  $housingPurchasesTitle: string
-  $housingPurchasesContent: string
-  $secondaryHouseTitle: string
-  $secondaryHouseContent: string
-  $wasteTitle: string
-  $wasteContent: string
-  $transportTitle: string
-  $transportContent: string
-  $transportCarTitle: string
-  $transportCarContent: string
-  $transportPublicTransportTitle: string
-  $transportPublicTransportContent: string
-  $transportMotorcyclesBoatsTitle: string
-  $transportMotorcyclesBoatsContent: string
-  $transportTravelTitle: string
-  $transportTravelContent: string
-  $transportWalkingCyclingTitle: string
-  $transportWalkingCyclingContent: string
-  $foodTitle: string
-  $foodContent: string
-  $goodsAndServicesTitle: string
-  $goodsAndServicesContent: string
-  $sourcesTitle: string
-  $sourcesContent: string
-  $resultsTitle: string
-  $resultsContent: string
-  $analysisTitle: string
-  $analysisContent: string
 }
 
 export interface IFooterTranslations {
