@@ -10,11 +10,9 @@ const en: IFoodTranslations = {
   $chickenAndTurkey: 'Chicken and turkey',
   $coffeeAndTea: 'Coffee and tea',
   $diet: 'Diet',
-  $dietSummary: `An omnivorous diet represents the average Finnish diet. If you are mainly a vegetarian but sometimes eat e.g. fish, choose the omnivorous diet and adjust the amounts on the next page.
-
-A vegetarian diet does not include fish or meat.
-
-A vegan diet excludes all animal products. If meat, fish or dairy consumption is below the average or not eaten at all, plant-based protein sources are added to compensate for the animal-based food items.`,
+  $dietSummary: `Choose the option that best matches your diet. You can later adjust the consumption of individual food groups to align with your diet. For example, if you eat mostly plant-based but occasionally consume meat or fish, start by selecting the vegetarian diet and then add the estimated amount of meat and fish on the next page of the calculator.
+  
+The default diet for omnivores is based on the average food consumption of Finns. A vegetarian diet does not include meat or fish. Vegans do not consume any animal-derived products. For vegetarian and vegan diets, the estimated consumption is calculated by replacing animal products with equivalent plant-based alternatives.`,
   $dietMixed: 'Omnivore',
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',

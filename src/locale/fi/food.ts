@@ -10,11 +10,9 @@ const fi: IFoodTranslations = {
   $chickenAndTurkey: 'Kana ja kalkkuna',
   $coffeeAndTea: 'Kahvi ja tee',
   $diet: 'Ruokavalio',
-  $dietSummary: `Sekasyöjän oletusruokavalio perustuu suomalaisten keskimääräiseen ruoan kulutukseen. Jos syöt kasvispainotteisesti mutta esimerkiksi kalaa tai toisinaan lihaa, valitse sekasyöjän ruokavalio ja pienennä lihan kulutusta seuraavalla sivulla.
+  $dietSummary: `Valitse omaa ruokavaliotasi parhaiten vastaava vaihtoehto. Voit myöhemmin tarkentaa yksittäisten ruoka-aineryhmien kulutusta oman ruokavaliosi mukaiseksi. Jos esimerkiksi syöt kasvispainotteisesti, mutta toisinaan lihaa tai kalaa, valitse aluksi kasvissyöjän ruokavalio ja lisää lihaa ja kalaa arvioimasi määrä laskurin seuraavalla sivulla.
 
-  Kasvisruokavaliossa ei ole lihaa eikä kalaa.
-
-  Vegaanit eivät käytä mitään eläinperäisiä tuotteita. Jos lihaa tai muita eläinperäisiä tuotteita ei käytetä tai niiden kulutus on keskimääräistä vähäisempää, laskelmaan lisätään proteiinipitoisia kasvikunnan tuotteita.`,
+Sekasyöjän oletusruokavalio perustuu suomalaisten keskimääräiseen ruoan kulutukseen. Kasvisruokavaliossa ei ole lihaa eikä kalaa. Vegaanit eivät käytä mitään eläinperäisiä tuotteita. Kasvis- ja vegaaniruokavalioiden oletettu kulutus on arvioitu korvaamalla eläinperäiset tuotteet vastaavilla kasvipohjaisilla tuotteilla.`,
   $dietMixed: 'Sekasyöjä',
   $dietVegan: 'Vegaani',
   $dietVegetarian: 'Kasvissyöjä',
