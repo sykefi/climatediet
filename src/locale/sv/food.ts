@@ -9,7 +9,9 @@ const sv: IFoodTranslations = {
   $chickenAndTurkey: 'Kyckling och kalkon',
   $coffeeAndTea: 'Kaffe och te',
   $diet: 'Kost',
-  $dietSummary: `Utgångsvärdet för en blandad kost är finländarnas genomsnittliga livsmedelskonsumtion. Om du mestadels äter vegetariskt, men till exempel äter fisk eller då och då kött, väljer du blandad kost och reducerar köttkonsumtionen på följande sida. En vegetarisk kost innehåller varken kött eller fisk. Veganer använder inga animaliska produkter. Om du inte använder kött eller andra animaliska produkter, eller om du använder dem i mindre mängd än genomsnittet, läggs proteinhaltiga, vegetabiliska produkter till beräkningen.`,
+  $dietSummary: `Välj det alternativ som bäst motsvarar din kost. Du kan senare justera konsumtionen av enskilda livsmedelsgrupper så att den överensstämmer med din kost. Om du till exempel äter mestadels vegetariskt men ibland kött eller fisk, välj först vegetarian som kostalternativ och lägg sedan till den mängd kött och fisk du konsumerar på nästa sida i kalkylatorn. 
+
+  Kostalternativet för blandkost baseras på genomsnittlig matförbrukning bland finländare. Vegetarisk kost innehåller inte kött eller fisk. Veganerna använder inga produkter av animaliskt ursprung. För vegetarian- och vegankost har den uppskattade konsumtionen beräknats genom att ersätta animaliska produkter med motsvarande växtbaserade alternativ.`,
   $dietMixed: 'Flexitarian',
   $dietVegan: 'Vegan',
   $dietVegetarian: 'Vegetarian',
