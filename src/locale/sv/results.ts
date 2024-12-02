@@ -19,9 +19,9 @@ const sv: IResultTranslations = {
   $socialShareText:
     'Mitt koldioxidavtryck är {result} per år. Kontrollera ditt eget resultat på adressen ilmastodieetti.fi',
   $finnishAverageComparisonDetails:
-    'Finländarnas medelvärde baseras på statistik om koldioxidavtryck av finländarnas konsumtionsutgifter uträknade med ENVIMAT-modellen. Resultatet innehåller alltså inte exempelvis den offentliga hälsovårdens och utbildningens utsläpp.',
+    'Finländarnas genomsnittliga klimatavtryck från hemmet, trafik, varor och tjänster samt avfall baseras på det klimatavtryck som beräknats med ENVIMAT-modellen för de statistiskt redovisade konsumtionsutgifterna hos finländska hushåll. Resultatet inkluderar därför inte exempelvis utsläpp från offentlig hälso- och sjukvård eller utbildning. Det genomsnittliga klimatavtrycket från matkonsumtion har beräknats med ENVIMATfood-modellen och grundar sig på finländarnas genomsnittliga matkonsumtion enligt FinRavinto 2017-undersökningen.',
   $testAverageComparisonDetails:
-    'Medelvärde baserat på uppgifter från räknarens användare. Vid uträkningen av medelvärdet används uträkningar gjorda från och med år 2019. Jämförelsevärdet visas inte om det finns mindre än 15 svar.',
+    'Genomsnitten beräknas från alla resultat med den nuvarande kalkylatorversionen. Jämförelse visas inte om det finns färre än 15 jämförbara resultat.',
   $resultsSocietalChangeTitle: 'Samhällets förändring mot Parisavtalet',
   $reset: 'Nollställ alla uppgifter',
 }
