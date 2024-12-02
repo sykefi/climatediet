@@ -19,7 +19,7 @@ const en: IResultTranslations = {
     'My carbon footprint is {result} in a year. See how you do at ilmastodieetti.fi',
   $finnishAverageComparisonDetails: `The average carbon footprint of Finns from home, travel, goods and services, and waste is based on the carbon footprint of Finnish households' statistically reported consumption expenditures, calculated using the ENVIMAT model. The result therefore does not include, for instance, emissions from public healthcare or education. The average carbon footprint of food consumption has been calculated using the ENVIMATfood model, based on the average food consumption of Finns as per the FinRavinto 2017 study.`,
   $testAverageComparisonDetails:
-    'The averages are calculated from all the results with the current calculator version. Comparison is not shown if there are fewer than 15 comparable results.',
+    'The averages are calculated from all the results from the current calculator version. Comparison is not shown if there are fewer than 15 comparable results.',
   $resultsSocietalChangeTitle: 'Societal change towards the Paris Agreement',
   $reset: 'Reset all data',
   $incomeShort: 'Income',
