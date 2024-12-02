@@ -28,6 +28,7 @@ describe('ConsumptionView', () => {
       'recreationLowCarbon',
       'communicationsLowCarbon',
       'otherLowCarbon',
+      'restaurantsLowCarbon'
     ]
     serviceToggles.forEach((toggle) => {
       const el = vm.find('#' + toggle).element as HTMLInputElement
@@ -89,6 +90,7 @@ describe('ConsumptionView', () => {
     assert.equal(store.paperResult, 0)
     assert.equal(store.recreationResult, 0)
     assert.equal(store.otherResult, 0)
+    assert.equal(store.restaurantsResults, 0)
     assert.equal(store.totalResult, 0)
     fakeApi
       .onPost('/consumption/' + globalStateStore.testInstanceId)
@@ -102,6 +104,7 @@ describe('ConsumptionView', () => {
           paper: 10,
           recreation: 1000,
           other: 90,
+          restaurants: 100,
           total: 3900,
         },
       })
@@ -118,6 +121,7 @@ describe('ConsumptionView', () => {
     assert.equal(store.paperResult, 10, 'Paper result mismatch')
     assert.equal(store.recreationResult, 1000, 'Recreation result mismatch')
     assert.equal(store.otherResult, 90, 'Other result mismatch')
+    assert.equal(store.restaurantsResults, 100, 'Restaurant result mismatch')
     assert.equal(store.totalResult, 3900, 'Total result mismatch')
   })
 })

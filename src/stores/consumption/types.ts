@@ -13,6 +13,8 @@ export interface IConsumptionState {
   recreationLowCarbon: boolean
   shoes: number
   shoesLowCarbon: boolean
+  restaurants: number
+  restaurantsLowCarbon: boolean
   id: number
   submitted: boolean
   unSavedChanges: boolean
@@ -24,6 +26,7 @@ export interface IConsumptionState {
   paperResult: number
   recreationResult: number
   shoesResult: number
+  restaurantsResults: number
   totalResult: number
 }
 
@@ -35,6 +38,7 @@ export enum ConsumptionFields {
   Paper = 'paper',
   Recreation = 'recreation',
   Shoes = 'shoes',
+  Restaurants = 'restaurants',
 }
 
 export interface IConsumptionResults {
@@ -45,5 +49,6 @@ export interface IConsumptionResults {
   paper: number
   recreation: number
   shoes: number
+  restaurants: number
   total: number
 }

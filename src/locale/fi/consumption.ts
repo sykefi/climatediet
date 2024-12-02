@@ -43,5 +43,6 @@ const fi: IConsumptionTranslations = {
   $sitraInvestInResponsibility: 'Äänestä lompakollasi vastuullisuuden puolesta',
   $sitraInvestInResponsibilityUrl:
     'https://www.sitra.fi/caset/aanesta-lompakollasi-vastuullisuuden-puolesta/',
+  $restaurants: 'Ravintolat ja kahvilat',
 }
 export default fi
