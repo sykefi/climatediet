@@ -43,5 +43,6 @@ const en: IConsumptionTranslations = {
   $sitraInvestInResponsibility: 'Invest in responsibility',
   $sitraInvestInResponsibilityUrl:
     'https://www.sitra.fi/en/cases/invest-in-responsibility/',
+  $restaurants: 'Restaurants and cafés',
 }
 export default en

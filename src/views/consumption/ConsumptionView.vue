@@ -197,6 +197,7 @@ export default defineComponent({
       services: [
         ConsumptionFields.Recreation,
         ConsumptionFields.Communications,
+        ConsumptionFields.Restaurants,
         ConsumptionFields.Other,
       ],
       resultsShown: false,

@@ -17,6 +17,7 @@ const defaultLevels = {
   other: 309,
   paper: 20,
   recreation: 91,
+  restaurants: 60,
   shoes: 10,
 }
 
@@ -31,6 +32,7 @@ export const useConsumptionStore = defineStore('consumption', {
     paperLowCarbon: false,
     recreationLowCarbon: false,
     shoesLowCarbon: false,
+    restaurantsLowCarbon: false,
     id: 0,
     submitted: false,
     unSavedChanges: false,
@@ -42,6 +44,7 @@ export const useConsumptionStore = defineStore('consumption', {
     paperResult: 0,
     recreationResult: 0,
     shoesResult: 0,
+    restaurantsResults: 0,
     totalResult: 0,
   }),
   persist: {
@@ -67,6 +70,8 @@ export const useConsumptionStore = defineStore('consumption', {
           RecreationLowCarbon: this.recreationLowCarbon,
           Shoes: this.shoes,
           ShoesLowCarbon: this.shoesLowCarbon,
+          Restaurants: this.restaurants,
+          RestaurantsLowCarbon: this.restaurantsLowCarbon,
         }
         const createNew = this.id === 0
         const response = createNew
@@ -89,6 +94,7 @@ export const useConsumptionStore = defineStore('consumption', {
           paper: response.result.paper,
           recreation: response.result.recreation,
           shoes: response.result.shoes,
+          restaurants: response.result.restaurants,
           total: response.result.total,
         }
 
@@ -122,6 +128,9 @@ export const useConsumptionStore = defineStore('consumption', {
         case ConsumptionFields.Recreation:
           this.recreation = value
           break
+        case ConsumptionFields.Restaurants:
+          this.restaurants = value
+          break
         case ConsumptionFields.Shoes:
           this.shoes = value
           break
@@ -150,6 +159,9 @@ export const useConsumptionStore = defineStore('consumption', {
         case ConsumptionFields.Recreation:
           this.recreationLowCarbon = value
           break
+        case ConsumptionFields.Restaurants:
+          this.restaurantsLowCarbon = value
+          break
         case ConsumptionFields.Shoes:
           this.shoesLowCarbon = value
           break
@@ -176,6 +188,7 @@ export const useConsumptionStore = defineStore('consumption', {
       this.paperResult = Math.round(results.paper)
       this.recreationResult = Math.round(results.recreation)
       this.shoesResult = Math.round(results.shoes)
+      this.restaurantsResults = Math.round(results.restaurants)
       this.totalResult = Math.round(results.total)
       this.unSavedChanges = false
     },
@@ -201,6 +214,8 @@ export const useConsumptionStore = defineStore('consumption', {
             return state.recreation
           case ConsumptionFields.Shoes:
             return state.shoes
+          case ConsumptionFields.Restaurants:
+            return state.restaurants
           default:
             return 0
         }
@@ -223,6 +238,8 @@ export const useConsumptionStore = defineStore('consumption', {
             return state.recreationLowCarbon
           case ConsumptionFields.Shoes:
             return state.shoesLowCarbon
+          case ConsumptionFields.Restaurants:
+            return state.restaurantsLowCarbon
           default:
             return false
         }
@@ -232,7 +249,8 @@ export const useConsumptionStore = defineStore('consumption', {
       return (
         state.recreationLowCarbon &&
         state.communicationsLowCarbon &&
-        state.otherLowCarbon
+        state.otherLowCarbon &&
+        state.restaurantsLowCarbon
       )
     },
     allGoodsLowCarbon: (state) => {
@@ -251,7 +269,8 @@ export const useConsumptionStore = defineStore('consumption', {
         state.other +
         state.paper +
         state.recreation +
-        state.shoes
+        state.shoes +
+        state.restaurants
       )
     },
     resultChartData: (state) => {
@@ -276,6 +295,10 @@ export const useConsumptionStore = defineStore('consumption', {
           value: state.recreationResult,
         })
         data.push({ label: i18n.global.t('$shoes'), value: state.shoesResult })
+        data.push({
+          label: i18n.global.t('$restaurants'),
+          value: state.restaurantsResults,
+        })
 
         data.sort((a, b) => {
           return b.value - a.value
