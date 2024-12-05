@@ -58,7 +58,7 @@ const props = defineProps({
   step: {
     type: String,
     required: false,
-    default: '10',
+    default: '1',
   },
 })
 </script>

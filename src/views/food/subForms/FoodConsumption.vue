@@ -120,7 +120,6 @@
         inputName="eggs"
         maxValue="100"
         unit="$piecesShort"
-        step="1"
         v-model.number="eggsCount"
       ></FoodConsumptionInput>
     </div>
