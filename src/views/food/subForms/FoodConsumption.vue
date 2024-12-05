@@ -206,7 +206,6 @@
         inputDescription="plantBasedDrinksDescription"
         maxValue="20"
         unit="l/ "
-        step="0.1"
         v-model.number="plantBasedDrinks"
       ></FoodConsumptionInput>
     </div>
@@ -219,7 +218,6 @@
         inputName="coffeeAndTea"
         maxValue="20"
         unit="l/ "
-        step="0.1"
         v-model.number="coffeeAndTea"
       ></FoodConsumptionInput>
 
@@ -227,7 +225,6 @@
         inputName="alcoholicBeverages"
         maxValue="10"
         unit="l/ "
-        step="0.1"
         v-model.number="alcoholicBeverages"
       ></FoodConsumptionInput>
 
@@ -236,7 +233,6 @@
         inputDescription="otherDrinksDescription"
         maxValue="20"
         unit="l/ "
-        step="0.1"
         v-model.number="otherDrinks"
       ></FoodConsumptionInput>
     </div>
