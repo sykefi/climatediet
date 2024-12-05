@@ -92,7 +92,6 @@
         inputName="milk"
         maxValue="20"
         unit="l/ "
-        step="0.1"
         v-model.number="milk"
       ></FoodConsumptionInput>
 
@@ -120,7 +119,6 @@
         inputName="eggs"
         maxValue="100"
         unit="$piecesShort"
-        step="1"
         v-model.number="eggsCount"
       ></FoodConsumptionInput>
     </div>
