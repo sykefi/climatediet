@@ -363,6 +363,7 @@ export interface IConsumptionTranslations {
   $recreationShort: string
   $services: string
   $shoes: string
+  $restaurants: string
   $sitraBuyingHangover: string
   $sitraBuyingHangoverUrl: string
   $sitraInvestInResponsibility: string

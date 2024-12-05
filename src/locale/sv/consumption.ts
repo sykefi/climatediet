@@ -41,5 +41,6 @@ const sv: IConsumptionTranslations = {
   $sitraInvestInResponsibility: 'Rösta på det ansvarsfulla med plånboken',
   $sitraInvestInResponsibilityUrl:
     'https://www.sitra.fi/sv/cases/rosta-pa-det-ansvarsfulla-med-planboken/',
+  $restaurants: 'Restauranger och caféer',
 }
 export default sv
