@@ -20,9 +20,9 @@ const fi: IResultTranslations = {
   $socialShareText:
     'Hiilijalanjälkeni on {result} vuodessa. Tarkista oma tuloksesi osoitteessa ilmastodieetti.fi',
   $finnishAverageComparisonDetails:
-    'Suomalaisten keskiarvo perustuu tilastoista ENVIMAT-mallilla suomalaisten kotitalouksien kulutusmenoista laskettuun hiilijalanjälkeen. Tulos ei siis sisällä esimerkiksi julkisen terveydenhoidon ja koulutuksen päästöjä.',
+    'Suomalaisten hiilijalanjäljen keskiarvo kodin, liikenteen, tavaroiden ja palvelujen sekä jätteiden osalta perustuu ENVIMAT-mallilla laskettuun suomalaisten kotitalouksien tilastoitujen kulutusmenojen hiilijalanjälkeen. Tulos ei siis sisällä esimerkiksi julkisen terveydenhoidon ja koulutuksen päästöjä. Ruuan kulutuksen keskimääräinen hiilijalanjälki on laskettu ENVIMATfood-mallilla perustuen FinRavinto 2017 -tutkimuksen mukaiseen suomalaisten keskimääräiseen ruuankulutukseen.',
   $testAverageComparisonDetails:
-    'Laskurin käyttäjien tietoihin perustuva keskiarvo. Keskiarvon laskennassa käytetään 2019 vuodesta alkaen tehtyjä laskelmia. Vertailuarvoa ei näytetä mikäli vastauksia on vähemmän kuin 15.',
+    'Laskurin käyttäjien tietoihin perustuva keskiarvo. Keskiarvon laskennassa käytetään kaikkia laskurin nykyisellä versiolla saatuja tuloksia. Vertailuarvoa ei näytetä mikäli vastauksia on vähemmän kuin 15.',
   $resultsSocietalChangeTitle: 'Yhteiskunnan muutos kohti Pariisin sopimusta',
   $reset: 'Nollaa kaikki tiedot',
 }
