@@ -10,7 +10,6 @@
       :id="props.inputName"
       type="range"
       min="0"
-      :step="props.step"
       :max="maxValue"
       v-model="model"
     />
@@ -19,7 +18,6 @@
         :id="props.inputName"
         type="number"
         min="0"
-        :step="props.step"
         :max="props.maxValue"
         v-model.number="model"
       />
@@ -54,12 +52,7 @@ const props = defineProps({
     type: String,
     required: false,
     default: 'g/ ',
-  },
-  step: {
-    type: String,
-    required: false,
-    default: '10',
-  },
+  }
 })
 </script>
 
