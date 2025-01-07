@@ -131,7 +131,9 @@ a {
   }
   @media (min-width: $window-width-small-low) {
     header {
-      grid-template: '. title login lang .' 60px / 1fr minmax(auto, 500px) auto 100px 1fr;
+      grid-template:
+        '. title login lang .' 60px / 1fr minmax(auto, 500px)
+        auto 100px 1fr;
     }
   }
   h1 {
