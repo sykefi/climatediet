@@ -284,7 +284,7 @@ export default defineComponent({
         if (this.groupCode) {
           try {
             await this.globalStateStore.associateUserWithGroup()
-          } catch (error) {
+          } catch {
             this.globalStateStore.setError(this.$t('$groupCodeError'))
             return
           }

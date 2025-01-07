@@ -185,7 +185,7 @@ export default defineComponent({
   mounted() {
     try {
       ;(this.$refs.emailField as any).focus()
-    } catch (error) {
+    } catch {
       ;(this.$refs.tokenField as any).focus()
     }
   },
