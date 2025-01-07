@@ -25,15 +25,25 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     'vue/require-default-prop': 'off',
-    '@typescript-eslint/ban-types': [
-      'error',
+    "@typescript-eslint/no-restricted-types": [
+      "error",
       {
-        extendDefaults: true,
-        types: {
-          '{}': false,
-        },
-      },
-    ],
+        "types": {
+          "{}": {
+            "message": "Use object instead"
+          },
+          "Function": {
+            "message": "Use a specific function type instead, like `() => void`"
+          },
+          "Object": {
+            "message": "Use {} instead"
+          },
+          "Number": {
+            "message": "Use number instead"
+          }
+        }
+      }
+    ]
   },
   overrides: [
     {
