@@ -151,7 +151,7 @@
 </template>
 
 <style lang="scss" scoped>
-@use '@/assets/styles/style.scss';
+@use '@/assets/styles/style.scss' as *;
 
 button {
   height: 3em;
