@@ -52,10 +52,7 @@ import { IStoreProperties } from 'pinia'
 import { IChartData } from '@/types'
 
 export default defineComponent({
-  components: {
-    SubSection,
-    DoughnutChart,
-  },
+  components: { SubSection, DoughnutChart },
   data() {
     return {
       currentlyShownResults: this.store.resultButtons
@@ -102,7 +99,7 @@ export interface IResultActionLink {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 
 h3 {
   text-transform: uppercase;

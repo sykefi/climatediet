@@ -39,31 +39,18 @@ import { IResultActionLink } from './ResultBase.vue'
 
 export default defineComponent({
   data() {
-    return {
-      isExpanded: false,
-    }
+    return { isExpanded: false }
   },
   props: {
-    actions: {
-      type: Object as PropType<string[]>,
-      required: false,
-    },
-    links: {
-      type: Object as PropType<IResultActionLink[]>,
-      required: false,
-    },
-    title: {
-      type: String,
-      required: false,
-      default: '$resultActionsTitle',
-    },
+    actions: { type: Object as PropType<string[]>, required: false },
+    links: { type: Object as PropType<IResultActionLink[]>, required: false },
+    title: { type: String, required: false, default: '$resultActionsTitle' },
   },
 })
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
-
+@use '@/assets/styles/style.scss' as *;
 .sub-section {
   margin: 10px 0;
   white-space: pre-line;

@@ -20,22 +20,14 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   data() {
-    return {
-      shown: false,
-      rightOverFlow: false,
-    }
+    return { shown: false, rightOverFlow: false }
   },
-  props: {
-    contentKey: {
-      type: String,
-      required: true,
-    },
-  },
+  props: { contentKey: { type: String, required: true } },
 })
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 .details-button-wrapper {
   display: inline;
   position: relative;

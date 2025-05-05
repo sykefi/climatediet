@@ -156,8 +156,7 @@
 </template>
 
 <style scoped lang="scss">
-@import '@/assets/styles/variables.scss';
-
+@use '@/assets/styles/style.scss' as *;
 h1 {
   font-family: 'Raleway';
   font-weight: $extra-bold;

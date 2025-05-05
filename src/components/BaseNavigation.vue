@@ -25,30 +25,21 @@
     <router-link
       to="/housing"
       @click="$emit('link-clicked')"
-      :class="{
-        ready: housingStore.submitted,
-        disabled: !baseDataSubmitted,
-      }"
+      :class="{ ready: housingStore.submitted, disabled: !baseDataSubmitted }"
     >
       {{ $t('$housing') }}
     </router-link>
     <router-link
       to="/food"
       @click="$emit('link-clicked')"
-      :class="{
-        ready: foodStore.submitted,
-        disabled: !baseDataSubmitted,
-      }"
+      :class="{ ready: foodStore.submitted, disabled: !baseDataSubmitted }"
     >
       {{ $t('$food') }}
     </router-link>
     <router-link
       to="/transport"
       @click="$emit('link-clicked')"
-      :class="{
-        ready: transportStore.submitted,
-        disabled: !baseDataSubmitted,
-      }"
+      :class="{ ready: transportStore.submitted, disabled: !baseDataSubmitted }"
     >
       {{ $t('$transport') }}
     </router-link>
@@ -65,10 +56,7 @@
     <router-link
       to="/waste"
       @click="$emit('link-clicked')"
-      :class="{
-        ready: wasteStore.submitted,
-        disabled: !baseDataSubmitted,
-      }"
+      :class="{ ready: wasteStore.submitted, disabled: !baseDataSubmitted }"
     >
       {{ $t('$waste') }}
     </router-link>
@@ -113,8 +101,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
-
+@use '@/assets/styles/style.scss' as *;
 nav {
   background: white;
   text-align: center;
@@ -234,11 +221,6 @@ export default defineComponent({
       this.globalStateStore.setLoginVisible(true)
     },
   },
-  props: {
-    isVisible: {
-      type: Boolean,
-      required: true,
-    },
-  },
+  props: { isVisible: { type: Boolean, required: true } },
 })
 </script>
