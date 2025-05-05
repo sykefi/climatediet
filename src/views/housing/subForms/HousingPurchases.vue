@@ -64,7 +64,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 #purchase-sum {
   font-weight: bold;
   text-align: center;
@@ -172,12 +172,6 @@ export default defineComponent({
       ])
     },
   },
-  props: {
-    isPrimary: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-  },
+  props: { isPrimary: { type: Boolean, required: false, default: true } },
 })
 </script>

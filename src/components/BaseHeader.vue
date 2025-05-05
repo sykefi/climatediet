@@ -42,7 +42,7 @@
 </template>
 
 <style scoped lang="scss">
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 
 header {
   width: 100%;
@@ -157,9 +157,7 @@ import { mapStores } from 'pinia'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  computed: {
-    ...mapStores(useGlobalStateStore),
-  },
+  computed: { ...mapStores(useGlobalStateStore) },
   methods: {
     logout() {
       this.globalStateStore.resetAllData()

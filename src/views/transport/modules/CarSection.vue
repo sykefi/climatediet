@@ -47,7 +47,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 footer {
   font-size: $font-size-s;
   color: $text-semidark;
@@ -129,11 +129,6 @@ export default defineComponent({
       this.transportStore.setCarDetails([this.order, false])
     },
   },
-  props: {
-    order: {
-      type: Number,
-      required: true,
-    },
-  },
+  props: { order: { type: Number, required: true } },
 })
 </script>

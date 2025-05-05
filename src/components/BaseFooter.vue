@@ -89,7 +89,7 @@
 </template>
 
 <style scoped lang="scss">
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 footer {
   width: 100%;
   background: $footer-background;

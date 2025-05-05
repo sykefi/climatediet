@@ -30,36 +30,18 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   props: {
-    detailsContentKey: {
-      type: String,
-      required: false,
-    },
-    footer: {
-      type: String,
-      required: false,
-    },
-    lowerCase: {
-      type: Boolean,
-      required: false,
-    },
-    noBorder: {
-      type: Boolean,
-      required: false,
-    },
-    title: {
-      type: String,
-      required: false,
-    },
-    titleFor: {
-      type: String,
-      required: false,
-    },
+    detailsContentKey: { type: String, required: false },
+    footer: { type: String, required: false },
+    lowerCase: { type: Boolean, required: false },
+    noBorder: { type: Boolean, required: false },
+    title: { type: String, required: false },
+    titleFor: { type: String, required: false },
   },
 })
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 .sub-form-section {
   padding: 1.5em 0;
   display: flex;

@@ -38,43 +38,15 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    summary: {
-      type: String,
-      required: false,
-    },
-    details: {
-      type: String,
-      required: false,
-    },
-    isEnabled: {
-      type: Boolean,
-      required: true,
-    },
-    isActive: {
-      type: Boolean,
-      required: true,
-    },
-    isNested: {
-      type: Boolean,
-      required: false,
-    },
-    isVisible: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-    calcInfoHash: {
-      type: String,
-      required: false,
-    },
-    id: {
-      type: String,
-      required: false,
-    },
+    title: { type: String, required: true },
+    summary: { type: String, required: false },
+    details: { type: String, required: false },
+    isEnabled: { type: Boolean, required: true },
+    isActive: { type: Boolean, required: true },
+    isNested: { type: Boolean, required: false },
+    isVisible: { type: Boolean, required: false, default: true },
+    calcInfoHash: { type: String, required: false },
+    id: { type: String, required: false },
   },
   methods: {
     titleClicked() {
@@ -87,7 +59,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 .calc-sub-form {
   margin: 5px 0;
   & > fieldset {
@@ -160,7 +132,7 @@ export default defineComponent({
 
 <style lang="scss">
 //global styles related to this component and its children
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 
 .section-title {
   font-weight: bold;

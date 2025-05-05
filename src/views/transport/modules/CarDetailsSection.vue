@@ -127,7 +127,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 .car-details {
   background: $form-custom-background;
   padding: 1em;
@@ -232,11 +232,6 @@ export default defineComponent({
       this.transportStore.setCarFuelConsumption([this.order, fuel, consumption])
     },
   },
-  props: {
-    order: {
-      type: Number,
-      required: true,
-    },
-  },
+  props: { order: { type: Number, required: true } },
 })
 </script>

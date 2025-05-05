@@ -21,24 +21,15 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   props: {
-    detailsContentKey: {
-      type: String,
-      required: false,
-    },
-    footer: {
-      type: String,
-      required: false,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
+    detailsContentKey: { type: String, required: false },
+    footer: { type: String, required: false },
+    title: { type: String, required: true },
   },
 })
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 
 .input-selection {
   display: flex;

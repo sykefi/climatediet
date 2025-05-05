@@ -75,7 +75,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 
 .car-section {
   display: flex;
@@ -119,10 +119,7 @@ import {
 import { useBaseDataStore } from '@/stores/startView/store'
 
 export default defineComponent({
-  components: {
-    CarSection,
-    CarDetailsSection,
-  },
+  components: { CarSection, CarDetailsSection },
   computed: {
     ...mapStores(useTransportStore, useBaseDataStore),
     cars(): ICarData[] {

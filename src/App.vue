@@ -100,9 +100,9 @@ export default defineComponent({
 
 <style lang="scss">
 // THESE STYLES ARE GLOBAL
-@import '@/assets/styles/variables.scss';
-@import '@/assets/styles/font_faces.scss';
-@import '@/assets/styles/custom_inputs.scss';
+@use '@/assets/styles/variables.scss' as *;
+@use '@/assets/styles/font_faces.scss' as *;
+@use '@/assets/styles/custom_inputs.scss' as *;
 
 body {
   width: 100vw;
@@ -191,8 +191,9 @@ h3 {
   }
 }
 </style>
+
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/variables.scss' as *;
 
 #picture-padder {
   max-width: 100%; //IE hacks

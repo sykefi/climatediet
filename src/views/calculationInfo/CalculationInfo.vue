@@ -29,7 +29,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 main {
   padding: 0 20px;
   position: relative;

@@ -16,7 +16,7 @@
 </template>
 
 <style lang="scss">
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 
 button.vueperslides__arrow {
   opacity: 0.8;
@@ -50,17 +50,10 @@ import { defineComponent } from 'vue'
 import { VueperSlide, VueperSlides } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
-type ISlide = {
-  image: string
-}
+type ISlide = { image: string }
 
 export default defineComponent({
   components: { VueperSlides, VueperSlide },
-  props: {
-    slides: {
-      type: Array<ISlide>,
-      required: true,
-    },
-  },
+  props: { slides: { type: Array<ISlide>, required: true } },
 })
 </script>

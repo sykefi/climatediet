@@ -151,7 +151,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/variables.scss';
+@use '@/assets/styles/style.scss' as *;
 
 button {
   height: 3em;
@@ -249,12 +249,7 @@ import { defineComponent } from 'vue'
 import { TranslateResult } from 'vue-i18n'
 
 export default defineComponent({
-  components: {
-    BarChart,
-    CarouselBase,
-    DoughnutChart,
-    SubSection,
-  },
+  components: { BarChart, CarouselBase, DoughnutChart, SubSection },
   created() {
     this.averageCompareWith = this.initialAverageCompareWith()
   },
@@ -373,10 +368,7 @@ export default defineComponent({
           label: this.$t('$consumption'),
           value: this.consumptionStore.totalResult,
         },
-        {
-          label: this.$t('$waste'),
-          value: this.wasteStore.totalResult,
-        },
+        { label: this.$t('$waste'), value: this.wasteStore.totalResult },
       ]
 
       if (this.housingStore.hasSecondaryHouse) {
