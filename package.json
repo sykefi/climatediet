@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "eslint --ext .ts,.vue --ignore-pattern '.gitignore' --fix tests",
-    "lint-no-fix": "eslint --ext .ts,.vue --ignore-pattern '.gitignore' tests",
+    "lint": "eslint --ext .ts,.vue --ignore-pattern '.gitignore' --fix src",
+    "lint-no-fix": "eslint --ext .ts,.vue --ignore-pattern '.gitignore' src",
     "format": "prettier --write .",
     "test": "vitest"
   },
