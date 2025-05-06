@@ -1,4 +1,4 @@
-import tsParser from '@typescript-eslint/parser'
+import tsEslint from 'typescript-eslint'
 import vueParser from 'vue-eslint-parser'
 
 export default [
@@ -14,11 +14,11 @@ export default [
       'plugin:@typescript-eslint/recommended',
       'plugin:prettier/recommended', // must be last to override other configs
     ],
-    plugins: { '@typescript-eslint': tsEslint },
+    plugins: { '@typescript-eslint': tsEslint.plugin },
     languageOptions: {
       parser: vueParser,
       parserOptions: {
-        parser: tsParser,
+        parser: tsEslint.parser,
         sourceType: 'module',
         ecmaVersion: 2020,
         project: true,
