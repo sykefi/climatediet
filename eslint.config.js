@@ -15,14 +15,10 @@ export default defineConfigWithVueTs({
   },
   extends: [
     vueTsConfigs.recommended,
-    // '@vue/typescript/recommended',
     // All flat configs in this plugin are provided as arrays, so spread syntax is required when combining them with other configs. https://eslint.vuejs.org/user-guide/#bundle-configurations-eslint-config-js
     ...eslintPluginVue.configs['flat/essential'],
-    // 'plugin:vue/vue3-essential',
     ...tsEslint.configs.recommended,
-    // 'plugin:@typescript-eslint/recommended',
     ...eslintPluginPrettierRecommended, // must be last to override other configs
-    //'plugin:prettier/recommended', // must be last to override other configs
   ],
   plugins: { '@typescript-eslint': tsEslint.plugin },
   languageOptions: {
