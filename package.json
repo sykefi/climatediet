@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "eslint --ext .ts,.vue --ignore-path .gitignore --fix src",
-    "lint-no-fix": "eslint --ext .ts,.vue --ignore-path .gitignore src",
+    "lint": "eslint --ext .ts,.vue --ignore-pattern '.gitignore' --fix src",
+    "lint-no-fix": "eslint --ext .ts,.vue --ignore-pattern '.gitignore' src",
     "format": "prettier --write .",
     "test": "vitest"
   },
@@ -27,13 +27,12 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.31.1",
-    "@typescript-eslint/parser": "^8.31.1",
+    "typescript-eslint": "^8.31.1",
     "@vue/compiler-sfc": "^3.3.4",
-    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vue/eslint-config-typescript": "^14.5.0",
     "@vue/test-utils": "^2.4.6",
     "axios-mock-adapter": "^2.1.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
     "eslint-plugin-vue": "^9.32.0",
