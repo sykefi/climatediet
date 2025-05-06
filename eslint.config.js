@@ -16,7 +16,6 @@ export default defineConfigWithVueTs(
   ...eslintPluginVue.configs['flat/essential'],
   ...tsEslint.configs.recommended,
   eslintPluginPrettierRecommended.default, // must be last to override other configs
-
   {
     plugins: { '@typescript-eslint': tsEslint.plugin },
     languageOptions: {
