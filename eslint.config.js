@@ -10,9 +10,6 @@ const eslintPluginPrettierRecommended = await import(
 )
 
 export default defineConfigWithVueTs({
-  env: {
-    es2021: true,
-  },
   extends: [
     vueTsConfigs.recommended,
     // All flat configs in this plugin are provided as arrays, so spread syntax is required when combining them with other configs. https://eslint.vuejs.org/user-guide/#bundle-configurations-eslint-config-js
