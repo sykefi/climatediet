@@ -8,7 +8,6 @@ import {
 import eslintPluginPrettierRecommended from 'eslint-config-prettier/recommended'
 
 export default defineConfigWithVueTs({
-  files: ['**/*.js'], // TODO: update
   root: true,
   env: {
     es2021: true,
