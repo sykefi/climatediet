@@ -10,7 +10,6 @@ const eslintPluginPrettierRecommended = await import(
 )
 
 export default defineConfigWithVueTs({
-  root: true,
   env: {
     es2021: true,
   },
