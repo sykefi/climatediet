@@ -1,9 +1,9 @@
-import tsEslint from '@typescript-eslint'
-import vueEslitParser from 'vue-eslint-parser'
+import tsParser from '@typescript-eslint/parser'
+import vueParser from 'vue-eslint-parser'
 
 export default [
   {
-    files: ['**/*.js'],
+    files: ['**/*.js'], // TODO: update
     root: true,
     env: {
       es2021: true,
@@ -16,13 +16,15 @@ export default [
     ],
     plugins: { '@typescript-eslint': tsEslint },
     languageOptions: {
-      parser: vueEslitParser,
-      parser: tsEslint.parser, // TODO: check if two parsers are allowed
-      sourceType: 'module',
-      ecmaVersion: 2020,
-      project: true,
-      tsconfigRootDir: 'src',
-      extraFileExtensions: ['.vue'],
+      parser: vueParser,
+      parserOptions: {
+        parser: tsParser,
+        sourceType: 'module',
+        ecmaVersion: 2020,
+        project: true,
+        tsconfigRootDir: 'src',
+        extraFileExtensions: ['.vue'],
+      },
       es2021: true, // TODO: check if this works. based on https://eslint.org/docs/latest/use/configure/migration-guide#configuring-language-options, should use globals package
     },
     rules: {
