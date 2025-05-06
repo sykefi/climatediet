@@ -5,7 +5,9 @@ import {
   defineConfigWithVueTs,
   vueTsConfigs,
 } from '@vue/eslint-config-typescript'
-import eslintPluginPrettierRecommended from 'eslint-config-prettier/recommended'
+// import eslintPluginPrettierRecommended from 'eslint-config-prettier/recommended'
+const eslintPluginPrettierRecommended = require('eslint-plugin-prettier/recommended')
+// import eslintPluginPrettier from 'eslint-config-prettier'
 
 export default defineConfigWithVueTs({
   root: true,
@@ -17,7 +19,8 @@ export default defineConfigWithVueTs({
     // All flat configs in this plugin are provided as arrays, so spread syntax is required when combining them with other configs. https://eslint.vuejs.org/user-guide/#bundle-configurations-eslint-config-js
     ...eslintPluginVue.configs['flat/essential'],
     ...tsEslint.configs.recommended,
-    ...eslintPluginPrettierRecommended, // must be last to override other configs
+    //...eslintPluginPrettier.recommended, // must be last to override other configs
+    ...eslintPluginPrettierRecommended,
   ],
   plugins: { '@typescript-eslint': tsEslint.plugin },
   languageOptions: {
