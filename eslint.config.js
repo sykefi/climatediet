@@ -9,6 +9,10 @@ const eslintPluginPrettierRecommended = await import(
   'eslint-plugin-prettier/recommended'
 )
 import globals from 'globals'
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfigWithVueTs(
   vueTsConfigs.recommended,
@@ -25,7 +29,7 @@ export default defineConfigWithVueTs(
         sourceType: 'module',
         ecmaVersion: 2020,
         project: true,
-        tsconfigRootDir: 'src',
+        tsconfigRootDir: __dirname, // absolute path to project root
         extraFileExtensions: ['.vue'],
       },
       ecmaVersion: 2021,
