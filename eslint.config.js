@@ -25,7 +25,7 @@ export default defineConfigWithVueTs(
         sourceType: 'module',
         ecmaVersion: 2020,
         project: true,
-        tsconfigRootDir: 'src',
+        tsconfigRootDir: __dirname, // absolute path to project root
         extraFileExtensions: ['.vue'],
       },
       ecmaVersion: 2021,
