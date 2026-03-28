@@ -7,13 +7,13 @@
     "noUnusedParameters": true,
     "jsx": "preserve",
     "importHelpers": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "types": ["webpack-env", "mocha", "chai", "node", "vite/client"],
+    "types": ["mocha", "chai", "node", "vite/client"],
     "paths": {
       "@/*": ["src/*"]
     },
